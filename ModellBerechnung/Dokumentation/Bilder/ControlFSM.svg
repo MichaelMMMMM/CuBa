@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg height="348" version="1.1" width="820" xmlns="http://www.w3.org/2000/svg">
+<rect fill="#00ff" height="320" rx="16" ry="16" stroke="#00ff" stroke-width="1" width="752" x="54" y="14"/>
+<rect fill="#ffffff" height="320" rx="16" ry="16" stroke="#000000" stroke-width="1" width="752" x="54" y="14"/>
+<rect fill="#ffffff" height="318" rx="16" ry="16" stroke="#ffffff" stroke-width="1" width="750" x="55" y="15"/>
+<text font-family="Dialog" font-size="14" x="368" y="28">
+CFSM_ControlUnit</text>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="54" x2="805" y1="39" y2="39"/>
+<rect fill="#00ff" height="48" rx="16" ry="16" stroke="#00ff" stroke-width="1" width="130" x="406" y="70"/>
+<rect fill="#ffffff" height="48" rx="16" ry="16" stroke="#000000" stroke-width="1" width="130" x="406" y="70"/>
+<rect fill="#ffffff" height="46" rx="16" ry="16" stroke="#ffffff" stroke-width="1" width="128" x="407" y="71"/>
+<text font-family="Dialog" font-size="14" x="436" y="84">
+CStateIdle</text>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="406" x2="535" y1="95" y2="95"/>
+<rect fill="#00ff" height="48" rx="16" ry="16" stroke="#00ff" stroke-width="1" width="130" x="110" y="262"/>
+<rect fill="#ffffff" height="48" rx="16" ry="16" stroke="#000000" stroke-width="1" width="130" x="110" y="262"/>
+<rect fill="#ffffff" height="46" rx="16" ry="16" stroke="#ffffff" stroke-width="1" width="128" x="111" y="263"/>
+<text font-family="Dialog" font-size="14" x="125" y="276">
+CStateJumpUp</text>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="110" x2="239" y1="287" y2="287"/>
+<rect fill="#00ff" height="48" rx="16" ry="16" stroke="#00ff" stroke-width="1" width="115" x="614" y="262"/>
+<rect fill="#ffffff" height="48" rx="16" ry="16" stroke="#000000" stroke-width="1" width="115" x="614" y="262"/>
+<rect fill="#ffffff" height="46" rx="16" ry="16" stroke="#ffffff" stroke-width="1" width="113" x="615" y="263"/>
+<text font-family="Dialog" font-size="14" x="621" y="276">
+CStateBalance</text>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="614" x2="728" y1="287" y2="287"/>
+<ellipse cx="22" cy="94" fill="#000000" rx="8.0" ry="8.0" stroke="#000000" stroke-width="1"/>
+<polyline fill="none" points="414,117 414,174 142,174 142,262" stroke="#333399" stroke-width="1"/>
+<line fill="#333399" stroke="#333399" stroke-width="1" x1="135" x2="142" y1="250" y2="262"/>
+<line fill="#333399" stroke="#333399" stroke-width="1" x1="149" x2="142" y1="250" y2="262"/>
+<text font-family="Dialog" font-size="14" x="77" y="162">
+EV_JUMPUP &amp;&amp; bodyResting &amp;&amp; mJumpUpFlag</text>
+<polyline fill="none" points="206,262 206,214 438,214 438,117" stroke="#333399" stroke-width="1"/>
+<line fill="#333399" stroke="#333399" stroke-width="1" x1="445" x2="438" y1="129" y2="117"/>
+<line fill="#333399" stroke="#333399" stroke-width="1" x1="431" x2="438" y1="129" y2="117"/>
+<text font-family="Dialog" font-size="14" x="230" y="204">
+phi_R__d == jumpVelocity</text>
+<polyline fill="none" points="526,117 526,166 702,166 702,262" stroke="#333399" stroke-width="1"/>
+<line fill="#333399" stroke="#333399" stroke-width="1" x1="695" x2="702" y1="250" y2="262"/>
+<line fill="#333399" stroke="#333399" stroke-width="1" x1="709" x2="702" y1="250" y2="262"/>
+<text font-family="Dialog" font-size="14" x="539" y="150">
+phi_K &lt; max_phi_K &amp;&amp; mBalanceFlag</text>
+<rect fill="#00ff" height="48" rx="16" ry="16" stroke="#00ff" stroke-width="1" width="154" x="110" y="70"/>
+<rect fill="#ffffff" height="48" rx="16" ry="16" stroke="#000000" stroke-width="1" width="154" x="110" y="70"/>
+<rect fill="#ffffff" height="46" rx="16" ry="16" stroke="#ffffff" stroke-width="1" width="152" x="111" y="71"/>
+<text font-family="Dialog" font-size="14" x="118" y="84">
+CStateConfiguration</text>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="110" x2="263" y1="95" y2="95"/>
+<polyline fill="none" points="30,94 110,94" stroke="#333399" stroke-width="1"/>
+<line fill="#333399" stroke="#333399" stroke-width="1" x1="98" x2="110" y1="101" y2="94"/>
+<line fill="#333399" stroke="#333399" stroke-width="1" x1="98" x2="110" y1="87" y2="94"/>
+<polyline fill="none" points="263,86 406,86" stroke="#333399" stroke-width="1"/>
+<line fill="#333399" stroke="#333399" stroke-width="1" x1="394" x2="406" y1="93" y2="86"/>
+<line fill="#333399" stroke="#333399" stroke-width="1" x1="394" x2="406" y1="79" y2="86"/>
+<text font-family="Dialog" font-size="14" x="296" y="78">
+EV_START</text>
+<polyline fill="none" points="406,102 263,102" stroke="#333399" stroke-width="1"/>
+<line fill="#333399" stroke="#333399" stroke-width="1" x1="275" x2="263" y1="95" y2="102"/>
+<line fill="#333399" stroke="#333399" stroke-width="1" x1="275" x2="263" y1="109" y2="102"/>
+<text font-family="Dialog" font-size="14" x="305" y="117">
+EV_END</text>
+<polyline fill="none" points="662,262 662,214 486,214 486,117" stroke="#333399" stroke-width="1"/>
+<line fill="#333399" stroke="#333399" stroke-width="1" x1="493" x2="486" y1="129" y2="117"/>
+<line fill="#333399" stroke="#333399" stroke-width="1" x1="479" x2="486" y1="129" y2="117"/>
+<text font-family="Dialog" font-size="14" x="506" y="203">
+phi_K &gt; max_phi_K</text>
+</svg>

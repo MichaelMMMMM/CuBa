@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg height="568" version="1.1" width="1137" xmlns="http://www.w3.org/2000/svg">
+<rect fill="#ffffff" height="184" stroke="#ffffff" stroke-width="1" width="432" x="326" y="86"/>
+<rect fill="none" height="184" stroke="#000000" stroke-width="1" width="432" x="326" y="86"/>
+<text font-family="Dialog" font-size="14" x="499" y="102">
++ CBasicFSM</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="432" x="326" y="113"/>
+<text font-family="Dialog" font-size="14" x="330" y="130">
+#mState : *State</text>
+<text font-family="Dialog" font-size="14" x="330" y="150">
+#mActionHandler : CConctrolActionHandler</text>
+<text font-family="Dialog" font-size="14" x="330" y="170">
+#sInternalQueue : EEvent</text>
+<text font-family="Dialog" font-size="14" x="330" y="190">
+#sInternalQueueLength : UInt32</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="432" x="326" y="201"/>
+<text font-family="Dialog" font-size="14" x="330" y="218">
++exit() : void</text>
+<text font-family="Dialog" font-size="14" x="330" y="238">
++entry() : void</text>
+<text font-family="Dialog" font-size="14" x="330" y="258">
++dispatch(msg : &amp;CMessage) : bool</text>
+<rect fill="#ffffff" height="164" stroke="#ffffff" stroke-width="1" width="397" x="726" y="390"/>
+<rect fill="none" height="164" stroke="#000000" stroke-width="1" width="397" x="726" y="390"/>
+<text font-family="Dialog" font-size="14" x="876" y="406">
++ CControlFSM</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="397" x="726" y="417"/>
+<text font-family="Dialog" font-size="14" x="730" y="434">
+-mStateRunning : CStateRunning</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="397" x="726" y="455"/>
+<text font-family="Dialog" font-size="14" x="730" y="472">
+-dispatch(msg : &amp;CMessage) : bool</text>
+<text font-family="Dialog" font-size="14" x="730" y="492">
+-onInitial(msg : &amp;CMessage) : bool</text>
+<text font-family="Dialog" font-size="14" x="730" y="512">
+-onConfiguration(msg : &amp;CMessage) : bool</text>
+<text font-family="Dialog" font-size="14" x="730" y="532">
+-onRunning(msg : &amp;CMessage) : bool</text>
+<rect fill="#ffffff" height="72" stroke="#ffffff" stroke-width="1" width="152" x="606" y="14"/>
+<rect fill="none" height="72" stroke="#000000" stroke-width="1" width="152" x="606" y="14"/>
+<text font-family="Dialog" font-size="14" x="663" y="53">
+*State</text>
+<text font-family="Dialog" font-size="14" x="638" y="31">
+&lt;&lt;datatype&gt;&gt;</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="152" x="606" y="64"/>
+<polygon fill="#ffffff" points="326,22 595,22 605,32 605,65 326,65 326,22" stroke="#ffffff" stroke-width="1"/>
+<polyline fill="none" points="326,22 595,22 605,32 605,65 326,65 326,22" stroke="#000000" stroke-width="1"/>
+<polygon fill="#ffffff" points="595,22 605,32 595,32 595,22" stroke="#ffffff" stroke-width="1"/>
+<polyline fill="none" points="595,22 605,32 595,32 595,22" stroke="#000000" stroke-width="1"/>
+<text font-family="Dialog" font-size="14" x="329" y="40">
+Zustand wird als Methoden-</text>
+<text font-family="Dialog" font-size="14" x="329" y="59">
+zeiger definiert.</text>
+<rect fill="#ffffff" height="457" stroke="#ffffff" stroke-width="1" width="262" x="14" y="22"/>
+<rect fill="none" height="457" stroke="#000000" stroke-width="1" width="262" x="14" y="22"/>
+<text font-family="Dialog" font-size="14" x="67" y="38">
++ CControlActionHandler</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="262" x="14" y="49"/>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="262" x="14" y="70"/>
+<text font-family="Dialog" font-size="14" x="18" y="87">
++onEntryConfiguration() : void</text>
+<text font-family="Dialog" font-size="14" x="18" y="107">
++onExitConfiguration() : void</text>
+<text font-family="Dialog" font-size="14" x="18" y="127">
++onEntryRunning() : void</text>
+<text font-family="Dialog" font-size="14" x="18" y="147">
++onExitRunning() : void</text>
+<text font-family="Dialog" font-size="14" x="18" y="167">
++onEntryIdle() : void</text>
+<text font-family="Dialog" font-size="14" x="18" y="187">
++onExitIdle() : void</text>
+<text font-family="Dialog" font-size="14" x="18" y="207">
++onEntryBalance() : void</text>
+<text font-family="Dialog" font-size="14" x="18" y="227">
++onExitBalance() : void</text>
+<text font-family="Dialog" font-size="14" x="18" y="247">
++onEntryJump() : void</text>
+<text font-family="Dialog" font-size="14" x="18" y="267">
++onExitJump() : void</text>
+<text font-family="Dialog" font-size="14" x="18" y="287">
++onEntryWaiting() : void</text>
+<text font-family="Dialog" font-size="14" x="18" y="307">
++onExitWaiting() : void</text>
+<text font-family="Dialog" font-size="14" x="18" y="327">
++onEntryAccelerate() : void</text>
+<text font-family="Dialog" font-size="14" x="18" y="347">
++onExitAccelerate() : void</text>
+<text font-family="Dialog" font-size="14" x="18" y="367">
++onEntryBrake() : void</text>
+<text font-family="Dialog" font-size="14" x="18" y="387">
++onExitBrake() : void</text>
+<text font-family="Dialog" font-size="14" x="18" y="407">
++phiK_inBalanceArea() : bool</text>
+<text font-family="Dialog" font-size="14" x="18" y="427">
++cubeIsResting() : bool</text>
+<text font-family="Dialog" font-size="14" x="18" y="447">
++jumpVelocityReached() : bool</text>
+<text font-family="Dialog" font-size="14" x="18" y="467">
++controlIteration() : void</text>
+<rect fill="#ffffff" height="144" stroke="#ffffff" stroke-width="1" width="320" x="798" y="198"/>
+<rect fill="none" height="144" stroke="#000000" stroke-width="1" width="320" x="798" y="198"/>
+<text font-family="Dialog" font-size="14" x="904" y="214">
++ CStateRunning</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="320" x="798" y="225"/>
+<text font-family="Dialog" font-size="14" x="802" y="242">
+-mStateJump : CStateJump</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="320" x="798" y="253"/>
+<text font-family="Dialog" font-size="14" x="802" y="270">
+-onInitial(msg : &amp;CMessage) : bool</text>
+<text font-family="Dialog" font-size="14" x="802" y="290">
+-onIdle(msg : &amp;CMessage) : bool</text>
+<text font-family="Dialog" font-size="14" x="802" y="310">
+-onJump(msg : &amp;CMessage) : bool</text>
+<text font-family="Dialog" font-size="14" x="802" y="330">
+-onBalance(msg : &amp;CMessage) : bool</text>
+<polyline fill="none" points="798,269 757,269" stroke="#000000" stroke-width="1"/>
+<polygon fill="#ffffff" points="757,269 769,262 769,276" stroke="#ffffff" stroke-width="1"/>
+<polygon fill="none" points="757,269 769,262 769,276" stroke="#000000" stroke-width="1"/>
+<polyline fill="none" points="766,390 766,334 646,334 646,269" stroke="#333399" stroke-width="1"/>
+<polygon fill="#ffffff" points="646,269 653,281 639,281" stroke="#ffffff" stroke-width="1"/>
+<polygon fill="none" points="646,269 653,281 639,281" stroke="#333399" stroke-width="1"/>
+<rect fill="#ffffff" height="137" stroke="#ffffff" stroke-width="1" width="320" x="798" y="14"/>
+<rect fill="none" height="137" stroke="#000000" stroke-width="1" width="320" x="798" y="14"/>
+<text font-family="Dialog" font-size="14" x="914" y="30">
++ CStateJump</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="320" x="798" y="41"/>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="320" x="798" y="62"/>
+<text font-family="Dialog" font-size="14" x="802" y="79">
+-onInitial(msg : &amp;CMessage) : bool</text>
+<text font-family="Dialog" font-size="14" x="802" y="99">
+-onWaiting(msg : &amp;CMessage) : bool</text>
+<text font-family="Dialog" font-size="14" x="802" y="119">
+-onAccelerate(msg : &amp;CMessage) : bool</text>
+<text font-family="Dialog" font-size="14" x="802" y="139">
+-onBrake(msg : &amp;CMessage) : bool</text>
+<polyline fill="none" points="326,110 275,110" stroke="#000000" stroke-width="1"/>
+<polygon fill="#000000" points="326,110 316,115 306,110 316,105" stroke="#000000" stroke-width="1"/>
+<polygon fill="none" points="326,110 316,115 306,110 316,105" stroke="#000000" stroke-width="1"/>
+<text font-family="Dialog" font-size="14" x="270" y="91">
+ </text>
+<polyline fill="none" points="990,390 990,341" stroke="#000000" stroke-width="1"/>
+<polygon fill="#000000" points="990,390 985,380 990,370 995,380" stroke="#000000" stroke-width="1"/>
+<polygon fill="none" points="990,390 985,380 990,370 995,380" stroke="#000000" stroke-width="1"/>
+<text font-family="Dialog" font-size="14" x="909" y="403">
+ </text>
+<polyline fill="none" points="990,198 990,150" stroke="#000000" stroke-width="1"/>
+<polygon fill="#000000" points="990,198 985,188 990,178 995,188" stroke="#000000" stroke-width="1"/>
+<polygon fill="none" points="990,198 985,188 990,178 995,188" stroke="#000000" stroke-width="1"/>
+<text font-family="Dialog" font-size="14" x="912" y="180">
+ </text>
+<polyline fill="none" points="798,150 757,150" stroke="#333399" stroke-width="1"/>
+<polygon fill="#ffffff" points="757,150 769,143 769,157" stroke="#ffffff" stroke-width="1"/>
+<polygon fill="none" points="757,150 769,143 769,157" stroke="#333399" stroke-width="1"/>
+<rect fill="#ffffff" height="160" stroke="#ffffff" stroke-width="1" width="320" x="326" y="390"/>
+<rect fill="none" height="160" stroke="#000000" stroke-width="1" width="320" x="326" y="390"/>
+<text font-family="Dialog" font-size="14" x="416" y="406">
++ SControlComponent</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="320" x="326" y="417"/>
+<text font-family="Dialog" font-size="14" x="330" y="434">
+-sInstance : SControlComponent*</text>
+<text font-family="Dialog" font-size="14" x="330" y="454">
+-mFSM : CControlFSM</text>
+<text font-family="Dialog" font-size="14" x="330" y="474">
+-mAction : CConctrolActionHandler</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="320" x="326" y="503"/>
+<text font-family="Dialog" font-size="14" x="330" y="520">
++getInstance() : &amp;SControlComponent</text>
+<polyline fill="none" points="645,414 726,414" stroke="#000000" stroke-width="1"/>
+<polygon fill="#000000" points="645,414 655,409 665,414 655,419" stroke="#000000" stroke-width="1"/>
+<polygon fill="none" points="645,414 655,409 665,414 655,419" stroke="#000000" stroke-width="1"/>
+<text font-family="Dialog" font-size="14" x="654" y="395">
+ </text>
+<polyline fill="none" points="326,414 275,414" stroke="#000000" stroke-width="1"/>
+<polygon fill="#000000" points="326,414 316,419 306,414 316,409" stroke="#000000" stroke-width="1"/>
+<polygon fill="none" points="326,414 316,419 306,414 316,409" stroke="#000000" stroke-width="1"/>
+<text font-family="Dialog" font-size="14" x="270" y="395">
+ </text>
+</svg>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg height="468" version="1.1" width="972" xmlns="http://www.w3.org/2000/svg">
+<rect fill="#00ff" height="440" rx="16" ry="16" stroke="#00ff" stroke-width="1" width="904" x="54" y="14"/>
+<rect fill="#ffffff" height="440" rx="16" ry="16" stroke="#000000" stroke-width="1" width="904" x="54" y="14"/>
+<rect fill="#ffffff" height="438" rx="16" ry="16" stroke="#ffffff" stroke-width="1" width="902" x="55" y="15"/>
+<text font-family="Dialog" font-size="14" x="463" y="30">
+CControlFSM</text>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="54" x2="957" y1="41" y2="41"/>
+<rect fill="#00ff" height="52" rx="16" ry="16" stroke="#00ff" stroke-width="1" width="184" x="78" y="62"/>
+<rect fill="#ffffff" height="52" rx="16" ry="16" stroke="#000000" stroke-width="1" width="184" x="78" y="62"/>
+<rect fill="#ffffff" height="50" rx="16" ry="16" stroke="#ffffff" stroke-width="1" width="182" x="79" y="63"/>
+<text font-family="Dialog" font-size="14" x="106" y="78">
+CStateConfiguration</text>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="78" x2="261" y1="89" y2="89"/>
+<rect fill="#00ff" height="376" rx="16" ry="16" stroke="#00ff" stroke-width="1" width="576" x="366" y="62"/>
+<rect fill="#ffffff" height="376" rx="16" ry="16" stroke="#000000" stroke-width="1" width="576" x="366" y="62"/>
+<rect fill="#ffffff" height="374" rx="16" ry="16" stroke="#ffffff" stroke-width="1" width="574" x="367" y="63"/>
+<text font-family="Dialog" font-size="14" x="606" y="78">
+CStateRunning</text>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="366" x2="941" y1="89" y2="89"/>
+<rect fill="#00ff" height="52" rx="16" ry="16" stroke="#00ff" stroke-width="1" width="109" x="382" y="110"/>
+<rect fill="#ffffff" height="52" rx="16" ry="16" stroke="#000000" stroke-width="1" width="109" x="382" y="110"/>
+<rect fill="#ffffff" height="50" rx="16" ry="16" stroke="#ffffff" stroke-width="1" width="107" x="383" y="111"/>
+<text font-family="Dialog" font-size="14" x="404" y="126">
+CStateIdle</text>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="382" x2="490" y1="137" y2="137"/>
+<rect fill="#00ff" height="52" rx="16" ry="16" stroke="#00ff" stroke-width="1" width="136" x="790" y="110"/>
+<rect fill="#ffffff" height="52" rx="16" ry="16" stroke="#000000" stroke-width="1" width="136" x="790" y="110"/>
+<rect fill="#ffffff" height="50" rx="16" ry="16" stroke="#ffffff" stroke-width="1" width="134" x="791" y="111"/>
+<text font-family="Dialog" font-size="14" x="811" y="126">
+CStateBalance</text>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="790" x2="925" y1="137" y2="137"/>
+<polyline fill="none" points="261,78 366,78" stroke="#333399" stroke-width="1"/>
+<line fill="#333399" stroke="#333399" stroke-width="1" x1="354" x2="366" y1="85" y2="78"/>
+<line fill="#333399" stroke="#333399" stroke-width="1" x1="354" x2="366" y1="71" y2="78"/>
+<text font-family="Dialog" font-size="14" x="277" y="72">
+EV_START</text>
+<polyline fill="none" points="366,102 261,102" stroke="#333399" stroke-width="1"/>
+<line fill="#333399" stroke="#333399" stroke-width="1" x1="273" x2="261" y1="95" y2="102"/>
+<line fill="#333399" stroke="#333399" stroke-width="1" x1="273" x2="261" y1="109" y2="102"/>
+<text font-family="Dialog" font-size="14" x="280" y="120">
+EV_STOP</text>
+<ellipse cx="22" cy="86" fill="#000000" rx="8.0" ry="8.0" stroke="#000000" stroke-width="1"/>
+<polyline fill="none" points="30,86 78,86" stroke="#333399" stroke-width="1"/>
+<line fill="#333399" stroke="#333399" stroke-width="1" x1="66" x2="78" y1="93" y2="86"/>
+<line fill="#333399" stroke="#333399" stroke-width="1" x1="66" x2="78" y1="79" y2="86"/>
+<polyline fill="none" points="490,153 790,153" stroke="#333399" stroke-width="1"/>
+<line fill="#333399" stroke="#333399" stroke-width="1" x1="778" x2="790" y1="160" y2="153"/>
+<line fill="#333399" stroke="#333399" stroke-width="1" x1="778" x2="790" y1="146" y2="153"/>
+<text font-family="Dialog" font-size="14" x="493" y="176">
+EV_PHIK_IN_BALANCE_AREA &amp;&amp; mBalanceFlag</text>
+<polyline fill="none" points="790,118 490,118" stroke="#333399" stroke-width="1"/>
+<line fill="#333399" stroke="#333399" stroke-width="1" x1="502" x2="490" y1="111" y2="118"/>
+<line fill="#333399" stroke="#333399" stroke-width="1" x1="502" x2="490" y1="125" y2="118"/>
+<text font-family="Dialog" font-size="14" x="537" y="111">
+EV_PHIK_NOT_BALANCEAREA</text>
+<rect fill="#00ff" height="176" rx="16" ry="16" stroke="#00ff" stroke-width="1" width="496" x="430" y="246"/>
+<rect fill="#ffffff" height="176" rx="16" ry="16" stroke="#000000" stroke-width="1" width="496" x="430" y="246"/>
+<rect fill="#ffffff" height="174" rx="16" ry="16" stroke="#ffffff" stroke-width="1" width="494" x="431" y="247"/>
+<text font-family="Dialog" font-size="14" x="640" y="262">
+CStateJump</text>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="430" x2="925" y1="273" y2="273"/>
+<polyline fill="none" points="470,161 470,206 886,206 886,246" stroke="#333399" stroke-width="1"/>
+<line fill="#333399" stroke="#333399" stroke-width="1" x1="879" x2="886" y1="234" y2="246"/>
+<line fill="#333399" stroke="#333399" stroke-width="1" x1="893" x2="886" y1="234" y2="246"/>
+<text font-family="Dialog" font-size="14" x="659" y="227">
+EV_JUMP &amp;&amp; mJumpFlag</text>
+<polyline fill="none" points="598,246 598,214 422,214 422,161" stroke="#333399" stroke-width="1"/>
+<line fill="#333399" stroke="#333399" stroke-width="1" x1="429" x2="422" y1="173" y2="161"/>
+<line fill="#333399" stroke="#333399" stroke-width="1" x1="415" x2="422" y1="173" y2="161"/>
+<text font-family="Dialog" font-size="14" x="450" y="234">
+EV_BRAKE</text>
+<rect fill="#00ff" height="52" rx="16" ry="16" stroke="#00ff" stroke-width="1" width="128" x="454" y="318"/>
+<rect fill="#ffffff" height="52" rx="16" ry="16" stroke="#000000" stroke-width="1" width="128" x="454" y="318"/>
+<rect fill="#ffffff" height="50" rx="16" ry="16" stroke="#ffffff" stroke-width="1" width="126" x="455" y="319"/>
+<text font-family="Dialog" font-size="14" x="473" y="334">
+CStateWaiting</text>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="454" x2="581" y1="345" y2="345"/>
+<rect fill="#00ff" height="52" rx="16" ry="16" stroke="#00ff" stroke-width="1" width="152" x="606" y="318"/>
+<rect fill="#ffffff" height="52" rx="16" ry="16" stroke="#000000" stroke-width="1" width="152" x="606" y="318"/>
+<rect fill="#ffffff" height="50" rx="16" ry="16" stroke="#ffffff" stroke-width="1" width="150" x="607" y="319"/>
+<text font-family="Dialog" font-size="14" x="627" y="334">
+CStateAccelerate</text>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="606" x2="757" y1="345" y2="345"/>
+<rect fill="#00ff" height="52" rx="16" ry="16" stroke="#00ff" stroke-width="1" width="120" x="790" y="318"/>
+<rect fill="#ffffff" height="52" rx="16" ry="16" stroke="#000000" stroke-width="1" width="120" x="790" y="318"/>
+<rect fill="#ffffff" height="50" rx="16" ry="16" stroke="#ffffff" stroke-width="1" width="118" x="791" y="319"/>
+<text font-family="Dialog" font-size="14" x="810" y="334">
+CStateBreak</text>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="790" x2="909" y1="345" y2="345"/>
+<polyline fill="none" points="478,369 478,390 638,390 638,369" stroke="#333399" stroke-width="1"/>
+<line fill="#333399" stroke="#333399" stroke-width="1" x1="645" x2="638" y1="381" y2="369"/>
+<line fill="#333399" stroke="#333399" stroke-width="1" x1="631" x2="638" y1="381" y2="369"/>
+<text font-family="Dialog" font-size="14" x="515" y="407">
+EV_RESTING</text>
+<polyline fill="none" points="670,369 670,390 838,390 838,369" stroke="#333399" stroke-width="1"/>
+<line fill="#333399" stroke="#333399" stroke-width="1" x1="845" x2="838" y1="381" y2="369"/>
+<line fill="#333399" stroke="#333399" stroke-width="1" x1="831" x2="838" y1="381" y2="369"/>
+<text font-family="Dialog" font-size="14" x="655" y="408">
+EV_JUMP_VELOCITY_REACHED</text>
+<ellipse cx="398" cy="342" fill="#000000" rx="8.0" ry="8.0" stroke="#000000" stroke-width="1"/>
+<polyline fill="none" points="406,342 454,342" stroke="#333399" stroke-width="1"/>
+<line fill="#333399" stroke="#333399" stroke-width="1" x1="442" x2="454" y1="349" y2="342"/>
+<line fill="#333399" stroke="#333399" stroke-width="1" x1="442" x2="454" y1="335" y2="342"/>
+<ellipse cx="342" cy="142" fill="#000000" rx="8.0" ry="8.0" stroke="#000000" stroke-width="1"/>
+<polyline fill="none" points="349,141 382,141" stroke="#333399" stroke-width="1"/>
+<line fill="#333399" stroke="#333399" stroke-width="1" x1="370" x2="382" y1="148" y2="141"/>
+<line fill="#333399" stroke="#333399" stroke-width="1" x1="370" x2="382" y1="134" y2="141"/>
+<polyline fill="none" points="678,318 678,302 510,302 510,318" stroke="#333399" stroke-width="1"/>
+<line fill="#333399" stroke="#333399" stroke-width="1" x1="503" x2="510" y1="306" y2="318"/>
+<line fill="#333399" stroke="#333399" stroke-width="1" x1="517" x2="510" y1="306" y2="318"/>
+<text font-family="Dialog" font-size="14" x="533" y="293">
+EV_NOT_RESTING</text>
+</svg>

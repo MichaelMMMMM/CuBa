@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg height="460" version="1.1" width="1084" xmlns="http://www.w3.org/2000/svg">
+<rect fill="#ffffff" height="208" stroke="#ffffff" stroke-width="1" width="304" x="14" y="14"/>
+<rect fill="none" height="208" stroke="#000000" stroke-width="1" width="304" x="14" y="14"/>
+<text font-family="Dialog" font-size="14" x="128" y="30">
++ CRxBuffer</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="304" x="14" y="41"/>
+<text font-family="Dialog" font-size="14" x="18" y="58">
+-sMaxSize : UInt32</text>
+<text font-family="Dialog" font-size="14" x="18" y="78">
+-mCurrentSize : UInt32</text>
+<text font-family="Dialog" font-size="14" x="18" y="98">
+-mBuffer [12] : UInt8</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="304" x="14" y="131"/>
+<text font-family="Dialog" font-size="14" x="18" y="148">
++writeByte(byte : UInt8) : bool</text>
+<text font-family="Dialog" font-size="14" x="18" y="168">
++isFinished() : bool</text>
+<text font-family="Dialog" font-size="14" x="18" y="188">
++getBuffer(buffer : UInt8[]) : bool</text>
+<rect fill="#ffffff" height="208" stroke="#ffffff" stroke-width="1" width="320" x="382" y="14"/>
+<rect fill="none" height="208" stroke="#000000" stroke-width="1" width="320" x="382" y="14"/>
+<text font-family="Dialog" font-size="14" x="493" y="30">
++ CRxBufferList</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="320" x="382" y="41"/>
+<text font-family="Dialog" font-size="14" x="386" y="58">
+-sMaxSize : UInt32</text>
+<text font-family="Dialog" font-size="14" x="386" y="78">
+-mCurrentSize : UInt16</text>
+<text font-family="Dialog" font-size="14" x="386" y="98">
+-mFirstIndex : UInt8</text>
+<text font-family="Dialog" font-size="14" x="386" y="118">
+-mLastIndex : UInt8</text>
+<text font-family="Dialog" font-size="14" x="386" y="138">
+-mBufferList [5] : CRxBuffer</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="320" x="382" y="161"/>
+<text font-family="Dialog" font-size="14" x="386" y="178">
++onRXIRQ(receivedByte : UInt8) : void</text>
+<text font-family="Dialog" font-size="14" x="386" y="198">
++processReceivedBuffer() : void</text>
+<polyline fill="none" points="382,54 317,54" stroke="#000000" stroke-width="1"/>
+<polygon fill="#000000" points="382,54 372,59 362,54 372,49" stroke="#000000" stroke-width="1"/>
+<polygon fill="none" points="382,54 372,59 362,54 372,49" stroke="#000000" stroke-width="1"/>
+<text font-family="Dialog" font-size="14" x="319" y="35">
+ </text>
+<text font-family="Dialog" font-size="14" x="361" y="48">
+1</text>
+<text font-family="Dialog" font-size="14" x="324" y="48">
+1..*</text>
+<rect fill="#ffffff" height="192" stroke="#ffffff" stroke-width="1" width="304" x="14" y="254"/>
+<rect fill="none" height="192" stroke="#000000" stroke-width="1" width="304" x="14" y="254"/>
+<text font-family="Dialog" font-size="14" x="128" y="270">
++ CTxBuffer</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="304" x="14" y="281"/>
+<text font-family="Dialog" font-size="14" x="18" y="298">
+-sMaxSize : UInt32</text>
+<text font-family="Dialog" font-size="14" x="18" y="318">
+-mCurrentSize : UInt32</text>
+<text font-family="Dialog" font-size="14" x="18" y="338">
+-mBuffer [12] : UInt8</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="304" x="14" y="373"/>
+<text font-family="Dialog" font-size="14" x="18" y="390">
++writeBuffer(msg : &amp;CMessage) : bool</text>
+<text font-family="Dialog" font-size="14" x="18" y="410">
++getCurrentByte(byte : &amp;UInt8) : bool</text>
+<rect fill="#ffffff" height="192" stroke="#ffffff" stroke-width="1" width="320" x="382" y="254"/>
+<rect fill="none" height="192" stroke="#000000" stroke-width="1" width="320" x="382" y="254"/>
+<text font-family="Dialog" font-size="14" x="493" y="270">
++ CTxBufferList</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="320" x="382" y="281"/>
+<text font-family="Dialog" font-size="14" x="386" y="298">
+-sMaxSize : UInt32</text>
+<text font-family="Dialog" font-size="14" x="386" y="318">
+-mCurrentSize : UInt16</text>
+<text font-family="Dialog" font-size="14" x="386" y="338">
+-mFirstIndex : UInt8</text>
+<text font-family="Dialog" font-size="14" x="386" y="358">
+-mLastIndex : UInt8</text>
+<text font-family="Dialog" font-size="14" x="386" y="378">
+-mBufferList [5] : CTxBuffer</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="320" x="382" y="393"/>
+<text font-family="Dialog" font-size="14" x="386" y="410">
++onTXIRQ() : void</text>
+<text font-family="Dialog" font-size="14" x="386" y="430">
++writeMessage(msg : &amp;CMessage) : bool</text>
+<polyline fill="none" points="382,294 317,294" stroke="#000000" stroke-width="1"/>
+<polygon fill="#000000" points="382,294 372,299 362,294 372,289" stroke="#000000" stroke-width="1"/>
+<polygon fill="none" points="382,294 372,299 362,294 372,289" stroke="#000000" stroke-width="1"/>
+<text font-family="Dialog" font-size="14" x="319" y="275">
+ </text>
+<text font-family="Dialog" font-size="14" x="361" y="287">
+1</text>
+<text font-family="Dialog" font-size="14" x="323" y="288">
+1..*</text>
+<rect fill="#ffffff" height="208" stroke="#ffffff" stroke-width="1" width="288" x="782" y="134"/>
+<rect fill="none" height="208" stroke="#000000" stroke-width="1" width="288" x="782" y="134"/>
+<text font-family="Dialog" font-size="14" x="859" y="150">
++ SCommComponent</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="288" x="782" y="161"/>
+<text font-family="Dialog" font-size="14" x="786" y="178">
+-sInstance : SCommComponent*</text>
+<text font-family="Dialog" font-size="14" x="786" y="198">
+-mTxBuffer : CTxBufferList</text>
+<text font-family="Dialog" font-size="14" x="786" y="218">
+-mRxBuffer : CRxBufferList</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="288" x="782" y="251"/>
+<text font-family="Dialog" font-size="14" x="786" y="268">
++getInstance() : &amp;SCommComponent</text>
+<text font-family="Dialog" font-size="14" x="786" y="288">
++onTxIRQ() : void</text>
+<text font-family="Dialog" font-size="14" x="786" y="308">
++onRxIRQ(receivedByte : UInt8) : void</text>
+<polyline fill="none" points="782,197 701,197" stroke="#000000" stroke-width="1"/>
+<polygon fill="#000000" points="782,197 772,202 762,197 772,192" stroke="#000000" stroke-width="1"/>
+<polygon fill="none" points="782,197 772,202 762,197 772,192" stroke="#000000" stroke-width="1"/>
+<text font-family="Dialog" font-size="14" x="711" y="178">
+ </text>
+<text font-family="Dialog" font-size="14" x="761" y="191">
+1</text>
+<text font-family="Dialog" font-size="14" x="714" y="191">
+1</text>
+<polyline fill="none" points="782,270 701,270" stroke="#000000" stroke-width="1"/>
+<polygon fill="#000000" points="782,270 772,275 762,270 772,265" stroke="#000000" stroke-width="1"/>
+<polygon fill="none" points="782,270 772,275 762,270 772,265" stroke="#000000" stroke-width="1"/>
+<text font-family="Dialog" font-size="14" x="711" y="251">
+ </text>
+<text font-family="Dialog" font-size="14" x="760" y="264">
+1</text>
+<text font-family="Dialog" font-size="14" x="716" y="262">
+1</text>
+</svg>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg height="486" version="1.1" width="892" xmlns="http://www.w3.org/2000/svg">
+<rect fill="#ffffff" height="240" stroke="#ffffff" stroke-width="1" width="232" x="382" y="20"/>
+<rect fill="none" height="240" stroke="#000000" stroke-width="1" width="232" x="382" y="20"/>
+<text font-family="Dialog" font-size="14" x="458" y="36">
++ CMessage</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="232" x="382" y="47"/>
+<text font-family="Dialog" font-size="14" x="386" y="64">
+-mSender : EComponentID</text>
+<text font-family="Dialog" font-size="14" x="386" y="84">
+-mReceiver : EComponentID</text>
+<text font-family="Dialog" font-size="14" x="386" y="104">
+-mType : EMessageType</text>
+<text font-family="Dialog" font-size="14" x="386" y="124">
+-mDiagEvent : ECommEvent</text>
+<text font-family="Dialog" font-size="14" x="386" y="144">
+-mCommEvent : EDiagEvent</text>
+<text font-family="Dialog" font-size="14" x="386" y="164">
+-mControlEvent : EControlEvent</text>
+<text font-family="Dialog" font-size="14" x="386" y="184">
+-mData [12] : UInt8</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="232" x="382" y="216"/>
+<rect fill="#ffffff" height="120" stroke="#ffffff" stroke-width="1" width="168" x="710" y="20"/>
+<rect fill="none" height="120" stroke="#000000" stroke-width="1" width="168" x="710" y="20"/>
+<text font-family="Dialog" font-size="14" x="746" y="59">
+EComponentID</text>
+<text font-family="Dialog" font-size="14" x="738" y="37">
+&lt;&lt;enumeration&gt;&gt;</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="168" x="710" y="70"/>
+<text font-family="Dialog" font-size="14" x="714" y="87">
+CONTROL_COMP</text>
+<text font-family="Dialog" font-size="14" x="714" y="107">
+COMM_COMP</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="168" x="710" y="118"/>
+<polyline fill="none" points="613,108 710,108" stroke="#000000" stroke-width="1"/>
+<polygon fill="#000000" points="613,108 623,103 633,108 623,113" stroke="#000000" stroke-width="1"/>
+<polygon fill="none" points="613,108 623,103 633,108 623,113" stroke="#000000" stroke-width="1"/>
+<text font-family="Dialog" font-size="14" x="637" y="93">
+ </text>
+<text font-family="Dialog" font-size="14" x="624" y="30">
+1</text>
+<text font-family="Dialog" font-size="14" x="696" y="101">
+2</text>
+<rect fill="#ffffff" height="440" stroke="#ffffff" stroke-width="1" width="286" x="14" y="28"/>
+<rect fill="none" height="440" stroke="#000000" stroke-width="1" width="286" x="14" y="28"/>
+<text font-family="Dialog" font-size="14" x="111" y="67">
+EControlEvent</text>
+<text font-family="Dialog" font-size="14" x="101" y="45">
+&lt;&lt;enumeration&gt;&gt;</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="286" x="14" y="78"/>
+<text font-family="Dialog" font-size="14" x="18" y="95">
+EV_DEFAULT_INITIAL</text>
+<text font-family="Dialog" font-size="14" x="18" y="115">
+EV_START</text>
+<text font-family="Dialog" font-size="14" x="18" y="135">
+EV_STOP</text>
+<text font-family="Dialog" font-size="14" x="18" y="155">
+EV_SET_JUMP_FLAG</text>
+<text font-family="Dialog" font-size="14" x="18" y="175">
+EV_SET_BALANCE_FLAG</text>
+<text font-family="Dialog" font-size="14" x="18" y="195">
+EV_SET_TRANSMIT_FLAG</text>
+<text font-family="Dialog" font-size="14" x="18" y="215">
+EV_SET_JUMP_VELOCITY</text>
+<text font-family="Dialog" font-size="14" x="18" y="235">
+EV_SET_PID_VALUES</text>
+<text font-family="Dialog" font-size="14" x="18" y="255">
+EV_JUMP</text>
+<text font-family="Dialog" font-size="14" x="18" y="275">
+EV_BRAKE</text>
+<text font-family="Dialog" font-size="14" x="18" y="295">
+EV_PHIK_IN_CONTROLAREA</text>
+<text font-family="Dialog" font-size="14" x="18" y="315">
+EV_PHIK_NOT_IN_CONTROLAREA</text>
+<text font-family="Dialog" font-size="14" x="18" y="335">
+EV_TIMER</text>
+<text font-family="Dialog" font-size="14" x="18" y="355">
+EV_INIT</text>
+<text font-family="Dialog" font-size="14" x="18" y="375">
+EV_EXIT</text>
+<text font-family="Dialog" font-size="14" x="18" y="395">
+EV_RESTING</text>
+<text font-family="Dialog" font-size="14" x="18" y="415">
+EV_NOT_RESTING</text>
+<text font-family="Dialog" font-size="14" x="18" y="435">
+EV_JUMP_VELOCITY_REACHED</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="286" x="14" y="446"/>
+<rect fill="#ffffff" height="136" stroke="#ffffff" stroke-width="1" width="224" x="654" y="332"/>
+<rect fill="none" height="136" stroke="#000000" stroke-width="1" width="224" x="654" y="332"/>
+<text font-family="Dialog" font-size="14" x="723" y="371">
+ECommEvent</text>
+<text font-family="Dialog" font-size="14" x="710" y="349">
+&lt;&lt;enumeration&gt;&gt;</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="224" x="654" y="382"/>
+<text font-family="Dialog" font-size="14" x="658" y="399">
+EV_DEFAULT_INITIAL</text>
+<text font-family="Dialog" font-size="14" x="658" y="419">
+EV_TRANSMIT_MSG</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="224" x="654" y="438"/>
+<rect fill="#ffffff" height="140" stroke="#ffffff" stroke-width="1" width="200" x="382" y="332"/>
+<rect fill="none" height="140" stroke="#000000" stroke-width="1" width="200" x="382" y="332"/>
+<text font-family="Dialog" font-size="14" x="445" y="371">
+EDiagEvent</text>
+<text font-family="Dialog" font-size="14" x="426" y="349">
+&lt;&lt;enumeration&gt;&gt;</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="200" x="382" y="382"/>
+<text font-family="Dialog" font-size="14" x="386" y="399">
+EV_DEFAULT_INITIAL</text>
+<text font-family="Dialog" font-size="14" x="386" y="419">
+EV_RX_BUFFER_OF</text>
+<text font-family="Dialog" font-size="14" x="386" y="439">
+EV_TX_BUFFER_OF</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="200" x="382" y="450"/>
+<rect fill="#ffffff" height="140" stroke="#ffffff" stroke-width="1" width="168" x="710" y="172"/>
+<rect fill="none" height="140" stroke="#000000" stroke-width="1" width="168" x="710" y="172"/>
+<text font-family="Dialog" font-size="14" x="745" y="211">
+EMessageType</text>
+<text font-family="Dialog" font-size="14" x="738" y="189">
+&lt;&lt;enumeration&gt;&gt;</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="168" x="710" y="222"/>
+<text font-family="Dialog" font-size="14" x="714" y="239">
+CONTROL_MSG</text>
+<text font-family="Dialog" font-size="14" x="714" y="259">
+COMM_MSG</text>
+<text font-family="Dialog" font-size="14" x="714" y="279">
+DIAG_MSG</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="168" x="710" y="290"/>
+<polyline fill="none" points="613,180 710,180" stroke="#000000" stroke-width="1"/>
+<polygon fill="#000000" points="613,180 623,175 633,180 623,185" stroke="#000000" stroke-width="1"/>
+<polygon fill="none" points="613,180 623,175 633,180 623,185" stroke="#000000" stroke-width="1"/>
+<text font-family="Dialog" font-size="14" x="626" y="161">
+ 1</text>
+<text font-family="Dialog" font-size="14" x="626" y="174">
+1</text>
+<text font-family="Dialog" font-size="14" x="689" y="174">
+1</text>
+<polyline fill="none" points="382,76 299,76" stroke="#000000" stroke-width="1"/>
+<polygon fill="#000000" points="382,76 372,81 362,76 372,71" stroke="#000000" stroke-width="1"/>
+<polygon fill="none" points="382,76 372,81 362,76 372,71" stroke="#000000" stroke-width="1"/>
+<text font-family="Dialog" font-size="14" x="310" y="57">
+ </text>
+<text font-family="Dialog" font-size="14" x="361" y="70">
+1</text>
+<text font-family="Dialog" font-size="14" x="304" y="70">
+0..1</text>
+<polyline fill="none" points="430,259 430,332" stroke="#000000" stroke-width="1"/>
+<polygon fill="#000000" points="430,259 435,269 430,279 425,269" stroke="#000000" stroke-width="1"/>
+<polygon fill="none" points="430,259 435,269 430,279 425,269" stroke="#000000" stroke-width="1"/>
+<text font-family="Dialog" font-size="14" x="446" y="301">
+ </text>
+<text font-family="Dialog" font-size="14" x="443" y="287">
+1</text>
+<text font-family="Dialog" font-size="14" x="435" y="316">
+0..1</text>
+<polyline fill="none" points="574,259 574,308 670,308 670,332" stroke="#000000" stroke-width="1"/>
+<polygon fill="#000000" points="574,259 579,269 574,279 569,269" stroke="#000000" stroke-width="1"/>
+<polygon fill="none" points="574,259 579,269 574,279 569,269" stroke="#000000" stroke-width="1"/>
+<text font-family="Dialog" font-size="14" x="578" y="253">
+ </text>
+<text font-family="Dialog" font-size="14" x="587" y="287">
+1</text>
+<text font-family="Dialog" font-size="14" x="645" y="302">
+0..1</text>
+</svg>

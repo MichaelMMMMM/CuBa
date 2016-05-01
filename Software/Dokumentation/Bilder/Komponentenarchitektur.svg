@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg height="378" version="1.1" width="676" xmlns="http://www.w3.org/2000/svg">
+<rect fill="#ffffff" height="124" stroke="#ffffff" stroke-width="1" width="228" x="206" y="24"/>
+<rect fill="none" height="124" stroke="#000000" stroke-width="1" width="228" x="206" y="24"/>
+<text font-family="Dialog" font-size="14" font-style="italic" x="257" y="40">
++ AComponentBase</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="228" x="206" y="51"/>
+<text font-family="Dialog" font-size="14" x="210" y="68">
+-mQueue : xQueueHandle</text>
+<text font-family="Dialog" font-size="14" x="210" y="88">
+-mID : EComponentID</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="228" x="206" y="99"/>
+<text font-family="Dialog" font-size="14" font-style="italic" x="210" y="116">
+#run() : void</text>
+<text font-family="Dialog" font-size="14" font-style="italic" x="210" y="136">
+#dispatch() : bool</text>
+<rect fill="#ffffff" height="120" stroke="#ffffff" stroke-width="1" width="160" x="502" y="24"/>
+<rect fill="none" height="120" stroke="#000000" stroke-width="1" width="160" x="502" y="24"/>
+<text font-family="Dialog" font-size="14" x="534" y="63">
+EComponentID</text>
+<text font-family="Dialog" font-size="14" x="526" y="41">
+&lt;&lt;enumeration&gt;&gt;</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="160" x="502" y="74"/>
+<text font-family="Dialog" font-size="14" x="506" y="91">
+CONTROL_COMP</text>
+<text font-family="Dialog" font-size="14" x="506" y="111">
+COMM_COMP</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="160" x="502" y="122"/>
+<polyline fill="none" points="433,48 502,48" stroke="#000000" stroke-width="1"/>
+<polygon fill="#000000" points="433,48 443,43 453,48 443,53" stroke="#000000" stroke-width="1"/>
+<polygon fill="none" points="433,48 443,43 453,48 443,53" stroke="#000000" stroke-width="1"/>
+<text font-family="Dialog" font-size="14" x="426" y="30">
+ </text>
+<text font-family="Dialog" font-size="14" x="446" y="42">
+1</text>
+<text font-family="Dialog" font-size="14" x="483" y="42">
+1</text>
+<rect fill="#ffffff" height="124" stroke="#ffffff" stroke-width="1" width="296" x="14" y="200"/>
+<rect fill="none" height="124" stroke="#000000" stroke-width="1" width="296" x="14" y="200"/>
+<text font-family="Dialog" font-size="14" x="92" y="216">
++ SControlComponent</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="296" x="14" y="227"/>
+<text font-family="Dialog" font-size="14" x="18" y="244">
+-sInstance : SControlComponent*</text>
+<text font-family="Dialog" font-size="14" x="18" y="264">
+-mFSM : CControlFSM</text>
+<text font-family="Dialog" font-size="14" x="18" y="284">
+-mAction : CConctrolActionHandler</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="296" x="14" y="295"/>
+<text font-family="Dialog" font-size="14" x="18" y="312">
++getInstance() : &amp;SControlComponent</text>
+<polyline fill="none" points="262,200 262,147" stroke="#333399" stroke-width="1"/>
+<polygon fill="#ffffff" points="262,147 269,159 255,159" stroke="#ffffff" stroke-width="1"/>
+<polygon fill="none" points="262,147 269,159 255,159" stroke="#333399" stroke-width="1"/>
+<rect fill="#ffffff" height="164" stroke="#ffffff" stroke-width="1" width="304" x="358" y="200"/>
+<rect fill="none" height="164" stroke="#000000" stroke-width="1" width="304" x="358" y="200"/>
+<text font-family="Dialog" font-size="14" x="443" y="216">
++ SCommComponent</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="304" x="358" y="227"/>
+<text font-family="Dialog" font-size="14" x="362" y="244">
+-sInstance : SCommComponent*</text>
+<text font-family="Dialog" font-size="14" x="362" y="264">
+-mTxBuffer : CTxBufferList</text>
+<text font-family="Dialog" font-size="14" x="362" y="284">
+-mRxBuffer : CRxBufferList</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="304" x="358" y="295"/>
+<text font-family="Dialog" font-size="14" x="362" y="312">
++getInstance() : &amp;SCommComponent</text>
+<text font-family="Dialog" font-size="14" x="362" y="332">
++onTxIRQ() : void</text>
+<text font-family="Dialog" font-size="14" x="362" y="352">
++onRxIRQ(receivedByte : UInt8) : void</text>
+<polyline fill="none" points="392,200 392,147" stroke="#333399" stroke-width="1"/>
+<polygon fill="#ffffff" points="392,147 399,159 385,159" stroke="#ffffff" stroke-width="1"/>
+<polygon fill="none" points="392,147 399,159 385,159" stroke="#333399" stroke-width="1"/>
+</svg>

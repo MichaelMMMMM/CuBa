@@ -20,6 +20,17 @@ classdef CPopulation < handle
                                                 mutationRate);
                 end
         end
+        function fittestChromosom = getFittestChromosom(this)
+            bestFitness = this.mPopulation{1}.mFitness;
+            fittestChromosom = this.mPopulation{1};
+            for index = 2:this.mPopulationSize
+               currentChromosom = this.mPopulation{index};
+               if(bestFitness < currentChromosom.mFitness)
+                   bestFitness = currentChromosom.mFitness;
+                   fittestChromosom = currentChromosom;
+               end
+            end
+        end
         function run(this, numberOfRuns)
            for runNr = 1:numberOfRuns
               this.evaluateFitness();
@@ -30,12 +41,12 @@ classdef CPopulation < handle
         function evaluateFitness(this)
             for index = 1:this.mPopulationSize
                currentChromosom = this.mPopulation{index};
-               K_D = currentChromosom.mKD;
-               K_I = currentChromosom.mKI;
-               K_P = currentChromosom.mKP;
+               set_param('CubaModelPID/PID/K_D', 'Gain', num2str(currentChromosom.mKD));
+               set_param('CubaModelPID/PID/K_I', 'Gain', num2str(currentChromosom.mKI));
+               set_param('CubaModelPID/PID/K_P', 'Gain', num2str(currentChromosom.mKP));
                
                sim('CubaModelPID');
-               currentChromosom.setFitness(-1/fitness);
+               currentChromosom.setFitness(1/fitness);
             end
         end
         function select(this)

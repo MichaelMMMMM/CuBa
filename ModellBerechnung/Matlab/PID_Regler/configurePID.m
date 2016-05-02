@@ -8,6 +8,10 @@
 
 %Gravitationsbeschleunigung
 g = 9.81;
+%Mechanische Zeitkonstante Motor
+T_M_m = 12.4e-3;
+%Elektrische Zeitkonstante Motor
+T_M_e = 5.5e-4;
 %Abstand von A zu B
 l = 0.085;
 %Abstand Schwerpunkt des Körper zu (A)
@@ -37,4 +41,4 @@ O_G_A = O_b_A + m_w * l^2;
 
 population = CPopulation(20, 0.5, 50, 0.2, -0.2, 10, 0);
 population.run(10);
-
+fittest = population.getFittestChromosom();

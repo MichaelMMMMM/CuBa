@@ -246,6 +246,10 @@ Tritt ein TX-Interrupt auf wird ein Byte aus dem aktuellen Datenpuffer übermitt
 \end{figure}
 
 \newpage
+\section{Implementation des Reglers}
+In diesem Abschnitt wird die Umsetzung der Regler in Software erläutert. Die Regler benötigen als Eingangsgröße den Zustandsvektor $x$. Dieser besteht aus den Größen $\phi_K$, $\dot{\phi_K}$ und $\dot{\phi_R}$. Außerdem muss die Winkelbeschleunigung $\ddot{\phi_K}$ zu Analysezwecken aufgezeichnet werden. Der Ausfallwinkel des Körpers und dessen zwei Ableitungen werden mit Hilfe von einem Magnetometer, Gyrometer und Beschleunigungssensor aufgenommen. 
+
+\newpage
 \section{Testen der Software}
 Die Software muss geprüft werden um den problemlosen Einsatz zu garantieren. Hierbei muss zwischen den Hardwareansteuerung, der Validierung des Reglers und der Komponentenstruktur bzw. Logik unterschieden werden.
 Die Softwareteile zur Ansteuerung der Hardware muss einzeln geprüft werden bevor sie in das Gesamtsystem eingehängt werden. Diese Tests erfolgen sowohl manuell als auch automatisch.

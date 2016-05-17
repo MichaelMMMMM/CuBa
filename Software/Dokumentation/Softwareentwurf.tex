@@ -5,6 +5,7 @@
 \usepackage{svg}
 \graphicspath{{Bilder/}}
 \usepackage{geometry}
+\usepackage{pdflscape}
 \geometry{a4paper, top=25mm, left=30mm, right=25mm, bottom=20mm}
 \begin{document}
 
@@ -203,26 +204,43 @@ Die Komponente verfügt über einen Puffer, der empfangene Datenpakete enthält.
 \end{figure}
 
 \subsection*{Aufbau der Bluetoothpakete}
-Der Datenaustausch zwischen Würfel und Bedieneinheit erfolgt byteweise. Die einzelnen Bytes werden zu logischen Paketen zusammen gesetzt. Alle Pakete besitzen eine fixe, einheitliche Größe, welche von der Genauigkeit der Sensoren und der Reglerstruktur abhängt. Somit liegt diese noch nicht endgültig fest. 
+Der Datenaustausch zwischen Würfel und Bedieneinheit erfolgt byteweise. Die einzelnen Bytes werden zu logischen Paketen zusammen gesetzt. Alle Pakete besitzen eine fixe, einheitliche Größe von 6 Bytes. Das erste Byte enthält die die ID des Empfängers, im zweiten Byte dient zur Speicherung des Ereignis bzw. Befehls. Die übrigen vier Bytes sind für zusätzliche Nutzdaten,wie z.B. Sensorwerte reserviert.
 
 Der Inhalt eines empfangenen Paket wird durch entsprechenden Proxyaufruf in eine Nachricht umgesetzt. Der Aufbau der einzelnen Pakete wird in einer Tabelle dokumentiert, hierbei ist darauf zu achten bei Werten, die größer als ein Byte sind die Position des MSB und LSB zu notieren.
 
-\begin{table}[h]
+
+\begin{landscape}
+
+\begin{table}[]
 \centering
+\caption{Aufbau der Datenpakete}
 \label{my-label}
-\begin{tabular}{|l|l|l|}
+\begin{tabular}{|l|l|l|l|l|l|l|}
 \hline
-\textbf{Byte0} & \textbf{Byte1}          & \textbf{Byte2}     \\ \hline
-CONTROL\_COMP  & EV\_START               &           \\ \hline
-CONTROL\_COMP  & EV\_STOP                &           \\ \hline
-CONTROL\_COMP  & EV\_SET\_JUMP\_FLAG     & flagValue \\ \hline
-CONTROL\_COMP  & EV\_SET\_BALANCE\_FLAG  & flagValue \\ \hline
-CONTROL\_COMP  & EV\_SET\_TRANSMIT\_FLAG & flagValue \\ \hline
-CONTROL\_COMP  & EV\_JUMP                &           \\ \hline
+\textbf{Byte0} & \textbf{Byte1}                  & \textbf{Byte2}      & \textbf{Byte3} & \textbf{Byte4} & \textbf{Byte5} & \textbf{Anmerkung}   \\ \hline
+CONTROL\_COMP  & EV\_START                       &                     &                &                &                &                      \\ \hline
+CONTROL\_COMP  & EV\_STOP                        &                     &                &                &                &                      \\ \hline
+CONTROL\_COMP  & EV\_SET\_JUMP\_FLAG             & flagValue           &                &                &                &                      \\ \hline
+CONTROL\_COMP  & EV\_SET\_BALANCE\_FLAG          & flagValue           &                &                &                &                      \\ \hline
+CONTROL\_COMP  & EV\_SET\_TRANSMIT\_FLAG         & flagValue           &                &                &                &                      \\ \hline
+CONTROL\_COMP  & EV\_JUMP                        &                     &                &                &                &                      \\ \hline
+CONTROL\_COMP  & EV\_SET\_PID\_P\_VALUE          & P\_Value(LSB)       & P\_Value       & P\_Value       & P\_Value(MSB)  & float                \\ \hline
+CONTROL\_COMP  & EV\_SET\_PID\_I\_VALUE          & I\_Value(LSB)       & I\_Value       & I\_Value       & I\_Value(MSB)  & float                \\ \hline
+CONTROL\_COMP  & EV\_SET\_PID\_D\_VALUE          & D\_Vaue(LSB)        & D\_Value       & D\_Value       & D\_Value(MSB)  & float                \\ \hline
+CONTROL\_COMP  & EV\_SET\_JUMP\_VELOCITY         & velocity(LSB)       & velocity       & velocity       & velocity(MSB)  & SI-Einheit als float \\ \hline
+               &                                 &                     &                &                &                &                      \\ \hline
+COMM\_COMP     & EV\_TRANSMIT\_TORQUE            & Torque(LSB)         & Torque         & Torque         & Torque(MSB)    & SI-Einheit als float \\ \hline
+COMM\_COMP     & EV\_TRANSMIT\_PHI\_K            & PhiK(LSB)           & PhiK           & PhiK           & PhiK(MSB)      & SI-Einheit als float \\ \hline
+COMM\_COMP     & EV\_TRANSMIT\_PHI\_K\_D         & PhiK\_d(LSB)        & PhiK\_d        & PhiK\_d        & PhiK\_d(MSB)   & SI-Einheit als float \\ \hline
+COMM\_COMP     & EV\_TRANSMIT\_PHI\_K\_DD        & PhiK\_dd(LSB)       & PhiK\_dd       & PhiK\_dd       & PhiK\_dd(MSB)  & SI-Einheit als float \\ \hline
+COMM\_COMP     & EV\_TRANSMIT\_BRAKE\_STATE      & brakeState          &                &                &                &                      \\ \hline
+COMM\_COMP     & EV\_TRANSMIT\_FSM\_STATE\_ENTRY & enteredState        &                &                &                &                      \\ \hline
+COMM\_COMP     & EV\_TRANSMIT\_UNHANDELD\_EV     & unhandeledControlEV &                &                &                &                      \\ \hline
+COMM\_COMP     & EV\_HARDWARE\_ERROR             & hardwareID          &                &                &                &                      \\ \hline
 \end{tabular}
 \end{table}
 
-Die Verarbeitung von Nachrichten der Kontrollkomponente verläuft nach gleichem Prinzip. Da der Paketaufbau allerdings von der Größe der Sensor- und Reglerwerte abhängt kann diese noch nicht festgelegt werden.
+\end{landscape}
 
 \newpage
 \subsection*{Funktionsablauf des RX-Puffer}
@@ -247,7 +265,28 @@ Tritt ein TX-Interrupt auf wird ein Byte aus dem aktuellen Datenpuffer übermitt
 
 \newpage
 \section{Implementation des Reglers}
-In diesem Abschnitt wird die Umsetzung der Regler in Software erläutert. Die Regler benötigen als Eingangsgröße den Zustandsvektor $x$. Dieser besteht aus den Größen $\phi_K$, $\dot{\phi_K}$ und $\dot{\phi_R}$. Außerdem muss die Winkelbeschleunigung $\ddot{\phi_K}$ zu Analysezwecken aufgezeichnet werden. Der Ausfallwinkel des Körpers und dessen zwei Ableitungen werden mit Hilfe von einem Magnetometer, Gyrometer und Beschleunigungssensor aufgenommen. 
+In diesem Abschnitt wird die Umsetzung der Regler in Software erläutert. Die Regler benötigen als Eingangsgröße den Zustandsvektor $x$. Dieser besteht aus den Größen $\phi_K$, $\dot{\phi_K}$ und $\dot{\phi_R}$. Außerdem muss die Winkelbeschleunigung $\ddot{\phi_K}$ zu Analysezwecken aufgezeichnet werden. Der Ausfallwinkel des Körpers und dessen zwei Ableitungen werden mit Hilfe von einem Magnetometer, Gyrometer und Beschleunigungssensor aufgenommen. Diese drei Sensoren sind auf einem IC verbaut und können über I2C angesteuert werden. Die aktuellen Sensorwerte werden als 16-Bit Ganzzahlen übergeben (signed unsigned?). Dem Datenblatt kann der einheitenbehaftete Faktor zur Umrechnung in die physikalische Größe entnommen werden.
+
+\subsection{Berechnung der Winkelbeschleunigung $\ddot{\phi_K}$}
+Der Dreiachs-Beschleunigungssensor gibt die Beschleunigung in x- und y-Richtung wieder. Daraus wird die Tangentialbeschleunigung des Sensors berechnet. Über den Abstand des Sensors zum Drehpunkt kann daraufhin die Winkelbeschleunigung des Körpers berechnet werden.
+
+\[\ a_t := Tangentialbeschleunigung des Sensors \]
+\[\ r_AS := Abstand des Sensors zum Drehpunkt \]
+\[\ \ddot{x} := Beschleunigung in x-Richtung in \frac{m}{s} \]
+\[\ \ddot{y} := Beschleunigung in y-Richtung in \frac{m}{s} \]
+\[\ a_t = \sqrt{\ddot{x}^2 + \ddot{y}^2} \]
+\[\ \ddot{\phi_K} = \frac{a_t}{r_AS} \] 
+
+\subsection{Berechnung der Winkelgeschwindigkeit $\dot{\phi_K}$}
+Der Gyrosensor gibt die Winkelbeschleunigung in Grad pro Sekunde wieder. Dementsprechend einfach kann die Umrechnung in SI-Einheiten durchgeführt werden.
+
+\[ \dot{\phi_{K,S}} := Winkelgeschwindigkeit in Grad pro Sekunde \]
+\[\ \dot{\phi_K} = \frac{2*\pi}{360} \cdot \dot{\phi_{K,S}} \]
+
+\subsection{Berechnung des Ausfallwinkels $\phi_K$}
+Der Ausfallwinkel des Körpers wird mit Hilfe eines Magnetometer bestimmt. Über die I2C versendet der Sensor die magnetische Flussdichte in x- und y-Richtung. Daraus wird der Winkel des Sensor und somit des Körpers berechnet.
+
+ATan von x und y gibt den Winkel, wenn richtig kalibriert kann das sogar funktionieren, ausprobieren mit arduino oder so
 
 \newpage
 \section{Testen der Software}

@@ -13,9 +13,6 @@ class CSensor
 {
 public:
 	CSensor(I2C_TypeDef* i2cInstance);
-	float getPhiK();
-	float getPhiK_d();
-	float getPhiK_dd();
 public:
 	UInt16 getAccelXRawValue();
 	UInt16 getAccelYRawValue();

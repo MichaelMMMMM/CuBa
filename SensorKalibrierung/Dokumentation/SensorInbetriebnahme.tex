@@ -5,12 +5,25 @@
 \usepackage{svg}
 \graphicspath{{Bilder/}}
 \usepackage{geometry}
+\usepackage{amsmath}
+\usepackage{pdflscape}
 \geometry{a4paper, top=25mm, left=30mm, right=25mm, bottom=20mm}
 \begin{document}
 
 \section{Inbetriebnahme der Sensor}
 Die Werte $\phi_K$, $\dot{\phi_K}$ und $\ddot{\phi_K}$ müssen für die Regelung des Würfels erfasst werden. Hierfür wird das Bauteil \textit{2020 Adafruit Industries} verwendet. Dieser Chip verfügt über einen Beschleunigungssensor, ein Gyroskop und Magnetometer, welche jeweils über drei Achsen die Beschleunigung, die Winkelgeschwindigkeit und die magnetische Flussdichte messen. 
 Um die Sensoren in das Gesamtsystem einzubinden müssen diese über $I^2C$ mit der Rechnereinheit verbunden und kalibriert werden. Außerdem müssen die gemessenen Werte in die benötigten Größen überführt werden.
+
+\subsection{Verwendete Koordinatensysteme}
+Bei der Betrachtung der Würfels werden zwei Koordinatensysteme verwendet. Das Weltkoordinatensystem $(x_w, y_w, z_w)^T$ beginnt im Drehpunkt der Würfelseite und ist fix. Das Würfelkoordinatensystem $(x, w, y)^T$ beginnt ebenfalls im Drehpunkt allerdings rotiert es mit dem Winkel $\phi_K$, welcher die relative Rotation der Würfelsystem zum Weltkoordinatensystem beschreibt. An der Außenseite des Würfels sind die beiden Sensoren befestigt, an der Innenseite sind die Schwungmasse, der Motor und die Bremse angebracht. Die Achsen der Sensorkoordinatensysteme liegen parallel zu den Würfelkoordinaten. Die Translation entspricht der Position des Sensors zum Drehpunkt und somit zum Ursprung des Würfelkoordinatensystem.
+
+\begin{figure}[h]
+	\includegraphics[width=\linewidth]{Koordinatensystem}
+	\caption{Darstellung Koordinatensysteme, Quelle: eigene Darstellung}
+\end{figure}
+
+Sensorkoordinaten in Winkelkoordinaten umwandeln, welche Sensorachsen müssen invertiert werden?
+Letze Messsung/Kalibrierung : x- und y-Achse invertiert, z-Achse nicht invertiert, allerdings ist die Richtung der z-Achse irrelevant da cosinus symmetrisch ist
 
 \subsection{Anbindung über $I^2C$ und Sensorkonfiguration}
 Der Sensor unterstützt das $I^2C$ Protokoll bei einer Frequenz von $400k Hz$. Mit Hilfe der Registeradressen des Sensors, welche im Datenblatt dokumentiert sind, werden die aktuellen Sensorwerte ausgelesen und Konfigurationen festgelegt werden.
@@ -135,4 +148,135 @@ Die Messung zur Bestimmung des Offset der Z-Achse wurde einmal durchgeführt.
 \[\ {\omega}_{off}^{int} = -55 \]
 \[\ {\omega}_{off} = -0.4793 \]
 
+\subsection{Übertragung auf das 1D-Würfelmodell}
+Die Übertragung der Kalibrierungswerte auf den eindimensionalen Prototyp ergab in den Testmessungen große Fehler. Der Test ergab einerseits, dass die Sensoren einzeln kalibriert werden müssen, da eine starke Abweichung zwischen den einzelnen Exemplaren herrscht. Andererseits führt der 3D-Druck des Prototyps zu einem Kippwinkel in Richtung der Z-Achse. Folglich muss das Modell zur Werteberechnung um einen Freiheitsgrad erweitert werden.
+
+\subsection{Bestimmen der Werte in einem Modell mit zwei rotatorsichen Freiheitsgraden}
+Die oben aufgezeigte Bestimmung der Werte $phi_K$, $\dot{\phi_K}$, $\ddot{\phi_K}$ wurde unter der Annahme durchgeführt, dass der von dem Winkel $\phi_K$ beschriebene rotatorische Freiheitsgrad beachtet werden muss. Allerdings ergibt sich durch die Qualität des 3D-Drucks ein nicht zu vernachlässigender Kippwinkel in Richtung der Z-Achse. Somit muss ein weiterer rotatorischer Freiheitsgrad beachtet werden, welcher von dem Winkel $\Theta_K$ beschrieben wird.
+
+Unter der Annahme das keine Kraft außer der Gravitation wirkt, wird die Beschleunigung in Würfelkoordinaten wie folgt beschrieben werden.
+
+\begin{equation}
+\begin{array}{lclcl}
+s_i 
+& = & 
+\begin{pmatrix} \ddot{x}^s_{i} \\ \ddot{y}^s_i \\ \ddot{z}^s_i \end{pmatrix}
+& = &
+\begin{pmatrix} 
+g \cdot sin(\phi_K) \cdot cos(\Theta_K) \\
+-g \cdot cos(\phi_K) \cdot cos(\Theta_K) \\
+g \cdot sin(\Theta_K)
+\end{pmatrix}
+\end{array}
+\end{equation}
+
+Der Betrag des Beschleunigungsvektor muss stets gleich $1g$ sein, an Hand dieser Bedingung kann das obige LGS überprüft werden.
+
+\begin{equation}
+\begin{array}{lcl}
+a^2 
+& = &
+\ddot{x}^2_i + \ddot{y}^2_i + \ddot{z}^2_i \\
+ & = &
+g^2 \cdot ( sin^2(\phi_K) \cdot cos^2(\Theta_K) + cos^2(\phi_K) \cdot cos^2(\Theta_K) + sin^2(\Theta_K) ) \\
+& = &
+g^2 \cdot ( cos^2(\Theta_K) \cdot (sin^2(\phi_K) + cos^2(\phi_K) ) + sin^2(\Theta_K) ) \\
+& = &
+g^2 \cdot (cos^2(\Theta_K) + sin^2(\Theta_K)) = g^2
+\end{array}
+\end{equation}
+
+Die obigen Gleichungssysteme beschreiben die Dynamik des Prototyp ohne weitere Einflüsse wie z.B. das durch den Motor verursachte Drehmoment.
+
+\begin{equation}
+\begin{array}{lclcl}
+s_i 
+& = & 
+\begin{pmatrix} \ddot{x}^s_i \\ \ddot{y}^s_i \\ \ddot{z}^s_i \end{pmatrix}
+& = &
+\begin{pmatrix} 
+g \cdot sin(\phi_K) \cdot cos(\Theta_K) + \ddot{\phi}_K \cdot r_i \\
+-g \cdot cos(\phi_K) \cdot cos(\Theta_K) - \dot{\phi}^2_K \cdot r_i - \dot{\Theta}^2_K \cdot r_i \\
+g \cdot sin(\Theta_K) + \ddot{\Theta}_K \cdot r_i
+\end{pmatrix}
+\end{array}
+\end{equation}
+
+\subsubsection{Winkelschätzung mit zwei Freiheitsgraden}
+Durch den zweiten Freiheitsgrad wird die Winkelschätzung von $\Theta_K$ und dessen Ableitungen beeinflusst. 
+
+\begin{equation}
+\begin{array}{lclcl}
+s_i 
+& = & 
+\begin{pmatrix} \ddot{x}^s_i \\ \ddot{y}^s_i \\ \ddot{z}^s_i \end{pmatrix}
+& = &
+\begin{pmatrix} 
+g \cdot sin(\phi_K) \cdot cos(\Theta_K) + \ddot{\phi}_K \cdot r_i \\
+-g \cdot cos(\phi_K) \cdot cos(\Theta_K) - \dot{\phi}^2_K \cdot r_i - \dot{\Theta}^2_K \cdot r_i \\
+g \cdot sin(\Theta_K) + \ddot{\Theta}_K \cdot r_i
+\end{pmatrix}
+\end{array}
+\end{equation}
+
+Die Werte für die beiden Winkel $\phi_K$ und $\Theta_K$ werden durch Subtraktion der beiden Sensorwerte in Proportion zu deren Abständen zum Drehpunkt bestimmt.
+
+\begin{equation}
+\begin{array}{lcl}
+s_1 - \mu s_2 
+& = &
+\begin{pmatrix}
+g \cdot sin(\phi_K)cos(\Theta_K) + r_1 \ddot{\phi}_K - \mu(g \cdot sin(\phi_K)cos(\Theta_K) + r_2 \ddot{\phi}_K) \\
+-g \cdot cos(\phi_K)cos(\Theta_K) - r_1 \dot{\phi}^2_K - r_1 \dot{\Theta}^2_K + \mu (g \cdot cos(\phi_K) cos(\Theta_K) + r_2 \dot{\phi}^2_K - r_2 \dot{\Theta}^2_K)\\
+g \cdot sin(\Theta_K) + \ddot{\Theta}_K r_1 - \mu(g \cdot sin(\Theta_K) + r_2 \ddot{\Theta}_K)
+\end{pmatrix} 
+\\
+& = &
+\begin{pmatrix}
+g \cdot sin(\phi_K)cos(\Theta_K)(1 - \mu) \\
+- g \cdot cos(\phi_K)cos(\Theta_K)(1 - \mu) \\
+g \cdot sin(\Theta_K)(1 - \mu)
+\end{pmatrix}
+\end{array}
+\end{equation}
+
+Der Winkel $\phi_K$ wird geschätzt indem die Subtraktion der Sensorwerte in x- und y-Richtung dividiert werden.
+
+\begin{equation}
+\begin{array}{lcl}
+\frac{\ddot{x}_1 - \mu \ddot{x}_2}{\ddot{y}_1 - \mu \ddot{y}_2}
+& = &
+\frac{- sin(\phi_K)}{cos(\phi_K} = -tan(\phi_K) \\
+\phi_K
+& = &
+-atan(\frac{\ddot{x}_1 - \mu \ddot{x}_2}{\ddot{y}_1 - \mu \ddot{y}_2})
+\end{array}
+\end{equation}
+
+
+
+Für die Bestimmung von $\Theta_K$ werden lediglich die Sensorwerte in z-Richtung verwendet. Hierdurch wird die Genauigkeit des Schätzverfahrens verringert.
+
+\begin{equation}
+\begin{array}{lcl}
+\ddot{z}_1 - \mu \ddot{z}_2 
+& = &
+g \cdot sin(\Theta_K)(1 - mu) \\
+\Theta_K
+& = &
+asin(\frac{\ddot{z}_1 - \mu \ddot{z}_2}{g(1 - mu)})
+\end{array}
+\end{equation}
+
+Die Winkelbeschleunigung $\ddot{\phi}_K$ kann mit Hilfe der Winkelwerte bestimmt werden.
+
+\begin{equation}
+\begin{array}{lcl}
+\ddot{\phi}_K
+& = &
+\frac{\ddot{x}^s_i - g \cdot sin(\phi_K) \cdot cos(\Theta_K)}{r_i}
+\end{array}
+\end{equation}
+
+Nächster Schritt ist die separate Kalibrierung der beiden Sensoren und anschließend die Berechnung nach dem Modell mit zwei Freiheitsgraden.
 \end{document}

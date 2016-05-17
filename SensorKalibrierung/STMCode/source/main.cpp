@@ -5,7 +5,7 @@
 #include "TUSART.h"
 
 #define SENSOR_1
-//#define SENSOR_2
+#define SENSOR_2
 
 volatile UInt32 counter = 0U;
 volatile bool overrun = false;

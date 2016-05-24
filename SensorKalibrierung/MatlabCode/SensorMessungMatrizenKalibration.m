@@ -1,22 +1,12 @@
 % Datum: 11.5.16
 % Autor: Michael Meindl
-% Programm zum Auslesen der aktuellen Sensorwerte
+% Programm zum Auslesen der aktuellen Sensorwerte, Kalibrierung über
+% Matrizen
 
-%Offset aus Kalibrierung bei phiK = 45 
-x1Offset = -3141;
-y1Offset = -813;
-z1Offset = -380;
-x2Offset = -1794;
-y2Offset = 781;
-z2Offset = 807;
-
-% x1Offset = 0;
-% y1Offset = 0;
-% z1Offset = 0;
-% x2Offset = 0;
-% y2Offset = 0;
-% z2Offset = 0;
-
+M1 = [0.995, 0.068, -0.021;-0.072,1.011, -0.027;0.028, 0.043, 0.994];
+B1 = [1890.934; -112.03;-163.762];
+M2 = [1.012, -0.028, 0.019;0.015, 0.988, -0.033;-0.005,0.039, 1.011];
+B2 = [1916.211;-303.049;328.907];
 
 accelSignedToGFactor = 0.061e-3; 
 
@@ -55,12 +45,15 @@ accZ1Signed = -double(typecast(accZ1Raw, 'int16'));
 accZ2Signed = -double(typecast(accZ2Raw, 'int16'));
 
 %Für invertierung, signed-Wert * -1 und offset subtrahieren
-accX1Off    = accX1Signed + x1Offset;
-accX2Off    = accX2Signed + x2Offset;
-accY1Off    = accY1Signed + y1Offset;
-accY2Off    = accY2Signed + y2Offset;
-accZ1Off    = accZ1Signed + z1Offset;
-accZ2Off    = accZ2Signed + z2Offset;
+acc1 = M1 * ([accX1Signed;accY1Signed;accZ1Signed] - B1);
+accX1Off = acc1(1);
+accY1Off = acc1(2);
+accZ1Off = acc1(3);
+
+acc2 = M2 * ([accX2Signed;accY2Signed;accZ2Signed] - B2);
+accX2Off = acc2(1);
+accY2Off = acc2(2);
+accZ2Off = acc2(3);
 
 x1G         = accX1Off * accelSignedToGFactor;
 x2G         = accX2Off * accelSignedToGFactor;

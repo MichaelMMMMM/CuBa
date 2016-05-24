@@ -10,6 +10,10 @@
 \geometry{a4paper, top=25mm, left=30mm, right=25mm, bottom=20mm}
 \begin{document}
 
+\renewcommand{\rmdefault}{phv}
+\renewcommand{\sfdefault}{phv}
+\renewcommand{\arraystretch}{1.1}
+
 \section{Inbetriebnahme der Sensor}
 Die Werte $\phi_K$, $\dot{\phi_K}$ und $\ddot{\phi_K}$ müssen für die Regelung des Würfels erfasst werden. Hierfür wird das Bauteil \textit{2020 Adafruit Industries} verwendet. Dieser Chip verfügt über einen Beschleunigungssensor, ein Gyroskop und Magnetometer, welche jeweils über drei Achsen die Beschleunigung, die Winkelgeschwindigkeit und die magnetische Flussdichte messen. 
 Um die Sensoren in das Gesamtsystem einzubinden müssen diese über $I^2C$ mit der Rechnereinheit verbunden und kalibriert werden. Außerdem müssen die gemessenen Werte in die benötigten Größen überführt werden.
@@ -278,5 +282,18 @@ Die Winkelbeschleunigung $\ddot{\phi}_K$ kann mit Hilfe der Winkelwerte bestimmt
 \end{array}
 \end{equation}
 
-Nächster Schritt ist die separate Kalibrierung der beiden Sensoren und anschließend die Berechnung nach dem Modell mit zwei Freiheitsgraden.
+\subsubsection{Ergebnisse der Neukalibrierung mit 2 Freiheitsgraden}
+Die Winkel sind sehr gut, allerdings ist die Schätzung der Winkelbeschleunigung extrem schlecht, auch die Kalibrierung mit dem Magnetometer-Tool hilft nicht weiter.
+
+\newpage
+\subsection{Fragerunde}
+\begin{itemize}
+\item Arbeitspaket falsch eingeschätzt
+\item Zeitmanagement falsch, Parallelisierung lief falsch, daraufhin schlechte Vorgehensweise, unkoordiniertes Arbeiten (z.B. Durcheinander von verschiedenen Kalibriermethoden, kein zielgerichtetes Arbeiten)
+\item Magnetometer ist zu sehr von Störung beeinflusst und fällt deswegen zur Winkelbestimmung raus.
+\item Winkelschätzung über zwei Beschleunigungssensoren
+\item Ergebnis sind gute Winkelwerte allerdings unbrauchbare Beschleunigungswerte. Mögliche Ursachen sind die Einstellung der Sensorfilter, die Kalibrierung, die Sensorqualität bzw. die Geometrie.
+
+\item Weitere Vorgehensweise? 
+\end{itemize}
 \end{document}

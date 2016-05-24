@@ -1,80 +1,96 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg height="363" version="1.1" width="1164" xmlns="http://www.w3.org/2000/svg">
-<rect fill="#ffffff" height="324" stroke="#ffffff" stroke-width="1" width="460" x="366" y="25"/>
-<rect fill="none" height="324" stroke="#000000" stroke-width="1" width="460" x="366" y="25"/>
-<text font-family="Dialog" font-size="14" x="568" y="41">
+<svg height="512" version="1.1" width="940" xmlns="http://www.w3.org/2000/svg">
+<rect fill="#ffffff" height="484" stroke="#ffffff" stroke-width="1" width="584" x="342" y="14"/>
+<rect fill="none" height="484" stroke="#000000" stroke-width="1" width="584" x="342" y="14"/>
+<text font-family="Dialog" font-size="14" x="606" y="30">
 + SProxy</text>
-<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="460" x="366" y="52"/>
-<text font-family="Dialog" font-size="14" x="370" y="69">
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="584" x="342" y="40"/>
+<text font-family="Dialog" font-size="14" x="346" y="57">
 -sInstance : SProxy*</text>
-<text font-family="Dialog" font-size="14" x="370" y="89">
+<text font-family="Dialog" font-size="14" x="346" y="76">
 -mCommComp : &amp;CCommComponent</text>
-<text font-family="Dialog" font-size="14" x="370" y="109">
+<text font-family="Dialog" font-size="14" x="346" y="95">
 -mControlComp : &amp;CControlComponent</text>
-<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="460" x="366" y="120"/>
-<text font-family="Dialog" font-size="14" x="370" y="137">
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="584" x="342" y="116"/>
+<text font-family="Dialog" font-size="14" x="346" y="133">
 +getInstance() : &amp;SProxy</text>
-<text font-family="Dialog" font-size="14" x="370" y="157">
-+startControl() : void</text>
-<text font-family="Dialog" font-size="14" x="370" y="177">
-+stopControl() : void</text>
-<text font-family="Dialog" font-size="14" x="370" y="197">
-+setJumpFlag(UInt8 : flagValue) : void</text>
-<text font-family="Dialog" font-size="14" x="370" y="217">
-+setBalanceFlag(UInt8 : flagValue) : void</text>
-<text font-family="Dialog" font-size="14" x="370" y="237">
-+setTransmitFlag(UInt8 : flagValue) : void</text>
-<text font-family="Dialog" font-size="14" x="370" y="257">
-+setJumpVelocity(UInt32 : velocity) : void</text>
-<text font-family="Dialog" font-size="14" x="370" y="277">
-+setPIDValues(UInt32 : K_I,UInt32 : K_P,UInt32 : K_D) : void</text>
-<text font-family="Dialog" font-size="14" x="370" y="297">
-+jump() : void</text>
-<text font-family="Dialog" font-size="14" x="370" y="317">
-+commMessageReceived() : void</text>
-<text font-family="Dialog" font-size="14" x="370" y="337">
-+transmitMessage() : void</text>
-<rect fill="#ffffff" height="124" stroke="#ffffff" stroke-width="1" width="288" x="862" y="25"/>
-<rect fill="none" height="124" stroke="#000000" stroke-width="1" width="288" x="862" y="25"/>
-<text font-family="Dialog" font-size="14" x="936" y="41">
+<text font-family="Dialog" font-size="14" x="346" y="152">
++startControl(sender : EComponentID) : void</text>
+<text font-family="Dialog" font-size="14" x="346" y="171">
++stopControl(sender : EComponentID) : void</text>
+<text font-family="Dialog" font-size="14" x="346" y="190">
++setJumpFlag(sender : EComponentID,UInt8 : flagValue) : void</text>
+<text font-family="Dialog" font-size="14" x="346" y="209">
++setBalanceFlag(sender : EComponentID,UInt8 : flagValue) : void</text>
+<text font-family="Dialog" font-size="14" x="346" y="228">
++setTransmitFlag(sender : EComponentID,UInt8 : flagValue) : void</text>
+<text font-family="Dialog" font-size="14" x="346" y="247">
++setJumpVelocity(sender : EComponentID,UInt32 : velocity) : void</text>
+<text font-family="Dialog" font-size="14" x="346" y="266">
++setPID_PValue(sender : EComponentID,pValue : float) : void</text>
+<text font-family="Dialog" font-size="14" x="346" y="285">
++setPID_IValue(sender : EComponentID,iValue : float) : void</text>
+<text font-family="Dialog" font-size="14" x="346" y="304">
++setPID_DValue(sender : EComponentID,dValue : float) : void</text>
+<text font-family="Dialog" font-size="14" x="346" y="323">
++jump(sender : EComponentID) : void</text>
+<text font-family="Dialog" font-size="14" x="346" y="342">
++timerCallback(sender : EComponentID) : void</text>
+<text font-family="Dialog" font-size="14" x="346" y="361">
++transmitPhiK(sender : EComponentID,phiK : float) : void</text>
+<text font-family="Dialog" font-size="14" x="346" y="380">
++transmitPhiK_d(sender : EComponentID,phiK_d : float) : void</text>
+<text font-family="Dialog" font-size="14" x="346" y="399">
++transmitPhiK_dd(sender : EComponentID,phiK_dd : float) : void</text>
+<text font-family="Dialog" font-size="14" x="346" y="418">
++transmitPhiR_d(sender : EComponentID,phiR_d : float) : void</text>
+<text font-family="Dialog" font-size="14" x="346" y="437">
++transmitBrakeState(sender : EComponentID,UInt8 : brakeState) : void</text>
+<text font-family="Dialog" font-size="14" x="346" y="456">
++transmitStateEntry(sender : EComponentID,state : EState) : void</text>
+<text font-family="Dialog" font-size="14" x="346" y="475">
++transmitUnhandeledEvent(sender : EComponentID,event : EControlEvent) : void</text>
+<rect fill="#ffffff" height="124" stroke="#ffffff" stroke-width="1" width="296" x="14" y="222"/>
+<rect fill="none" height="124" stroke="#000000" stroke-width="1" width="296" x="14" y="222"/>
+<text font-family="Dialog" font-size="14" x="92" y="238">
 + SControlComponent</text>
-<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="288" x="862" y="52"/>
-<text font-family="Dialog" font-size="14" x="866" y="69">
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="296" x="14" y="248"/>
+<text font-family="Dialog" font-size="14" x="18" y="265">
 -sInstance : SControlComponent*</text>
-<text font-family="Dialog" font-size="14" x="866" y="89">
+<text font-family="Dialog" font-size="14" x="18" y="284">
 -mFSM : CControlFSM</text>
-<text font-family="Dialog" font-size="14" x="866" y="109">
--mAction : CConctrolActionHandler</text>
-<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="288" x="862" y="120"/>
-<text font-family="Dialog" font-size="14" x="866" y="137">
+<text font-family="Dialog" font-size="14" x="18" y="303">
+-mAction</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="296" x="14" y="315"/>
+<text font-family="Dialog" font-size="14" x="18" y="332">
 +getInstance() : &amp;SControlComponent</text>
-<rect fill="#ffffff" height="164" stroke="#ffffff" stroke-width="1" width="296" x="14" y="25"/>
-<rect fill="none" height="164" stroke="#000000" stroke-width="1" width="296" x="14" y="25"/>
-<text font-family="Dialog" font-size="14" x="95" y="41">
+<rect fill="#ffffff" height="164" stroke="#ffffff" stroke-width="1" width="296" x="14" y="14"/>
+<rect fill="none" height="164" stroke="#000000" stroke-width="1" width="296" x="14" y="14"/>
+<text font-family="Dialog" font-size="14" x="95" y="30">
 + SCommComponent</text>
-<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="296" x="14" y="52"/>
-<text font-family="Dialog" font-size="14" x="18" y="69">
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="296" x="14" y="41"/>
+<text font-family="Dialog" font-size="14" x="18" y="58">
 -sInstance : SCommComponent*</text>
-<text font-family="Dialog" font-size="14" x="18" y="89">
+<text font-family="Dialog" font-size="14" x="18" y="78">
 -mTxBuffer : CTxBufferList</text>
-<text font-family="Dialog" font-size="14" x="18" y="109">
+<text font-family="Dialog" font-size="14" x="18" y="98">
 -mRxBuffer : CRxBufferList</text>
-<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="296" x="14" y="120"/>
-<text font-family="Dialog" font-size="14" x="18" y="137">
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="296" x="14" y="109"/>
+<text font-family="Dialog" font-size="14" x="18" y="126">
 +getInstance() : &amp;SCommComponent</text>
-<text font-family="Dialog" font-size="14" x="18" y="157">
+<text font-family="Dialog" font-size="14" x="18" y="146">
 +onTxIRQ() : void</text>
-<text font-family="Dialog" font-size="14" x="18" y="177">
+<text font-family="Dialog" font-size="14" x="18" y="166">
 +onRxIRQ(receivedByte : UInt8) : void</text>
-<polyline fill="none" points="366,49 309,49" stroke="#000000" stroke-width="1"/>
-<polygon fill="#000000" points="366,49 356,54 346,49 356,44" stroke="#000000" stroke-width="1"/>
-<polygon fill="none" points="366,49 356,54 346,49 356,44" stroke="#000000" stroke-width="1"/>
-<text font-family="Dialog" font-size="14" x="307" y="30">
+<polyline fill="none" points="342,42 309,42" stroke="#000000" stroke-width="1"/>
+<polygon fill="#000000" points="342,42 332,47 322,42 332,37" stroke="#000000" stroke-width="1"/>
+<polygon fill="none" points="342,42 332,47 322,42 332,37" stroke="#000000" stroke-width="1"/>
+<text font-family="Dialog" font-size="14" x="282" y="30">
  </text>
-<polyline fill="none" points="825,49 862,49" stroke="#000000" stroke-width="1"/>
-<polygon fill="#000000" points="825,49 835,44 845,49 835,54" stroke="#000000" stroke-width="1"/>
-<polygon fill="none" points="825,49 835,44 845,49 835,54" stroke="#000000" stroke-width="1"/>
-<text font-family="Dialog" font-size="14" x="812" y="30">
+<polyline fill="none" points="342,249 309,249" stroke="#000000" stroke-width="1"/>
+<polygon fill="#000000" points="342,249 332,254 322,249 332,244" stroke="#000000" stroke-width="1"/>
+<polygon fill="none" points="342,249 332,254 322,249 332,244" stroke="#000000" stroke-width="1"/>
+<text font-family="Dialog" font-size="14" x="295" y="230">
  </text>
 </svg>

@@ -3,10 +3,25 @@
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx} 
 \usepackage{svg}
+\usepackage{booktabs}
+\usepackage{longtable, lscape}
+\usepackage{tikz}
+\usepackage{multicol}
+\usepackage{longtable}
+\usepackage{array} 
+\usepackage{varwidth} 
 \graphicspath{{Bilder/}}
 \usepackage{geometry}
 \usepackage{pdflscape}
 \geometry{a4paper, top=25mm, left=30mm, right=25mm, bottom=20mm}
+
+
+\renewcommand{\rmdefault}{phv}
+ % Arial font
+\renewcommand{\sfdefault}{phv}
+% Arial font
+\renewcommand{\arraystretch}{1.1}
+
 \begin{document}
 
 
@@ -77,29 +92,34 @@ Die Nachrichten werden von der Klasse \textit{SProxy} erzeugt. Diese wird nach d
 \section{Aufbau der Kontrollkomponente}
 Die Aufgabe der Kontrollkomponente besteht darin, den Würfel aufzurichten und in der gewünschten Gleichgewichtslage zu balancieren. Hierfür müssen die Sensoren ausgewertet und die Motoren entsprechend angesteuert werden. Die Regelungseinheit muss eine Schnittstelle bieten um die Parameter über die Bedieneinheit zu konfigurieren. Außerdem sollen die aktuellen Werte an die Bedieneinheit übermittelt werden.
 Diese Funktionen werden in Form eines Zustandsautomaten implementiert. Mit Hilfe von Events können die gewünschten Funktionen aufgerufen werden.Die Ereignisse werden als Enumeration kodiert.
+
 \begin{table}[h]
 \centering
-\label{my-label}
-\begin{tabular}{|l|l|l|ll}
-\cline{1-3}
-\textbf{Eventkodierung}             & \textbf{Parameter} & \textbf{Kommentar}                                                                                                   &  &  \\ \cline{1-3}
-EV\_START                  &                       & Startet die Steuerung                                                                                       &  &  \\ \cline{1-3}
-EV\_STOP                   &                       & Stoppt die Steuerung                                                                                        &  &  \\ \cline{1-3}
-EV\_SET\_JUMP\_FLAG        & FlagValue             & Setzt den Wert des JumpFlag                                                                                 &  &  \\ \cline{1-3}
-EV\_SET\_BALANCE\_FLAG     & FlagValue             & Setzt den Wert des BalanceFlag                                                                              &  &  \\ \cline{1-3}
-EV\_SET\_TRANSMIT\_FLAG    & FlagValue             & Setzt den Wert des TransmitFlag                                                                             &  &  \\ \cline{1-3}
-EV\_SET\_JUMP\_VELOCITY    & VelocityValue         & \begin{tabular}[c]{@{}l@{}}Setzt die Geschwindigkeit der Schwung- \\masse zum 			Aufspringen\end{tabular}     &  &  \\ \cline{1-3}
-EV\_SET\_PID\_VALUES       & K\_I, K\_P, K\_D      & Setzt Verstärkungsfaktoren des Regler                                                                       &  &  \\ \cline{1-3}
-EV\_JUMP                   &                       & Leitet das Aufspringen ein                                                                                  &  &  \\ \cline{1-3}
-EV\_TIMER                  &                       & Timerevent, realisiert Abtastzeit                                                                           &  &  \\ \cline{1-3}
-EV\_BRAKE                  &                       & \begin{tabular}[c]{@{}l@{}}Internes Event, informiert über \\Betätigung 			der Bremse\end{tabular}          &  &  \\ \cline{1-3}
-EV\_PHIK\_IN\_BAL\_EAREA  &                       & \begin{tabular}[c]{@{}l@{}}Internes Event, informiert über be- \\treten des 			Regelungsbereich\end{tabular}  &  &  \\ \cline{1-3}
-EV\_PHIK\_NOT\_BAL\_AREA &                       & \begin{tabular}[c]{@{}l@{}}Internes Event, informiert über ver- \\lassen des 			Regelungsbereich\end{tabular} &  &  \\ \cline{1-3}
-EV\_RESTING                &                       & Internes Event, Würfel in Ruheposition                                                                      &  &  \\ \cline{1-3}
-EV\_NOT\_RESTING           &                       & Internes Event, Würfel nicht in Ruhe                                                                        &  &  \\ \cline{1-3}
-EV\_VELOCITY\_REACHED  &                       & Internes Event, bereit zum Aufspringen                                                                      &  &  \\ \cline{1-3}
+\begin{tabular}{|>{\small}l|>{\small}l|>{\small}l|}
+\hline
+\textbf{Eventkodierung}        & \textbf{Parameter} & \textbf{Kommentar}                                       \\ \hline
+EV\_START                      &                    & Starten die Steuerung und Regelung des Würfels           \\ \hline
+EV\_STOP                       &                    & Beendet die Steuerung des Würfels                        \\ \hline
+EV\_SET\_JUMP\_FLAG            & Flag-Value         & Einstellung ob der Würfel aufspringen soll.              \\ \hline
+EV\_SET\_BALANCE\_FLAG         & Flag-Value         & Einstellung ob der Würfel balancieren soll.              \\ \hline
+EV\_SET\_TRANSMIT\_FLAG        & Flag-Value         & Einstellung ob Sensordaten übertragen werden sollen.     \\ \hline
+EV\_SET\_JUMP\_VELOCITY        & Velocity       & Setzt die Sprungeschwindigkeit des Schwungrad.           \\ \hline
+EV\_SET\_PID\_P\_VALUE         & P-Value            & Setzt den P-Wert des PID-Regler.                         \\ \hline
+EV\_SET\_PID\_I\_VALUE         & I-Value            & Setzt den I-Wert des PID-Regler.                         \\ \hline
+EV\_SET\_PID\_D\_VALUE         & D-Value            & Setzt den D-Wert des PID-Regler.                         \\ \hline
+EV\_JUMP                       &                    & Startet das Aufspringen des Würfel.                      \\ \hline
+EV\_BRAKE                      &                    & Internes Event, welches das Bremsen auslöst.             \\ \hline
+EV\_PHIK\_IN\_BALANCEAREA      &                    & Internes Event, Würfel im Reglerbereich.                 \\ \hline
+EV\_PHIK\_NOT\_IN\_BALANCEAREA &                    & Internes Event, Würfel außerhalb des Reglerbereich.      \\ \hline
+EV\_TIMER                      &                    & Internes Event, Softtimerüberlauf.                       \\ \hline
+EV\_INIT                       &                    & Internes Event, für die Initialisierung eines Zustandes. \\ \hline
+EV\_EXIT                       &                    & Internes Event, führt zum Verlassen eines Zustandes.     \\ \hline
+EV\_RESTING                    &                    & Internes Event, Würfel liegt ruhig.                      \\ \hline
+EV\_NOT\_RESTING               &                    & Internes Event, Würfel liegt nicht ruhig.                \\ \hline
+EV\_JUMP\_VELOCITY\_REACHED    &                    & Internes Event, Rad hat Sprunggeschwindigkeit.           \\ \hline
 \end{tabular}
 \end{table}
+
 
 Der Zustandsautomat enthält die beiden Zustände \textit{CStateConfiguration} und \textit{CStateRunning}. In dem Startzustand \textit{CStateConfiguration} können die auszuführenden Funktionen der Steuerungseinheit und die Regelungsparameter festgelegt werden. Der Oberzustand \textit{CStateRunning} enthält die drei Zustände \textit{CStateIdle}, \textit{CStateJump} und \textit{CStateBalance}. Diese Zustände geben den Stand der Regelung wider. Um eine flexible Konfiguration des Würfels zu gewährleisten verfügt der Zustandsautomat über die drei Flags \textit{mJumpFlag}, \textit{mBalanceFlag} und \textit{mTransmitFlag}. Diese sind als Bedingungen an die entsprechenden Zustandsübergänge gekoppelt.
 
@@ -166,7 +186,7 @@ Die einzelnen folgende Tabelle zeigt die Methoden von \textit{CControlActionHand
 \begin{table}[h]
 \centering
 \label{my-label}
-\begin{tabular}{|l|l|}
+\begin{tabular}{|>{\small}l|>{\small}l|}
 \hline
 \textbf{Methode von CControlAction} & \textbf{Auszuführende Aktion}               \\ \hline
 void onEntryConfiguration()         & -                                           \\ \hline

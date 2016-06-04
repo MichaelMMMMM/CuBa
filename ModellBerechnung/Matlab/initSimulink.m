@@ -10,12 +10,14 @@ g = 9.81;
 T_M_m = 12.4e-3;
 %Elektrische Zeitkonstante Motor
 T_M_e = 5.5e-4;
+%Elektrische Zeitkonstante Motor
+T_M_e = 5.5e-4;
 %Abstand von A zu B
-l_AS = 0.085;
+l_AB = 0.08455;
 %Abstand Schwerpunkt des Körper zu (A)
-l_AB = 0.075;
+l_AS = 0.0751442;
 %Anfangswinkel des Körpers
-phi_K0 = degtorad(0);
+phi_K0 = degtorad(5);
 %Anfangsgeschwindigkeit des Körpers
 phi_K__d0 = degtorad(0);
 %Anfagsnwinkel des Schwungrades
@@ -23,26 +25,23 @@ phi_R0 = degtorad(0);
 %Anfangsgeschwindigkeit des Schwungrades
 phi_R__d0 = degtorad(0);
 %Masse des Körpers
-m_K = 0.419;
+m_K = 0.294;
 %Masse des Schwungrades
-m_R = 0.204;
+m_R = 0.1298;
 %Massentraegheitsmoment des Körpers um (A)
-O_K_A = 3.34e-3;
+O_K_A = 3.3e-3;
 %Massentraegheitsmoment des Schwungrades um (B)
-O_R_B = 0.57e-3;
+O_R_B = 0.088e-3;
 %Dynamischer Reibkoeffizient des Körpers
-C_K = 1.02e-3;
+C_K = 2.1e-3;
 %Dynamischer Reibkoeffizient des Schwungrades
-C_R = 0.05e-3;
+C_R = 2.1268e-5;
 %Massentraegheitsmoment des Gesamtsystem um (A)
 O_G_A = O_K_A + m_R * l_AB^2;
 
-% K_P = 3.9208;
-% K_D = 2.0107;
-% K_I = 5;
-K_D = 1.8206;
-K_I = 1.4006;
-K_P = 6.4842;
+K_D = 2.0012;
+K_I = 9.0142;
+K_P = 8.0785;
 
 sim('CubaModel');
 

@@ -2,11 +2,12 @@
 \usepackage[ngerman]{babel}
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx} 
+\usepackage{epstopdf}
 \usepackage{svg}
-\graphicspath{{Bilder/}}
 \usepackage{geometry}
 \usepackage{amsmath}
 \usepackage{pdflscape}
+\usepackage{verbatim}
 \geometry{a4paper, top=25mm, left=30mm, right=25mm, bottom=20mm}
 \begin{document}
 
@@ -296,4 +297,333 @@ Die Winkel sind sehr gut, allerdings ist die Schätzung der Winkelbeschleunigung
 
 \item Weitere Vorgehensweise? 
 \end{itemize}
+
+
+\newpage
+\section{Reset}
+Es werden fünf Messungen durchgeführt, hierbei befindet sich der Würfel jeweils in einer fixen Position. Die $\phi_K$-Werte sind hierbei $-45^\circ, -20^\circ, 0^\circ, 20^\circ, 45^\circ$. Es werden in jeder Position $m = 10000$ Messwerte mit einer Abtastperiode $T_A = 5ms$ aufgenommen. Aus den gemessenen Werten wird der Mittelwert, die Varianz und die Standardabweichung der Rohwerte berechnet. Mit dem Faktor zur Umrechnung in $g$ (Herstellerangabe) wird der Beschleunigungswert berechnet. Durch die Umrechnung ergibt sich aus der Differenz des Sensormittelwertes und dem Sollwert der Offset des jeweiligen Sensor berechnen. Ist dieser Offset über die fünf Messpositionen nicht konstant ist vermutlich die Herstellerangabe Fehlerbehaftet. Über eine Kurvenanpassung mit einem Polynom erster Ordnung kann der Offset und der korrigierte Umrechnungsfaktor über all Messreihen bestimmt werden.
+
+\subsection{Rohwerte}
+Die erste Messreihe erfasst bei den Stellungen $\phi_K \in \{-45^\circ, -30^\circ, -15^\circ, 0^\circ, 15^\circ, 30^\circ, 45^\circ \}$ die Beschleunigungswerte der Sensor $S_1$ und $S_2$ in X- und Y-Richtung auf. Hierfür werden $m = 10000$ Messwerte bei einer Abtastzeit $T_A = 5ms$ in jeder Position aufgenommen. Für jede Position ist der Soll-Beschleunigungswert bekannt, aus den Mittel- und Sollwerte können Polynomfunktionen bestimmt werden um die Umrechnung von Roh- in Beschleunigungswerte zu ermitteln.
+
+%Plot Raw-Values for X1,X2,Y1,Y2 at phiK = 45
+\begin{figure}[h]
+	\includegraphics[width=0.5\linewidth]{img/phiK45_x1_raw.eps}
+	\includegraphics[width=0.5\linewidth]{img/phiK45_x2_raw.eps}
+\end{figure}
+\begin{figure}[h]
+	\includegraphics[width=0.5\linewidth]{img/phiK45_y1_raw.eps}
+	\includegraphics[width=0.5\linewidth]{img/phiK45_y2_raw.eps}
+\end{figure}
+
+\begin{equation}
+\begin{array}{lclclcl}
+\overline{x}_1 &=& 13966 & \overline{x}_2 &=& 13193 \\
+\overline{y}_1 &=& -11971 & \overline{y}_2 &=& -12280
+\end{array}
+\end{equation}
+
+%Plot Raw-Values for X1,X2,Y1,Y2 at phiK = 30
+\newpage
+\begin{figure}[h]
+	\includegraphics[width=0.5\linewidth]{img/phiK30_x1_raw.eps}
+	\includegraphics[width=0.5\linewidth]{img/phiK30_x2_raw.eps}
+\end{figure}
+\begin{figure}[h]
+	\includegraphics[width=0.5\linewidth]{img/phiK30_y1_raw.eps}
+	\includegraphics[width=0.5\linewidth]{img/phiK30_y2_raw.eps}
+\end{figure}
+\begin{equation}
+\begin{array}{lclclcl}
+\overline{x}_1 &=& 10392 & \overline{x}_2 &=& 9743.8 \\
+\overline{y}_1 &=& -14563 & \overline{y}_2 &=& -14925
+\end{array}
+\end{equation}
+%Plot Raw-Values for X1,X2,Y1,Y2 at phiK = 15
+\newpage
+\begin{figure}[h]
+	\includegraphics[width=0.5\linewidth]{img/phiK15_x1_raw.eps}
+	\includegraphics[width=0.5\linewidth]{img/phiK15_x2_raw.eps}
+\end{figure}
+\begin{figure}[h]
+	\includegraphics[width=0.5\linewidth]{img/phiK15_y1_raw.eps}
+	\includegraphics[width=0.5\linewidth]{img/phiK15_y2_raw.eps}
+\end{figure}
+\begin{equation}
+\begin{array}{lclclcl}
+\overline{x}_1 &=& 6544.3 & \overline{x}_2 &=& 6027.5 \\
+\overline{y}_1 &=& -16034 & \overline{y}_2 &=& -16433
+\end{array}
+\end{equation}
+%Plot Raw-Values for X1,X2,Y1,Y2 at phiK = 0
+\newpage
+\begin{figure}[h]
+	\includegraphics[width=0.5\linewidth]{img/phiK0_x1_raw.eps}
+	\includegraphics[width=0.5\linewidth]{img/phiK0_x2_raw.eps}
+\end{figure}
+\begin{figure}[h]
+	\includegraphics[width=0.5\linewidth]{img/phiK0_y1_raw.eps}
+	\includegraphics[width=0.5\linewidth]{img/phiK0_y2_raw.eps}
+\end{figure}
+\begin{equation}
+\begin{array}{lclclcl}
+\overline{x}_1 &=& 2256.2 & \overline{x}_2 &=& 1883.2 \\
+\overline{y}_1 &=& -16535 & \overline{y}_2 &=& -16979
+\end{array}
+\end{equation}
+%Plot Raw-Values for X1,X2,Y1,Y2 at phiK = -15
+\newpage
+\begin{figure}[h]
+	\includegraphics[width=0.5\linewidth]{img/phiK-15_x1_raw.eps}
+	\includegraphics[width=0.5\linewidth]{img/phiK-15_x2_raw.eps}
+\end{figure}
+\begin{figure}[h]
+	\includegraphics[width=0.5\linewidth]{img/phiK-15_y1_raw.eps}
+	\includegraphics[width=0.5\linewidth]{img/phiK-15_y2_raw.eps}
+\end{figure}
+\begin{equation}
+\begin{array}{lclclcl}
+\overline{x}_1 &=& -2571.9 & \overline{x}_2 &=& -2790.2 \\
+\overline{y}_1 &=& -15786 & \overline{y}_2 &=& -16231
+\end{array}
+\end{equation}
+%Plot Raw-Values for X1,X2,Y1,Y2 at phiK = -30
+\newpage
+\begin{figure}[h]
+	\includegraphics[width=0.5\linewidth]{img/phiK-30_x1_raw.eps}
+	\includegraphics[width=0.5\linewidth]{img/phiK-30_x2_raw.eps}
+\end{figure}
+\begin{figure}[h]
+	\includegraphics[width=0.5\linewidth]{img/phiK-30_y1_raw.eps}
+	\includegraphics[width=0.5\linewidth]{img/phiK-30_y2_raw.eps}
+\end{figure}
+\begin{equation}
+\begin{array}{lclclcl}
+\overline{x}_1 &=& -6007.0 & \overline{x}_2 &=& -6142.5 \\
+\overline{y}_1 &=& -14307 & \overline{y}_2 &=& -14747
+\end{array}
+\end{equation}
+%Plot Raw-Values for X1,X2,Y1,Y2 at phiK = -45
+\newpage
+\begin{figure}[h]
+	\includegraphics[width=0.5\linewidth]{img/phiK-45_x1_raw.eps}
+	\includegraphics[width=0.5\linewidth]{img/phiK-45_x2_raw.eps}
+\end{figure}
+\begin{figure}[h]
+	\includegraphics[width=0.5\linewidth]{img/phiK-45_y1_raw.eps}
+	\includegraphics[width=0.5\linewidth]{img/phiK-45_y2_raw.eps}
+\end{figure}
+\begin{equation}
+\begin{array}{lclclcl}
+\overline{x}_1 &=& -9620.5 & \overline{x}_2 &=& -9647.9 \\
+\overline{y}_1 &=& -11597 & \overline{y}_2 &=& -12020
+\end{array}
+\end{equation}
+
+\newpage
+\subsection{Verlauf der Rohwerte und Ausgleichsfunktionen}
+Mit Hilfe der Messergebnisse kann der Verlauf der gemittelten Rohwerte über den Ausfallwinkel dargestellt werden. Anschließend wird zur Umrechnung der Roh- in Beschleunigungswerte ein Polynom erster Ordnung approximiert.
+
+\begin{figure}[h]
+	\includegraphics[width=0.5\linewidth]{img/X1_mean.eps}
+	\includegraphics[width=0.5\linewidth]{img/X2_mean.eps}
+\end{figure}
+\begin{figure}[h]
+	\includegraphics[width=0.5\linewidth]{img/Y1_mean.eps}
+	\includegraphics[width=0.5\linewidth]{img/Y2_mean.eps}
+\end{figure}
+
+\newpage
+\begin{figure}[h]
+	\includegraphics[width=0.5\linewidth]{img/X1_mean_correction.eps}
+	\includegraphics[width=0.5\linewidth]{img/X2_mean_correction.eps}
+\end{figure}
+\begin{figure}[h]
+	\includegraphics[width=0.5\linewidth]{img/Y1_mean_correction.eps}
+	\includegraphics[width=0.5\linewidth]{img/Y2_mean_correction.eps}
+\end{figure}
+
+\begin{equation}
+\begin{array}{lclcclcl}
+\ddot{x}_1 &=& 5.882 \cdot 10^{-4} \cdot x_1 - 1.257 & &
+\ddot{x}_2 &=& 6.074 \cdot 10^{-4} \cdot x_2 - 1.064 \\
+\ddot{y}_1 &=& 6.069 \cdot 10^{-4} \cdot y_1 + 0.221 & &
+\ddot{y}_2 &=& 5.997 \cdot 10^{-4} \cdot y_2 + 0.3585
+\end{array}
+\end{equation}
+
+\newpage
+\subsection{Untersuchung der Varianz und Standardabweichung der Sensoren}
+Mit den approximierten Polynomen zur Umrechnung der Rohwerte in Beschleunigungswerte werden die aufgezeichneten Rohdaten umgerechnet. Aus den Messreihen wird daraus die Varianz und Standardabweichung der Beschleunigugnswerte ermittelt. Hieraufhin werden 
+
+\begin{figure}[h]
+	\includegraphics[width=0.5\linewidth]{img/phiK45_X1_acceleration.eps}
+	\includegraphics[width=0.5\linewidth]{img/phiK45_X2_acceleration.eps}
+\end{figure}
+\begin{figure}[h]
+	\includegraphics[width=0.5\linewidth]{img/phiK45_Y1_acceleration.eps}
+	\includegraphics[width=0.5\linewidth]{img/phiK45_Y2_acceleration.eps}
+\end{figure}
+\begin{equation}
+\begin{array}{lclcclcl}
+var_{X_1} &=& 0.0016 & & sd_{X_1} &=& 0.0403\\
+var_{X_2} &=& 1.3281e-04 & & sd_{X_2} &=& 0.0115\\
+var_{Y_1} &=& 4.7285e-04 & & sd_{Y_1} &=& 0.0217\\
+var_{Y_2} &=& 1.6123e-04 & & sd_{Y_2} &=& 0.0127\\
+\end{array}
+\end{equation}
+
+\newpage
+\begin{figure}[h]
+	\includegraphics[width=0.5\linewidth]{img/phiK30_X1_acceleration.eps}
+	\includegraphics[width=0.5\linewidth]{img/phiK30_X2_acceleration.eps}
+\end{figure}
+\begin{figure}[h]
+	\includegraphics[width=0.5\linewidth]{img/phiK30_Y1_acceleration.eps}
+	\includegraphics[width=0.5\linewidth]{img/phiK30_Y2_acceleration.eps}
+\end{figure}
+\begin{equation}
+\begin{array}{lclcclcl}
+var_{X_1} &=& 0.0018& & sd_{X_1} &=& 0.0425\\
+var_{X_2} &=& 2.1497e-4& & sd_{X_2} &=& 0.0147\\
+var_{Y_1} &=& 5.3929e-4& & sd_{Y_1} &=& 0.0232\\
+var_{Y_2} &=& 8.4756e-4& & sd_{Y_2} &=& 0.0092\\
+\end{array}
+\end{equation}
+
+\newpage
+\begin{figure}[h]
+	\includegraphics[width=0.5\linewidth]{img/phiK15_X1_acceleration.eps}
+	\includegraphics[width=0.5\linewidth]{img/phiK15_X2_acceleration.eps}
+\end{figure}
+\begin{figure}[h]
+	\includegraphics[width=0.5\linewidth]{img/phiK15_Y1_acceleration.eps}
+	\includegraphics[width=0.5\linewidth]{img/phiK15_Y2_acceleration.eps}
+\end{figure}
+\begin{equation}
+\begin{array}{lclcclcl}
+var_{X_1} &=& 0.0044& & sd_{X_1} &=& 0.0665\\
+var_{X_2} &=& 1.2163e-4& & sd_{X_2} &=& 0.011\\
+var_{Y_1} &=& 0.0012& & sd_{Y_1} &=& 0.0352\\
+var_{Y_2} &=& 7.4382e-5& & sd_{Y_2} &=& 0.0086\\
+\end{array}
+\end{equation}
+
+\newpage
+\begin{figure}[h]
+	\includegraphics[width=0.5\linewidth]{img/phiK0_X1_acceleration.eps}
+	\includegraphics[width=0.5\linewidth]{img/phiK0_X2_acceleration.eps}
+\end{figure}
+\begin{figure}[h]
+	\includegraphics[width=0.5\linewidth]{img/phiK0_Y1_acceleration.eps}
+	\includegraphics[width=0.5\linewidth]{img/phiK0_Y2_acceleration.eps}
+\end{figure}
+\begin{equation}
+\begin{array}{lclcclcl}
+var_{X_1} &=& 0.0034& & sd_{X_1} &=& 0.0584\\
+var_{X_2} &=& 1.2908e-4& & sd_{X_2} &=& 0.0114\\
+var_{Y_1} &=& 9.937e-4& & sd_{Y_1} &=& 0.0315\\
+var_{Y_2} &=& 7.1301e-5& & sd_{Y_2} &=& 0.0084\\
+\end{array}
+\end{equation}
+
+\newpage
+\begin{figure}[h]
+	\includegraphics[width=0.5\linewidth]{img/phiKm15_X1_acceleration.eps}
+	\includegraphics[width=0.5\linewidth]{img/phiKm15_X2_acceleration.eps}
+\end{figure}
+\begin{figure}[h]
+	\includegraphics[width=0.5\linewidth]{img/phiKm15_Y1_acceleration.eps}
+	\includegraphics[width=0.5\linewidth]{img/phiKm15_Y2_acceleration.eps}
+\end{figure}
+\begin{equation}
+\begin{array}{lclcclcl}
+var_{X_1} &=& 0.0083& & sd_{X_1} &=& 0.091\\
+var_{X_2} &=& 4.3558e-4& & sd_{X_2} &=& 0.0209\\
+var_{Y_1} &=& 0.0021& & sd_{Y_1} &=& 0.0459\\
+var_{Y_2} &=& 1.7422e-4& & sd_{Y_2} &=& 0.0132\\
+\end{array}
+\end{equation}
+
+\newpage
+\begin{figure}[h]
+	\includegraphics[width=0.5\linewidth]{img/phiKm30_X1_acceleration.eps}
+	\includegraphics[width=0.5\linewidth]{img/phiKm30_X2_acceleration.eps}
+\end{figure}
+\begin{figure}[h]
+	\includegraphics[width=0.5\linewidth]{img/phiKm30_Y1_acceleration.eps}
+	\includegraphics[width=0.5\linewidth]{img/phiKm30_Y2_acceleration.eps}
+\end{figure}
+\begin{equation}
+\begin{array}{lclcclcl}
+var_{X_1} &=& 0.0023& & sd_{X_1} &=& 0.0482\\
+var_{X_2} &=& 2.3167e-4& & sd_{X_2} &=& 0.0152\\
+var_{Y_1} &=& 7.1196e-4& & sd_{Y_1} &=& 0.0267\\
+var_{Y_2} &=& 5.5412e-5& & sd_{Y_2} &=& 0.0081\\
+\end{array}
+\end{equation}
+
+\newpage
+\begin{figure}[h]
+	\includegraphics[width=0.5\linewidth]{img/phiKm45_X1_acceleration.eps}
+	\includegraphics[width=0.5\linewidth]{img/phiKm45_X2_acceleration.eps}
+\end{figure}
+\begin{figure}[h]
+	\includegraphics[width=0.5\linewidth]{img/phiKm45_Y1_acceleration.eps}
+	\includegraphics[width=0.5\linewidth]{img/phiKm45_Y2_acceleration.eps}
+\end{figure}
+\begin{equation}
+\begin{array}{lclcclcl}
+var_{X_1} &=& 0.0036& & sd_{X_1} &=& 0.0599\\
+var_{X_2} &=& 1.1753e-4& & sd_{X_2} &=& 0.0108\\
+var_{Y_1} &=& 0.001& & sd_{Y_1} &=& 0.0324\\
+var_{Y_2} &=& 1.3654e-4& & sd_{Y_2} &=& 0.0117\\
+\end{array}
+\end{equation}
+
+\newpage
+\subsection{Genauigkeit der Winkelschätzung}
+Im nächsten Schritt werden die berechneten Beschleunigungswerte zur Winkelschätzung eingesetzt. Hierbei wird die Genauigkeit, Varianz und Standardabweichung der Winkelwerte betrachtet.
+
+\begin{figure}[h]
+	\includegraphics[width=0.5\linewidth]{img/phiKm45_degree.eps}
+	\includegraphics[width=0.5\linewidth]{img/phiKm30_degree.eps}
+\end{figure}
+\begin{figure}[h]
+	\includegraphics[width=0.5\linewidth]{img/phiKm15_degree.eps}
+	\includegraphics[width=0.5\linewidth]{img/phiK0_degree.eps}
+\end{figure}
+
+\newpage
+\begin{figure}[h]
+	\includegraphics[width=0.5\linewidth]{img/phiK15_degree.eps}
+	\includegraphics[width=0.5\linewidth]{img/phiK30_degree.eps}
+\end{figure}
+\begin{figure}[h]
+	\includegraphics[width=0.5\linewidth]{img/phiK45_degree.eps}
+\end{figure}
+
+\newpage
+\subsection{Standardabweichung der Winkelwerte und gleitende Mittelung}
+Um die Varianz und Standardabweichung der Winkelschätzung zu minimieren wird eine gleitende Mittlung durchgeführt. Die folgenden Berechnungen wurden mit einer Mittlung von den $n = 5$ letzten Werten durchgeführt.
+
+\begin{figure}[h]
+	\includegraphics[width=0.5\linewidth]{img/phiKm45_floatingMean_degree.eps}
+	\includegraphics[width=0.5\linewidth]{img/phiKm30_floatingMean_degree.eps}
+\end{figure}
+\begin{figure}[h]
+	\includegraphics[width=0.5\linewidth]{img/phiKm15_floatingMean_degree.eps}
+	\includegraphics[width=0.5\linewidth]{img/phiK0_floatingMean_degree.eps}
+\end{figure}
+
+\newpage
+\begin{figure}[h]
+	\includegraphics[width=0.5\linewidth]{img/phiK15_floatingMean_degree.eps}
+	\includegraphics[width=0.5\linewidth]{img/phiK30_floatingMean_degree.eps}
+\end{figure}
+\begin{figure}[h]
+	\includegraphics[width=0.5\linewidth]{img/phiK45_floatingMean_degree.eps}
+	\includegraphics[width=0.5\linewidth]{img/degree_floatingMean_sd.eps}
+\end{figure}
+
 \end{document}

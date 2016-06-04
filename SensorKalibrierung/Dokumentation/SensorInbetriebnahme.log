@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.4.21)  23 MAY 2016 19:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.4.21)  1 JUN 2016 21:43
 entering extended mode
 **./SensorInbetriebnahme.tex
 (SensorInbetriebnahme.tex
@@ -314,6 +314,54 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen104
 \Gin@req@width=\dimen105
 )
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\epstopdf.sty"
+Package: epstopdf 2010/02/09 v2.5 Conversion with epstopdf on the fly (HO)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\grfext.sty"
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\kvdefinekeys.sty"
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\kvsetkeys.sty"
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\etexcmds.sty"
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ifluatex.sty"
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\pdftexcmds.sty"
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+))
 (C:\Users\ich\AppData\Roaming\MiKTeX\2.9\tex\latex\svg\svg.sty
 Package: svg 2012/09/05 v1.0 SVG inclusion and extraction
 
@@ -368,10 +416,6 @@ Package: import 2009/03/23  v 5.1
 Package: transparent 2007/01/08 v1.0 Transparency via pdfTeX's color stack (HO)
 
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
-Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
-Package ifpdf Info: pdfTeX in PDF mode is detected.
-)
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\auxhook.sty"
 Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
 ))
@@ -486,21 +530,27 @@ Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 80.
 )
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\verbatim.sty"
+Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks25
+\verbatim@line=\toks26
+\verbatim@in@stream=\read1
+)
 (SensorInbetriebnahme.aux)
 \openout1 = `SensorInbetriebnahme.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
 
 (C:\Users\ich\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -509,12 +559,12 @@ LaTeX Font Info:    ... okay on input line 11.
 \scratchbox=\box28
 \nofMPsegments=\count115
 \nofMParguments=\count116
-\everyMPshowfont=\toks25
+\everyMPshowfont=\toks27
 \MPscratchCnt=\count117
 \MPscratchDim=\dimen132
 \MPnumerator=\count118
 \makeMPintoPDFobject=\count119
-\everyMPtoPDFconversion=\toks26
+\everyMPtoPDFconversion=\toks28
 )
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
@@ -554,46 +604,1788 @@ Package caption Info: End \AtBeginDocument code.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Try loading font information for OT1+phv on input line 17.
+LaTeX Font Info:    Try loading font information for OT1+phv on input line 18.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\ot1phv.fd"
 File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
 )
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 17.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 18.
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <12> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 21.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 22.
 
 <Koordinatensystem.pdf, id=1, 596.98032pt x 611.28375pt>
 File: Koordinatensystem.pdf Graphic file (type pdf)
 
 <use Koordinatensystem.pdf>
-Package pdftex.def Info: Koordinatensystem.pdf used on input line 25.
+Package pdftex.def Info: Koordinatensystem.pdf used on input line 26.
 (pdftex.def)             Requested size: 441.01773pt x 451.58737pt.
  [1
 
 {C:/Users/ich/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./Koordinaten
 system.pdf>]
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <10> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 40.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 41.
  [2] [3] [4] [5] [6]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 291.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 292.
 
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 291.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 292.
  [7]
+Package epstopdf Info: Source file: <img/phiK45_x1_raw.eps>
+(epstopdf)                    date: 2016-06-01 13:04:27
+(epstopdf)                    size: 539966 bytes
+(epstopdf)             Output file: <img/phiK45_x1_raw-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-06-01 13:15:21
+(epstopdf)                    size: 50496 bytes
+(epstopdf)             Command: <epstopdf --outfile=img/phiK45_x1_raw-eps-conve
+rted-to.pdf img/phiK45_x1_raw.eps>
+(epstopdf)             \includegraphics on input line 311.
+Package epstopdf Info: Output file is already uptodate.
+
+<img/phiK45_x1_raw-eps-converted-to.pdf, id=63, 369.38pt x 307.1475pt>
+File: img/phiK45_x1_raw-eps-converted-to.pdf Graphic file (type pdf)
+
+<use img/phiK45_x1_raw-eps-converted-to.pdf>
+Package pdftex.def Info: img/phiK45_x1_raw-eps-converted-to.pdf used on input l
+ine 311.
+(pdftex.def)             Requested size: 220.50887pt x 183.35727pt.
+Package epstopdf Info: Source file: <img/phiK45_x2_raw.eps>
+(epstopdf)                    date: 2016-06-01 13:04:27
+(epstopdf)                    size: 537696 bytes
+(epstopdf)             Output file: <img/phiK45_x2_raw-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-06-01 13:15:22
+(epstopdf)                    size: 46380 bytes
+(epstopdf)             Command: <epstopdf --outfile=img/phiK45_x2_raw-eps-conve
+rted-to.pdf img/phiK45_x2_raw.eps>
+(epstopdf)             \includegraphics on input line 312.
+Package epstopdf Info: Output file is already uptodate.
+
+<img/phiK45_x2_raw-eps-converted-to.pdf, id=64, 375.4025pt x 307.1475pt>
+File: img/phiK45_x2_raw-eps-converted-to.pdf Graphic file (type pdf)
+
+<use img/phiK45_x2_raw-eps-converted-to.pdf>
+Package pdftex.def Info: img/phiK45_x2_raw-eps-converted-to.pdf used on input l
+ine 312.
+(pdftex.def)             Requested size: 220.50887pt x 180.41872pt.
+
+Overfull \hbox (2.11998pt too wide) in paragraph at lines 311--313
+[][] [] 
+ []
+
+Package epstopdf Info: Source file: <img/phiK45_y1_raw.eps>
+(epstopdf)                    date: 2016-06-01 13:04:28
+(epstopdf)                    size: 540129 bytes
+(epstopdf)             Output file: <img/phiK45_y1_raw-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-06-01 13:15:23
+(epstopdf)                    size: 48220 bytes
+(epstopdf)             Command: <epstopdf --outfile=img/phiK45_y1_raw-eps-conve
+rted-to.pdf img/phiK45_y1_raw.eps>
+(epstopdf)             \includegraphics on input line 315.
+Package epstopdf Info: Output file is already uptodate.
+<img/phiK45_y1_raw-eps-converted-to.pdf, id=65, 378.41376pt x 307.1475pt>
+File: img/phiK45_y1_raw-eps-converted-to.pdf Graphic file (type pdf)
+
+<use img/phiK45_y1_raw-eps-converted-to.pdf>
+Package pdftex.def Info: img/phiK45_y1_raw-eps-converted-to.pdf used on input l
+ine 315.
+(pdftex.def)             Requested size: 220.50887pt x 178.97989pt.
+Package epstopdf Info: Source file: <img/phiK45_y2_raw.eps>
+(epstopdf)                    date: 2016-06-01 13:04:29
+(epstopdf)                    size: 538737 bytes
+(epstopdf)             Output file: <img/phiK45_y2_raw-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-06-01 13:15:24
+(epstopdf)                    size: 46249 bytes
+(epstopdf)             Command: <epstopdf --outfile=img/phiK45_y2_raw-eps-conve
+rted-to.pdf img/phiK45_y2_raw.eps>
+(epstopdf)             \includegraphics on input line 316.
+Package epstopdf Info: Output file is already uptodate.
+
+<img/phiK45_y2_raw-eps-converted-to.pdf, id=66, 372.39125pt x 307.1475pt>
+File: img/phiK45_y2_raw-eps-converted-to.pdf Graphic file (type pdf)
+
+<use img/phiK45_y2_raw-eps-converted-to.pdf>
+Package pdftex.def Info: img/phiK45_y2_raw-eps-converted-to.pdf used on input l
+ine 316.
+(pdftex.def)             Requested size: 220.50887pt x 181.88095pt.
+
+Overfull \hbox (2.11998pt too wide) in paragraph at lines 315--317
+[][] [] 
+ []
+
+[8 <./img/phiK45_x1_raw-eps-converted-to.pdf> <./img/phiK45_x2_raw-eps-converte
+d-to.pdf> <./img/phiK45_y1_raw-eps-converted-to.pdf> <./img/phiK45_y2_raw-eps-c
+onverted-to.pdf>]
+Package epstopdf Info: Source file: <img/phiK30_x1_raw.eps>
+(epstopdf)                    date: 2016-06-01 14:15:03
+(epstopdf)                    size: 531170 bytes
+(epstopdf)             Output file: <img/phiK30_x1_raw-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-06-01 14:17:19
+(epstopdf)                    size: 50837 bytes
+(epstopdf)             Command: <epstopdf --outfile=img/phiK30_x1_raw-eps-conve
+rted-to.pdf img/phiK30_x1_raw.eps>
+(epstopdf)             \includegraphics on input line 329.
+Package epstopdf Info: Output file is already uptodate.
+
+<img/phiK30_x1_raw-eps-converted-to.pdf, id=118, 369.38pt x 307.1475pt>
+File: img/phiK30_x1_raw-eps-converted-to.pdf Graphic file (type pdf)
+
+<use img/phiK30_x1_raw-eps-converted-to.pdf>
+Package pdftex.def Info: img/phiK30_x1_raw-eps-converted-to.pdf used on input l
+ine 329.
+(pdftex.def)             Requested size: 220.50887pt x 183.35727pt.
+Package epstopdf Info: Source file: <img/phiK30_x2_raw.eps>
+(epstopdf)                    date: 2016-06-01 14:15:04
+(epstopdf)                    size: 476204 bytes
+(epstopdf)             Output file: <img/phiK30_x2_raw-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-06-01 14:17:20
+(epstopdf)                    size: 46140 bytes
+(epstopdf)             Command: <epstopdf --outfile=img/phiK30_x2_raw-eps-conve
+rted-to.pdf img/phiK30_x2_raw.eps>
+(epstopdf)             \includegraphics on input line 330.
+Package epstopdf Info: Output file is already uptodate.
+
+<img/phiK30_x2_raw-eps-converted-to.pdf, id=119, 378.41376pt x 307.1475pt>
+File: img/phiK30_x2_raw-eps-converted-to.pdf Graphic file (type pdf)
+
+<use img/phiK30_x2_raw-eps-converted-to.pdf>
+Package pdftex.def Info: img/phiK30_x2_raw-eps-converted-to.pdf used on input l
+ine 330.
+(pdftex.def)             Requested size: 220.50887pt x 178.97989pt.
+
+Overfull \hbox (2.11998pt too wide) in paragraph at lines 329--331
+[][] [] 
+ []
+
+Package epstopdf Info: Source file: <img/phiK30_y1_raw.eps>
+(epstopdf)                    date: 2016-06-01 14:15:05
+(epstopdf)                    size: 538687 bytes
+(epstopdf)             Output file: <img/phiK30_y1_raw-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-06-01 14:17:21
+(epstopdf)                    size: 48504 bytes
+(epstopdf)             Command: <epstopdf --outfile=img/phiK30_y1_raw-eps-conve
+rted-to.pdf img/phiK30_y1_raw.eps>
+(epstopdf)             \includegraphics on input line 333.
+Package epstopdf Info: Output file is already uptodate.
+<img/phiK30_y1_raw-eps-converted-to.pdf, id=120, 372.39125pt x 307.1475pt>
+File: img/phiK30_y1_raw-eps-converted-to.pdf Graphic file (type pdf)
+
+<use img/phiK30_y1_raw-eps-converted-to.pdf>
+Package pdftex.def Info: img/phiK30_y1_raw-eps-converted-to.pdf used on input l
+ine 333.
+(pdftex.def)             Requested size: 220.50887pt x 181.88095pt.
+Package epstopdf Info: Source file: <img/phiK30_y2_raw.eps>
+(epstopdf)                    date: 2016-06-01 14:15:06
+(epstopdf)                    size: 538923 bytes
+(epstopdf)             Output file: <img/phiK30_y2_raw-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-06-01 14:17:23
+(epstopdf)                    size: 46051 bytes
+(epstopdf)             Command: <epstopdf --outfile=img/phiK30_y2_raw-eps-conve
+rted-to.pdf img/phiK30_y2_raw.eps>
+(epstopdf)             \includegraphics on input line 334.
+Package epstopdf Info: Output file is already uptodate.
+
+<img/phiK30_y2_raw-eps-converted-to.pdf, id=121, 378.41376pt x 307.1475pt>
+File: img/phiK30_y2_raw-eps-converted-to.pdf Graphic file (type pdf)
+
+<use img/phiK30_y2_raw-eps-converted-to.pdf>
+Package pdftex.def Info: img/phiK30_y2_raw-eps-converted-to.pdf used on input l
+ine 334.
+(pdftex.def)             Requested size: 220.50887pt x 178.97989pt.
+
+Overfull \hbox (2.11998pt too wide) in paragraph at lines 333--335
+[][] [] 
+ []
+
+[9 <./img/phiK30_x1_raw-eps-converted-to.pdf> <./img/phiK30_x2_raw-eps-converte
+d-to.pdf> <./img/phiK30_y1_raw-eps-converted-to.pdf> <./img/phiK30_y2_raw-eps-c
+onverted-to.pdf>]
+Package epstopdf Info: Source file: <img/phiK15_x1_raw.eps>
+(epstopdf)                    date: 2016-06-01 14:28:10
+(epstopdf)                    size: 477010 bytes
+(epstopdf)             Output file: <img/phiK15_x1_raw-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-06-01 14:29:38
+(epstopdf)                    size: 51110 bytes
+(epstopdf)             Command: <epstopdf --outfile=img/phiK15_x1_raw-eps-conve
+rted-to.pdf img/phiK15_x1_raw.eps>
+(epstopdf)             \includegraphics on input line 345.
+Package epstopdf Info: Output file is already uptodate.
+
+<img/phiK15_x1_raw-eps-converted-to.pdf, id=169, 372.39125pt x 307.1475pt>
+File: img/phiK15_x1_raw-eps-converted-to.pdf Graphic file (type pdf)
+
+<use img/phiK15_x1_raw-eps-converted-to.pdf>
+Package pdftex.def Info: img/phiK15_x1_raw-eps-converted-to.pdf used on input l
+ine 345.
+(pdftex.def)             Requested size: 220.50887pt x 181.88095pt.
+Package epstopdf Info: Source file: <img/phiK15_x2_raw.eps>
+(epstopdf)                    date: 2016-06-01 14:28:10
+(epstopdf)                    size: 472524 bytes
+(epstopdf)             Output file: <img/phiK15_x2_raw-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-06-01 14:29:39
+(epstopdf)                    size: 45509 bytes
+(epstopdf)             Command: <epstopdf --outfile=img/phiK15_x2_raw-eps-conve
+rted-to.pdf img/phiK15_x2_raw.eps>
+(epstopdf)             \includegraphics on input line 346.
+Package epstopdf Info: Output file is already uptodate.
+
+<img/phiK15_x2_raw-eps-converted-to.pdf, id=170, 372.39125pt x 307.1475pt>
+File: img/phiK15_x2_raw-eps-converted-to.pdf Graphic file (type pdf)
+
+<use img/phiK15_x2_raw-eps-converted-to.pdf>
+Package pdftex.def Info: img/phiK15_x2_raw-eps-converted-to.pdf used on input l
+ine 346.
+(pdftex.def)             Requested size: 220.50887pt x 181.88095pt.
+
+Overfull \hbox (2.11998pt too wide) in paragraph at lines 345--347
+[][] [] 
+ []
+
+Package epstopdf Info: Source file: <img/phiK15_y1_raw.eps>
+(epstopdf)                    date: 2016-06-01 14:28:11
+(epstopdf)                    size: 529579 bytes
+(epstopdf)             Output file: <img/phiK15_y1_raw-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-06-01 14:29:40
+(epstopdf)                    size: 49812 bytes
+(epstopdf)             Command: <epstopdf --outfile=img/phiK15_y1_raw-eps-conve
+rted-to.pdf img/phiK15_y1_raw.eps>
+(epstopdf)             \includegraphics on input line 349.
+Package epstopdf Info: Output file is already uptodate.
+<img/phiK15_y1_raw-eps-converted-to.pdf, id=171, 372.39125pt x 307.1475pt>
+File: img/phiK15_y1_raw-eps-converted-to.pdf Graphic file (type pdf)
+
+<use img/phiK15_y1_raw-eps-converted-to.pdf>
+Package pdftex.def Info: img/phiK15_y1_raw-eps-converted-to.pdf used on input l
+ine 349.
+(pdftex.def)             Requested size: 220.50887pt x 181.88095pt.
+Package epstopdf Info: Source file: <img/phiK15_y2_raw.eps>
+(epstopdf)                    date: 2016-06-01 14:28:12
+(epstopdf)                    size: 537836 bytes
+(epstopdf)             Output file: <img/phiK15_y2_raw-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-06-01 14:29:42
+(epstopdf)                    size: 45682 bytes
+(epstopdf)             Command: <epstopdf --outfile=img/phiK15_y2_raw-eps-conve
+rted-to.pdf img/phiK15_y2_raw.eps>
+(epstopdf)             \includegraphics on input line 350.
+Package epstopdf Info: Output file is already uptodate.
+
+<img/phiK15_y2_raw-eps-converted-to.pdf, id=172, 378.41376pt x 307.1475pt>
+File: img/phiK15_y2_raw-eps-converted-to.pdf Graphic file (type pdf)
+
+<use img/phiK15_y2_raw-eps-converted-to.pdf>
+Package pdftex.def Info: img/phiK15_y2_raw-eps-converted-to.pdf used on input l
+ine 350.
+(pdftex.def)             Requested size: 220.50887pt x 178.97989pt.
+
+Overfull \hbox (2.11998pt too wide) in paragraph at lines 349--351
+[][] [] 
+ []
+
+[10 <./img/phiK15_x1_raw-eps-converted-to.pdf> <./img/phiK15_x2_raw-eps-convert
+ed-to.pdf> <./img/phiK15_y1_raw-eps-converted-to.pdf> <./img/phiK15_y2_raw-eps-
+converted-to.pdf>]
+Package epstopdf Info: Source file: <img/phiK0_x1_raw.eps>
+(epstopdf)                    date: 2016-06-01 13:12:29
+(epstopdf)                    size: 477056 bytes
+(epstopdf)             Output file: <img/phiK0_x1_raw-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-06-01 13:15:26
+(epstopdf)                    size: 50560 bytes
+(epstopdf)             Command: <epstopdf --outfile=img/phiK0_x1_raw-eps-conver
+ted-to.pdf img/phiK0_x1_raw.eps>
+(epstopdf)             \includegraphics on input line 361.
+Package epstopdf Info: Output file is already uptodate.
+
+<img/phiK0_x1_raw-eps-converted-to.pdf, id=216, 372.39125pt x 307.1475pt>
+File: img/phiK0_x1_raw-eps-converted-to.pdf Graphic file (type pdf)
+
+<use img/phiK0_x1_raw-eps-converted-to.pdf>
+Package pdftex.def Info: img/phiK0_x1_raw-eps-converted-to.pdf used on input li
+ne 361.
+(pdftex.def)             Requested size: 220.50887pt x 181.88095pt.
+Package epstopdf Info: Source file: <img/phiK0_x2_raw.eps>
+(epstopdf)                    date: 2016-06-01 13:12:30
+(epstopdf)                    size: 477521 bytes
+(epstopdf)             Output file: <img/phiK0_x2_raw-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-06-01 13:15:27
+(epstopdf)                    size: 45376 bytes
+(epstopdf)             Command: <epstopdf --outfile=img/phiK0_x2_raw-eps-conver
+ted-to.pdf img/phiK0_x2_raw.eps>
+(epstopdf)             \includegraphics on input line 362.
+Package epstopdf Info: Output file is already uptodate.
+
+<img/phiK0_x2_raw-eps-converted-to.pdf, id=217, 372.39125pt x 307.1475pt>
+File: img/phiK0_x2_raw-eps-converted-to.pdf Graphic file (type pdf)
+
+<use img/phiK0_x2_raw-eps-converted-to.pdf>
+Package pdftex.def Info: img/phiK0_x2_raw-eps-converted-to.pdf used on input li
+ne 362.
+(pdftex.def)             Requested size: 220.50887pt x 181.88095pt.
+
+Overfull \hbox (2.11998pt too wide) in paragraph at lines 361--363
+[][] [] 
+ []
+
+Package epstopdf Info: Source file: <img/phiK0_y1_raw.eps>
+(epstopdf)                    date: 2016-06-01 13:12:30
+(epstopdf)                    size: 529819 bytes
+(epstopdf)             Output file: <img/phiK0_y1_raw-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-06-01 13:15:28
+(epstopdf)                    size: 49382 bytes
+(epstopdf)             Command: <epstopdf --outfile=img/phiK0_y1_raw-eps-conver
+ted-to.pdf img/phiK0_y1_raw.eps>
+(epstopdf)             \includegraphics on input line 365.
+Package epstopdf Info: Output file is already uptodate.
+<img/phiK0_y1_raw-eps-converted-to.pdf, id=218, 372.39125pt x 307.1475pt>
+File: img/phiK0_y1_raw-eps-converted-to.pdf Graphic file (type pdf)
+
+<use img/phiK0_y1_raw-eps-converted-to.pdf>
+Package pdftex.def Info: img/phiK0_y1_raw-eps-converted-to.pdf used on input li
+ne 365.
+(pdftex.def)             Requested size: 220.50887pt x 181.88095pt.
+Package epstopdf Info: Source file: <img/phiK0_y2_raw.eps>
+(epstopdf)                    date: 2016-06-01 13:12:31
+(epstopdf)                    size: 527931 bytes
+(epstopdf)             Output file: <img/phiK0_y2_raw-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-06-01 13:15:29
+(epstopdf)                    size: 45401 bytes
+(epstopdf)             Command: <epstopdf --outfile=img/phiK0_y2_raw-eps-conver
+ted-to.pdf img/phiK0_y2_raw.eps>
+(epstopdf)             \includegraphics on input line 366.
+Package epstopdf Info: Output file is already uptodate.
+
+<img/phiK0_y2_raw-eps-converted-to.pdf, id=219, 378.41376pt x 307.1475pt>
+File: img/phiK0_y2_raw-eps-converted-to.pdf Graphic file (type pdf)
+
+<use img/phiK0_y2_raw-eps-converted-to.pdf>
+Package pdftex.def Info: img/phiK0_y2_raw-eps-converted-to.pdf used on input li
+ne 366.
+(pdftex.def)             Requested size: 220.50887pt x 178.97989pt.
+
+Overfull \hbox (2.11998pt too wide) in paragraph at lines 365--367
+[][] [] 
+ []
+
+[11 <./img/phiK0_x1_raw-eps-converted-to.pdf> <./img/phiK0_x2_raw-eps-converted
+-to.pdf> <./img/phiK0_y1_raw-eps-converted-to.pdf> <./img/phiK0_y2_raw-eps-conv
+erted-to.pdf>]
+Package epstopdf Info: Source file: <img/phiK-15_x1_raw.eps>
+(epstopdf)                    date: 2016-06-01 14:37:01
+(epstopdf)                    size: 476147 bytes
+(epstopdf)             Output file: <img/phiK-15_x1_raw-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-06-01 14:39:54
+(epstopdf)                    size: 51703 bytes
+(epstopdf)             Command: <epstopdf --outfile=img/phiK-15_x1_raw-eps-conv
+erted-to.pdf img/phiK-15_x1_raw.eps>
+(epstopdf)             \includegraphics on input line 377.
+Package epstopdf Info: Output file is already uptodate.
+
+<img/phiK-15_x1_raw-eps-converted-to.pdf, id=263, 375.4025pt x 307.1475pt>
+File: img/phiK-15_x1_raw-eps-converted-to.pdf Graphic file (type pdf)
+
+<use img/phiK-15_x1_raw-eps-converted-to.pdf>
+Package pdftex.def Info: img/phiK-15_x1_raw-eps-converted-to.pdf used on input 
+line 377.
+(pdftex.def)             Requested size: 220.50887pt x 180.41872pt.
+Package epstopdf Info: Source file: <img/phiK-15_x2_raw.eps>
+(epstopdf)                    date: 2016-06-01 14:37:02
+(epstopdf)                    size: 478814 bytes
+(epstopdf)             Output file: <img/phiK-15_x2_raw-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-06-01 14:39:55
+(epstopdf)                    size: 45826 bytes
+(epstopdf)             Command: <epstopdf --outfile=img/phiK-15_x2_raw-eps-conv
+erted-to.pdf img/phiK-15_x2_raw.eps>
+(epstopdf)             \includegraphics on input line 378.
+Package epstopdf Info: Output file is already uptodate.
+
+<img/phiK-15_x2_raw-eps-converted-to.pdf, id=264, 375.4025pt x 307.1475pt>
+File: img/phiK-15_x2_raw-eps-converted-to.pdf Graphic file (type pdf)
+
+<use img/phiK-15_x2_raw-eps-converted-to.pdf>
+Package pdftex.def Info: img/phiK-15_x2_raw-eps-converted-to.pdf used on input 
+line 378.
+(pdftex.def)             Requested size: 220.50887pt x 180.41872pt.
+
+Overfull \hbox (2.11998pt too wide) in paragraph at lines 377--379
+[][] [] 
+ []
+
+Package epstopdf Info: Source file: <img/phiK-15_y1_raw.eps>
+(epstopdf)                    date: 2016-06-01 14:37:02
+(epstopdf)                    size: 529727 bytes
+(epstopdf)             Output file: <img/phiK-15_y1_raw-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-06-01 14:39:56
+(epstopdf)                    size: 50871 bytes
+(epstopdf)             Command: <epstopdf --outfile=img/phiK-15_y1_raw-eps-conv
+erted-to.pdf img/phiK-15_y1_raw.eps>
+(epstopdf)             \includegraphics on input line 381.
+Package epstopdf Info: Output file is already uptodate.
+<img/phiK-15_y1_raw-eps-converted-to.pdf, id=265, 372.39125pt x 307.1475pt>
+File: img/phiK-15_y1_raw-eps-converted-to.pdf Graphic file (type pdf)
+
+<use img/phiK-15_y1_raw-eps-converted-to.pdf>
+Package pdftex.def Info: img/phiK-15_y1_raw-eps-converted-to.pdf used on input 
+line 381.
+(pdftex.def)             Requested size: 220.50887pt x 181.88095pt.
+Package epstopdf Info: Source file: <img/phiK-15_y2_raw.eps>
+(epstopdf)                    date: 2016-06-01 14:37:03
+(epstopdf)                    size: 540798 bytes
+(epstopdf)             Output file: <img/phiK-15_y2_raw-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-06-01 14:39:57
+(epstopdf)                    size: 46382 bytes
+(epstopdf)             Command: <epstopdf --outfile=img/phiK-15_y2_raw-eps-conv
+erted-to.pdf img/phiK-15_y2_raw.eps>
+(epstopdf)             \includegraphics on input line 382.
+Package epstopdf Info: Output file is already uptodate.
+
+<img/phiK-15_y2_raw-eps-converted-to.pdf, id=266, 372.39125pt x 307.1475pt>
+File: img/phiK-15_y2_raw-eps-converted-to.pdf Graphic file (type pdf)
+
+<use img/phiK-15_y2_raw-eps-converted-to.pdf>
+Package pdftex.def Info: img/phiK-15_y2_raw-eps-converted-to.pdf used on input 
+line 382.
+(pdftex.def)             Requested size: 220.50887pt x 181.88095pt.
+
+Overfull \hbox (2.11998pt too wide) in paragraph at lines 381--383
+[][] [] 
+ []
+
+[12 <./img/phiK-15_x1_raw-eps-converted-to.pdf> <./img/phiK-15_x2_raw-eps-conve
+rted-to.pdf> <./img/phiK-15_y1_raw-eps-converted-to.pdf> <./img/phiK-15_y2_raw-
+eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <img/phiK-30_x1_raw.eps>
+(epstopdf)                    date: 2016-06-01 14:19:46
+(epstopdf)                    size: 476958 bytes
+(epstopdf)             Output file: <img/phiK-30_x1_raw-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-06-01 14:22:36
+(epstopdf)                    size: 50085 bytes
+(epstopdf)             Command: <epstopdf --outfile=img/phiK-30_x1_raw-eps-conv
+erted-to.pdf img/phiK-30_x1_raw.eps>
+(epstopdf)             \includegraphics on input line 393.
+Package epstopdf Info: Output file is already uptodate.
+
+<img/phiK-30_x1_raw-eps-converted-to.pdf, id=310, 375.4025pt x 307.1475pt>
+File: img/phiK-30_x1_raw-eps-converted-to.pdf Graphic file (type pdf)
+
+<use img/phiK-30_x1_raw-eps-converted-to.pdf>
+Package pdftex.def Info: img/phiK-30_x1_raw-eps-converted-to.pdf used on input 
+line 393.
+(pdftex.def)             Requested size: 220.50887pt x 180.41872pt.
+Package epstopdf Info: Source file: <img/phiK-30_x2_raw.eps>
+(epstopdf)                    date: 2016-06-01 14:19:47
+(epstopdf)                    size: 476206 bytes
+(epstopdf)             Output file: <img/phiK-30_x2_raw-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-06-01 14:22:37
+(epstopdf)                    size: 46032 bytes
+(epstopdf)             Command: <epstopdf --outfile=img/phiK-30_x2_raw-eps-conv
+erted-to.pdf img/phiK-30_x2_raw.eps>
+(epstopdf)             \includegraphics on input line 394.
+Package epstopdf Info: Output file is already uptodate.
+
+<img/phiK-30_x2_raw-eps-converted-to.pdf, id=311, 375.4025pt x 307.1475pt>
+File: img/phiK-30_x2_raw-eps-converted-to.pdf Graphic file (type pdf)
+
+<use img/phiK-30_x2_raw-eps-converted-to.pdf>
+Package pdftex.def Info: img/phiK-30_x2_raw-eps-converted-to.pdf used on input 
+line 394.
+(pdftex.def)             Requested size: 220.50887pt x 180.41872pt.
+
+Overfull \hbox (2.11998pt too wide) in paragraph at lines 393--395
+[][] [] 
+ []
+
+Package epstopdf Info: Source file: <img/phiK-30_y1_raw.eps>
+(epstopdf)                    date: 2016-06-01 14:19:48
+(epstopdf)                    size: 538762 bytes
+(epstopdf)             Output file: <img/phiK-30_y1_raw-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-06-01 14:22:39
+(epstopdf)                    size: 49012 bytes
+(epstopdf)             Command: <epstopdf --outfile=img/phiK-30_y1_raw-eps-conv
+erted-to.pdf img/phiK-30_y1_raw.eps>
+(epstopdf)             \includegraphics on input line 397.
+Package epstopdf Info: Output file is already uptodate.
+<img/phiK-30_y1_raw-eps-converted-to.pdf, id=312, 372.39125pt x 307.1475pt>
+File: img/phiK-30_y1_raw-eps-converted-to.pdf Graphic file (type pdf)
+
+<use img/phiK-30_y1_raw-eps-converted-to.pdf>
+Package pdftex.def Info: img/phiK-30_y1_raw-eps-converted-to.pdf used on input 
+line 397.
+(pdftex.def)             Requested size: 220.50887pt x 181.88095pt.
+Package epstopdf Info: Source file: <img/phiK-30_y2_raw.eps>
+(epstopdf)                    date: 2016-06-01 14:19:48
+(epstopdf)                    size: 529523 bytes
+(epstopdf)             Output file: <img/phiK-30_y2_raw-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-06-01 14:22:40
+(epstopdf)                    size: 45387 bytes
+(epstopdf)             Command: <epstopdf --outfile=img/phiK-30_y2_raw-eps-conv
+erted-to.pdf img/phiK-30_y2_raw.eps>
+(epstopdf)             \includegraphics on input line 398.
+Package epstopdf Info: Output file is already uptodate.
+
+<img/phiK-30_y2_raw-eps-converted-to.pdf, id=313, 378.41376pt x 307.1475pt>
+File: img/phiK-30_y2_raw-eps-converted-to.pdf Graphic file (type pdf)
+
+<use img/phiK-30_y2_raw-eps-converted-to.pdf>
+Package pdftex.def Info: img/phiK-30_y2_raw-eps-converted-to.pdf used on input 
+line 398.
+(pdftex.def)             Requested size: 220.50887pt x 178.97989pt.
+
+Overfull \hbox (2.11998pt too wide) in paragraph at lines 397--399
+[][] [] 
+ []
+
+[13 <./img/phiK-30_x1_raw-eps-converted-to.pdf> <./img/phiK-30_x2_raw-eps-conve
+rted-to.pdf> <./img/phiK-30_y1_raw-eps-converted-to.pdf> <./img/phiK-30_y2_raw-
+eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <img/phiK-45_x1_raw.eps>
+(epstopdf)                    date: 2016-06-01 13:08:53
+(epstopdf)                    size: 467004 bytes
+(epstopdf)             Output file: <img/phiK-45_x1_raw-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-06-01 13:15:31
+(epstopdf)                    size: 50353 bytes
+(epstopdf)             Command: <epstopdf --outfile=img/phiK-45_x1_raw-eps-conv
+erted-to.pdf img/phiK-45_x1_raw.eps>
+(epstopdf)             \includegraphics on input line 409.
+Package epstopdf Info: Output file is already uptodate.
+
+<img/phiK-45_x1_raw-eps-converted-to.pdf, id=358, 381.425pt x 307.1475pt>
+File: img/phiK-45_x1_raw-eps-converted-to.pdf Graphic file (type pdf)
+
+<use img/phiK-45_x1_raw-eps-converted-to.pdf>
+Package pdftex.def Info: img/phiK-45_x1_raw-eps-converted-to.pdf used on input 
+line 409.
+(pdftex.def)             Requested size: 220.50887pt x 177.56451pt.
+Package epstopdf Info: Source file: <img/phiK-45_x2_raw.eps>
+(epstopdf)                    date: 2016-06-01 13:08:53
+(epstopdf)                    size: 462197 bytes
+(epstopdf)             Output file: <img/phiK-45_x2_raw-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-06-01 13:15:32
+(epstopdf)                    size: 45231 bytes
+(epstopdf)             Command: <epstopdf --outfile=img/phiK-45_x2_raw-eps-conv
+erted-to.pdf img/phiK-45_x2_raw.eps>
+(epstopdf)             \includegraphics on input line 410.
+Package epstopdf Info: Output file is already uptodate.
+
+<img/phiK-45_x2_raw-eps-converted-to.pdf, id=359, 375.4025pt x 307.1475pt>
+File: img/phiK-45_x2_raw-eps-converted-to.pdf Graphic file (type pdf)
+
+<use img/phiK-45_x2_raw-eps-converted-to.pdf>
+Package pdftex.def Info: img/phiK-45_x2_raw-eps-converted-to.pdf used on input 
+line 410.
+(pdftex.def)             Requested size: 220.50887pt x 180.41872pt.
+
+Overfull \hbox (2.11998pt too wide) in paragraph at lines 409--411
+[][] [] 
+ []
+
+Package epstopdf Info: Source file: <img/phiK-45_y1_raw.eps>
+(epstopdf)                    date: 2016-06-01 13:08:54
+(epstopdf)                    size: 529661 bytes
+(epstopdf)             Output file: <img/phiK-45_y1_raw-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-06-01 13:15:33
+(epstopdf)                    size: 49398 bytes
+(epstopdf)             Command: <epstopdf --outfile=img/phiK-45_y1_raw-eps-conv
+erted-to.pdf img/phiK-45_y1_raw.eps>
+(epstopdf)             \includegraphics on input line 413.
+Package epstopdf Info: Output file is already uptodate.
+<img/phiK-45_y1_raw-eps-converted-to.pdf, id=360, 372.39125pt x 307.1475pt>
+File: img/phiK-45_y1_raw-eps-converted-to.pdf Graphic file (type pdf)
+
+<use img/phiK-45_y1_raw-eps-converted-to.pdf>
+Package pdftex.def Info: img/phiK-45_y1_raw-eps-converted-to.pdf used on input 
+line 413.
+(pdftex.def)             Requested size: 220.50887pt x 181.88095pt.
+Package epstopdf Info: Source file: <img/phiK-45_y2_raw.eps>
+(epstopdf)                    date: 2016-06-01 13:08:55
+(epstopdf)                    size: 538790 bytes
+(epstopdf)             Output file: <img/phiK-45_y2_raw-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-06-01 13:15:34
+(epstopdf)                    size: 46104 bytes
+(epstopdf)             Command: <epstopdf --outfile=img/phiK-45_y2_raw-eps-conv
+erted-to.pdf img/phiK-45_y2_raw.eps>
+(epstopdf)             \includegraphics on input line 414.
+Package epstopdf Info: Output file is already uptodate.
+
+<img/phiK-45_y2_raw-eps-converted-to.pdf, id=361, 372.39125pt x 307.1475pt>
+File: img/phiK-45_y2_raw-eps-converted-to.pdf Graphic file (type pdf)
+
+<use img/phiK-45_y2_raw-eps-converted-to.pdf>
+Package pdftex.def Info: img/phiK-45_y2_raw-eps-converted-to.pdf used on input 
+line 414.
+(pdftex.def)             Requested size: 220.50887pt x 181.88095pt.
+
+Overfull \hbox (2.11998pt too wide) in paragraph at lines 413--415
+[][] [] 
+ []
+
+[14 <./img/phiK-45_x1_raw-eps-converted-to.pdf> <./img/phiK-45_x2_raw-eps-conve
+rted-to.pdf> <./img/phiK-45_y1_raw-eps-converted-to.pdf> <./img/phiK-45_y2_raw-
+eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <img/X1_mean.eps>
+(epstopdf)                    date: 2016-06-01 15:07:53
+(epstopdf)                    size: 162867 bytes
+(epstopdf)             Output file: <img/X1_mean-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-06-01 15:58:39
+(epstopdf)                    size: 5450 bytes
+(epstopdf)             Command: <epstopdf --outfile=img/X1_mean-eps-converted-t
+o.pdf img/X1_mean.eps>
+(epstopdf)             \includegraphics on input line 428.
+Package epstopdf Info: Output file is already uptodate.
+
+<img/X1_mean-eps-converted-to.pdf, id=405, 367.3725pt x 305.14pt>
+File: img/X1_mean-eps-converted-to.pdf Graphic file (type pdf)
+
+<use img/X1_mean-eps-converted-to.pdf>
+Package pdftex.def Info: img/X1_mean-eps-converted-to.pdf used on input line 42
+8.
+(pdftex.def)             Requested size: 220.50887pt x 183.1599pt.
+Package epstopdf Info: Source file: <img/X2_mean.eps>
+(epstopdf)                    date: 2016-06-01 15:07:54
+(epstopdf)                    size: 162868 bytes
+(epstopdf)             Output file: <img/X2_mean-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-06-01 15:58:40
+(epstopdf)                    size: 5443 bytes
+(epstopdf)             Command: <epstopdf --outfile=img/X2_mean-eps-converted-t
+o.pdf img/X2_mean.eps>
+(epstopdf)             \includegraphics on input line 429.
+Package epstopdf Info: Output file is already uptodate.
+
+<img/X2_mean-eps-converted-to.pdf, id=406, 367.3725pt x 305.14pt>
+File: img/X2_mean-eps-converted-to.pdf Graphic file (type pdf)
+
+<use img/X2_mean-eps-converted-to.pdf>
+Package pdftex.def Info: img/X2_mean-eps-converted-to.pdf used on input line 42
+9.
+(pdftex.def)             Requested size: 220.50887pt x 183.1599pt.
+
+Overfull \hbox (2.11998pt too wide) in paragraph at lines 428--430
+[][] [] 
+ []
+
+Package epstopdf Info: Source file: <img/Y1_mean.eps>
+(epstopdf)                    date: 2016-06-01 15:07:54
+(epstopdf)                    size: 163293 bytes
+(epstopdf)             Output file: <img/Y1_mean-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-06-01 15:58:41
+(epstopdf)                    size: 5469 bytes
+(epstopdf)             Command: <epstopdf --outfile=img/Y1_mean-eps-converted-t
+o.pdf img/Y1_mean.eps>
+(epstopdf)             \includegraphics on input line 432.
+Package epstopdf Info: Output file is already uptodate.
+<img/Y1_mean-eps-converted-to.pdf, id=407, 367.3725pt x 305.14pt>
+File: img/Y1_mean-eps-converted-to.pdf Graphic file (type pdf)
+
+<use img/Y1_mean-eps-converted-to.pdf>
+Package pdftex.def Info: img/Y1_mean-eps-converted-to.pdf used on input line 43
+2.
+(pdftex.def)             Requested size: 220.50887pt x 183.1599pt.
+Package epstopdf Info: Source file: <img/Y2_mean.eps>
+(epstopdf)                    date: 2016-06-01 15:07:55
+(epstopdf)                    size: 165078 bytes
+(epstopdf)             Output file: <img/Y2_mean-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-06-01 15:58:42
+(epstopdf)                    size: 5552 bytes
+(epstopdf)             Command: <epstopdf --outfile=img/Y2_mean-eps-converted-t
+o.pdf img/Y2_mean.eps>
+(epstopdf)             \includegraphics on input line 433.
+Package epstopdf Info: Output file is already uptodate.
+
+<img/Y2_mean-eps-converted-to.pdf, id=408, 372.39125pt x 305.14pt>
+File: img/Y2_mean-eps-converted-to.pdf Graphic file (type pdf)
+
+<use img/Y2_mean-eps-converted-to.pdf>
+Package pdftex.def Info: img/Y2_mean-eps-converted-to.pdf used on input line 43
+3.
+(pdftex.def)             Requested size: 220.50887pt x 180.69218pt.
+
+Overfull \hbox (2.11998pt too wide) in paragraph at lines 432--434
+[][] [] 
+ []
+
+[15 <./img/X1_mean-eps-converted-to.pdf> <./img/X2_mean-eps-converted-to.pdf> <
+./img/Y1_mean-eps-converted-to.pdf> <./img/Y2_mean-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <img/X1_mean_correction.eps>
+(epstopdf)                    date: 2016-06-01 15:39:15
+(epstopdf)                    size: 103152 bytes
+(epstopdf)             Output file: <img/X1_mean_correction-eps-converted-to.pd
+f>
+(epstopdf)                    date: 2016-06-01 15:59:17
+(epstopdf)                    size: 4850 bytes
+(epstopdf)             Command: <epstopdf --outfile=img/X1_mean_correction-eps-
+converted-to.pdf img/X1_mean_correction.eps>
+(epstopdf)             \includegraphics on input line 438.
+Package epstopdf Info: Output file is already uptodate.
+
+<img/X1_mean_correction-eps-converted-to.pdf, id=460, 362.35374pt x 304.13625pt
+>
+File: img/X1_mean_correction-eps-converted-to.pdf Graphic file (type pdf)
+ <use img/X1_mean_correction-eps-converted-to.pdf>
+Package pdftex.def Info: img/X1_mean_correction-eps-converted-to.pdf used on in
+put line 438.
+(pdftex.def)             Requested size: 220.50887pt x 185.08195pt.
+Package epstopdf Info: Source file: <img/X2_mean_correction.eps>
+(epstopdf)                    date: 2016-06-01 15:39:15
+(epstopdf)                    size: 103150 bytes
+(epstopdf)             Output file: <img/X2_mean_correction-eps-converted-to.pd
+f>
+(epstopdf)                    date: 2016-06-01 15:59:18
+(epstopdf)                    size: 4853 bytes
+(epstopdf)             Command: <epstopdf --outfile=img/X2_mean_correction-eps-
+converted-to.pdf img/X2_mean_correction.eps>
+(epstopdf)             \includegraphics on input line 439.
+Package epstopdf Info: Output file is already uptodate.
+
+<img/X2_mean_correction-eps-converted-to.pdf, id=461, 362.35374pt x 304.13625pt
+>
+File: img/X2_mean_correction-eps-converted-to.pdf Graphic file (type pdf)
+ <use img/X2_mean_correction-eps-converted-to.pdf>
+Package pdftex.def Info: img/X2_mean_correction-eps-converted-to.pdf used on in
+put line 439.
+(pdftex.def)             Requested size: 220.50887pt x 185.08195pt.
+
+Overfull \hbox (2.11998pt too wide) in paragraph at lines 438--440
+[][] [] 
+ []
+
+Package epstopdf Info: Source file: <img/Y1_mean_correction.eps>
+(epstopdf)                    date: 2016-06-01 15:39:16
+(epstopdf)                    size: 102188 bytes
+(epstopdf)             Output file: <img/Y1_mean_correction-eps-converted-to.pd
+f>
+(epstopdf)                    date: 2016-06-01 15:59:18
+(epstopdf)                    size: 4801 bytes
+(epstopdf)             Command: <epstopdf --outfile=img/Y1_mean_correction-eps-
+converted-to.pdf img/Y1_mean_correction.eps>
+(epstopdf)             \includegraphics on input line 442.
+Package epstopdf Info: Output file is already uptodate.
+
+<img/Y1_mean_correction-eps-converted-to.pdf, id=462, 367.3725pt x 304.13625pt>
+File: img/Y1_mean_correction-eps-converted-to.pdf Graphic file (type pdf)
+<use img/Y1_mean_correction-eps-converted-to.pdf>
+Package pdftex.def Info: img/Y1_mean_correction-eps-converted-to.pdf used on in
+put line 442.
+(pdftex.def)             Requested size: 220.50887pt x 182.5574pt.
+Package epstopdf Info: Source file: <img/Y2_mean_correction.eps>
+(epstopdf)                    date: 2016-06-01 15:39:17
+(epstopdf)                    size: 102185 bytes
+(epstopdf)             Output file: <img/Y2_mean_correction-eps-converted-to.pd
+f>
+(epstopdf)                    date: 2016-06-01 15:59:19
+(epstopdf)                    size: 4801 bytes
+(epstopdf)             Command: <epstopdf --outfile=img/Y2_mean_correction-eps-
+converted-to.pdf img/Y2_mean_correction.eps>
+(epstopdf)             \includegraphics on input line 443.
+Package epstopdf Info: Output file is already uptodate.
+
+<img/Y2_mean_correction-eps-converted-to.pdf, id=463, 367.3725pt x 304.13625pt>
+File: img/Y2_mean_correction-eps-converted-to.pdf Graphic file (type pdf)
+<use img/Y2_mean_correction-eps-converted-to.pdf>
+Package pdftex.def Info: img/Y2_mean_correction-eps-converted-to.pdf used on in
+put line 443.
+(pdftex.def)             Requested size: 220.50887pt x 182.5574pt.
+
+Overfull \hbox (2.11998pt too wide) in paragraph at lines 442--444
+[][] [] 
+ []
+
+[16 <./img/X1_mean_correction-eps-converted-to.pdf> <./img/X2_mean_correction-e
+ps-converted-to.pdf> <./img/Y1_mean_correction-eps-converted-to.pdf> <./img/Y2_
+mean_correction-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <img/phiK45_X1_acceleration.eps>
+(epstopdf)                    date: 2016-06-01 17:06:36
+(epstopdf)                    size: 667033 bytes
+(epstopdf)             Output file: <img/phiK45_X1_acceleration-eps-converted-t
+o.pdf>
+(epstopdf)                    date: 2016-06-01 17:11:36
+(epstopdf)                    size: 49506 bytes
+(epstopdf)             Command: <epstopdf --outfile=img/phiK45_X1_acceleration-
+eps-converted-to.pdf img/phiK45_X1_acceleration.eps>
+(epstopdf)             \includegraphics on input line 460.
+Package epstopdf Info: Output file is already uptodate.
+
+<img/phiK45_X1_acceleration-eps-converted-to.pdf, id=499, 372.39125pt x 307.147
+5pt>
+File: img/phiK45_X1_acceleration-eps-converted-to.pdf Graphic file (type pdf)
+ <use img/phiK45_X1_acceleration-eps-converted-to.pdf>
+Package pdftex.def Info: img/phiK45_X1_acceleration-eps-converted-to.pdf used o
+n input line 460.
+(pdftex.def)             Requested size: 220.50887pt x 181.88095pt.
+Package epstopdf Info: Source file: <img/phiK45_X2_acceleration.eps>
+(epstopdf)                    date: 2016-06-01 17:06:36
+(epstopdf)                    size: 665855 bytes
+(epstopdf)             Output file: <img/phiK45_X2_acceleration-eps-converted-t
+o.pdf>
+(epstopdf)                    date: 2016-06-01 17:11:38
+(epstopdf)                    size: 45754 bytes
+(epstopdf)             Command: <epstopdf --outfile=img/phiK45_X2_acceleration-
+eps-converted-to.pdf img/phiK45_X2_acceleration.eps>
+(epstopdf)             \includegraphics on input line 461.
+Package epstopdf Info: Output file is already uptodate.
+
+<img/phiK45_X2_acceleration-eps-converted-to.pdf, id=500, 372.39125pt x 307.147
+5pt>
+File: img/phiK45_X2_acceleration-eps-converted-to.pdf Graphic file (type pdf)
+ <use img/phiK45_X2_acceleration-eps-converted-to.pdf>
+Package pdftex.def Info: img/phiK45_X2_acceleration-eps-converted-to.pdf used o
+n input line 461.
+(pdftex.def)             Requested size: 220.50887pt x 181.88095pt.
+
+Overfull \hbox (2.11998pt too wide) in paragraph at lines 460--462
+[][] [] 
+ []
+
+Package epstopdf Info: Source file: <img/phiK45_Y1_acceleration.eps>
+(epstopdf)                    date: 2016-06-01 17:06:37
+(epstopdf)                    size: 655932 bytes
+(epstopdf)             Output file: <img/phiK45_Y1_acceleration-eps-converted-t
+o.pdf>
+(epstopdf)                    date: 2016-06-01 17:11:39
+(epstopdf)                    size: 47409 bytes
+(epstopdf)             Command: <epstopdf --outfile=img/phiK45_Y1_acceleration-
+eps-converted-to.pdf img/phiK45_Y1_acceleration.eps>
+(epstopdf)             \includegraphics on input line 464.
+Package epstopdf Info: Output file is already uptodate.
+
+<img/phiK45_Y1_acceleration-eps-converted-to.pdf, id=501, 375.4025pt x 307.1475
+pt>
+File: img/phiK45_Y1_acceleration-eps-converted-to.pdf Graphic file (type pdf)
+ <use img/phiK45_Y1_acceleration-eps-converted-to.pdf>
+Package pdftex.def Info: img/phiK45_Y1_acceleration-eps-converted-to.pdf used o
+n input line 464.
+(pdftex.def)             Requested size: 220.50887pt x 180.41872pt.
+Package epstopdf Info: Source file: <img/phiK45_Y2_acceleration.eps>
+(epstopdf)                    date: 2016-06-01 17:06:38
+(epstopdf)                    size: 666045 bytes
+(epstopdf)             Output file: <img/phiK45_Y2_acceleration-eps-converted-t
+o.pdf>
+(epstopdf)                    date: 2016-06-01 17:11:40
+(epstopdf)                    size: 45350 bytes
+(epstopdf)             Command: <epstopdf --outfile=img/phiK45_Y2_acceleration-
+eps-converted-to.pdf img/phiK45_Y2_acceleration.eps>
+(epstopdf)             \includegraphics on input line 465.
+Package epstopdf Info: Output file is already uptodate.
+
+<img/phiK45_Y2_acceleration-eps-converted-to.pdf, id=502, 375.4025pt x 307.1475
+pt>
+File: img/phiK45_Y2_acceleration-eps-converted-to.pdf Graphic file (type pdf)
+ <use img/phiK45_Y2_acceleration-eps-converted-to.pdf>
+Package pdftex.def Info: img/phiK45_Y2_acceleration-eps-converted-to.pdf used o
+n input line 465.
+(pdftex.def)             Requested size: 220.50887pt x 180.41872pt.
+
+Overfull \hbox (2.11998pt too wide) in paragraph at lines 464--466
+[][] [] 
+ []
+
+[17 <./img/phiK45_X1_acceleration-eps-converted-to.pdf> <./img/phiK45_X2_accele
+ration-eps-converted-to.pdf> <./img/phiK45_Y1_acceleration-eps-converted-to.pdf
+> <./img/phiK45_Y2_acceleration-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <img/phiK30_X1_acceleration.eps>
+(epstopdf)                    date: 2016-06-01 17:06:38
+(epstopdf)                    size: 665579 bytes
+(epstopdf)             Output file: <img/phiK30_X1_acceleration-eps-converted-t
+o.pdf>
+(epstopdf)                    date: 2016-06-01 17:11:42
+(epstopdf)                    size: 49967 bytes
+(epstopdf)             Command: <epstopdf --outfile=img/phiK30_X1_acceleration-
+eps-converted-to.pdf img/phiK30_X1_acceleration.eps>
+(epstopdf)             \includegraphics on input line 478.
+Package epstopdf Info: Output file is already uptodate.
+
+<img/phiK30_X1_acceleration-eps-converted-to.pdf, id=538, 367.3725pt x 307.1475
+pt>
+File: img/phiK30_X1_acceleration-eps-converted-to.pdf Graphic file (type pdf)
+ <use img/phiK30_X1_acceleration-eps-converted-to.pdf>
+Package pdftex.def Info: img/phiK30_X1_acceleration-eps-converted-to.pdf used o
+n input line 478.
+(pdftex.def)             Requested size: 220.50887pt x 184.3649pt.
+Package epstopdf Info: Source file: <img/phiK30_X2_acceleration.eps>
+(epstopdf)                    date: 2016-06-01 17:06:39
+(epstopdf)                    size: 666669 bytes
+(epstopdf)             Output file: <img/phiK30_X2_acceleration-eps-converted-t
+o.pdf>
+(epstopdf)                    date: 2016-06-01 17:11:43
+(epstopdf)                    size: 46366 bytes
+(epstopdf)             Command: <epstopdf --outfile=img/phiK30_X2_acceleration-
+eps-converted-to.pdf img/phiK30_X2_acceleration.eps>
+(epstopdf)             \includegraphics on input line 479.
+Package epstopdf Info: Output file is already uptodate.
+
+<img/phiK30_X2_acceleration-eps-converted-to.pdf, id=539, 372.39125pt x 307.147
+5pt>
+File: img/phiK30_X2_acceleration-eps-converted-to.pdf Graphic file (type pdf)
+ <use img/phiK30_X2_acceleration-eps-converted-to.pdf>
+Package pdftex.def Info: img/phiK30_X2_acceleration-eps-converted-to.pdf used o
+n input line 479.
+(pdftex.def)             Requested size: 220.50887pt x 181.88095pt.
+
+Overfull \hbox (2.11998pt too wide) in paragraph at lines 478--480
+[][] [] 
+ []
+
+Package epstopdf Info: Source file: <img/phiK30_Y1_acceleration.eps>
+(epstopdf)                    date: 2016-06-01 17:06:40
+(epstopdf)                    size: 655917 bytes
+(epstopdf)             Output file: <img/phiK30_Y1_acceleration-eps-converted-t
+o.pdf>
+(epstopdf)                    date: 2016-06-01 17:11:45
+(epstopdf)                    size: 47611 bytes
+(epstopdf)             Command: <epstopdf --outfile=img/phiK30_Y1_acceleration-
+eps-converted-to.pdf img/phiK30_Y1_acceleration.eps>
+(epstopdf)             \includegraphics on input line 482.
+Package epstopdf Info: Output file is already uptodate.
+
+<img/phiK30_Y1_acceleration-eps-converted-to.pdf, id=540, 375.4025pt x 307.1475
+pt>
+File: img/phiK30_Y1_acceleration-eps-converted-to.pdf Graphic file (type pdf)
+ <use img/phiK30_Y1_acceleration-eps-converted-to.pdf>
+Package pdftex.def Info: img/phiK30_Y1_acceleration-eps-converted-to.pdf used o
+n input line 482.
+(pdftex.def)             Requested size: 220.50887pt x 180.41872pt.
+Package epstopdf Info: Source file: <img/phiK30_Y2_acceleration.eps>
+(epstopdf)                    date: 2016-06-01 17:06:40
+(epstopdf)                    size: 655105 bytes
+(epstopdf)             Output file: <img/phiK30_Y2_acceleration-eps-converted-t
+o.pdf>
+(epstopdf)                    date: 2016-06-01 17:11:46
+(epstopdf)                    size: 45281 bytes
+(epstopdf)             Command: <epstopdf --outfile=img/phiK30_Y2_acceleration-
+eps-converted-to.pdf img/phiK30_Y2_acceleration.eps>
+(epstopdf)             \includegraphics on input line 483.
+Package epstopdf Info: Output file is already uptodate.
+
+<img/phiK30_Y2_acceleration-eps-converted-to.pdf, id=541, 375.4025pt x 307.1475
+pt>
+File: img/phiK30_Y2_acceleration-eps-converted-to.pdf Graphic file (type pdf)
+ <use img/phiK30_Y2_acceleration-eps-converted-to.pdf>
+Package pdftex.def Info: img/phiK30_Y2_acceleration-eps-converted-to.pdf used o
+n input line 483.
+(pdftex.def)             Requested size: 220.50887pt x 180.41872pt.
+
+Overfull \hbox (2.11998pt too wide) in paragraph at lines 482--484
+[][] [] 
+ []
+
+[18 <./img/phiK30_X1_acceleration-eps-converted-to.pdf> <./img/phiK30_X2_accele
+ration-eps-converted-to.pdf> <./img/phiK30_Y1_acceleration-eps-converted-to.pdf
+> <./img/phiK30_Y2_acceleration-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <img/phiK15_X1_acceleration.eps>
+(epstopdf)                    date: 2016-06-01 17:06:41
+(epstopdf)                    size: 666424 bytes
+(epstopdf)             Output file: <img/phiK15_X1_acceleration-eps-converted-t
+o.pdf>
+(epstopdf)                    date: 2016-06-01 17:11:47
+(epstopdf)                    size: 51286 bytes
+(epstopdf)             Command: <epstopdf --outfile=img/phiK15_X1_acceleration-
+eps-converted-to.pdf img/phiK15_X1_acceleration.eps>
+(epstopdf)             \includegraphics on input line 496.
+Package epstopdf Info: Output file is already uptodate.
+
+<img/phiK15_X1_acceleration-eps-converted-to.pdf, id=577, 367.3725pt x 307.1475
+pt>
+File: img/phiK15_X1_acceleration-eps-converted-to.pdf Graphic file (type pdf)
+ <use img/phiK15_X1_acceleration-eps-converted-to.pdf>
+Package pdftex.def Info: img/phiK15_X1_acceleration-eps-converted-to.pdf used o
+n input line 496.
+(pdftex.def)             Requested size: 220.50887pt x 184.3649pt.
+Package epstopdf Info: Source file: <img/phiK15_X2_acceleration.eps>
+(epstopdf)                    date: 2016-06-01 17:06:42
+(epstopdf)                    size: 645129 bytes
+(epstopdf)             Output file: <img/phiK15_X2_acceleration-eps-converted-t
+o.pdf>
+(epstopdf)                    date: 2016-06-01 17:11:49
+(epstopdf)                    size: 45536 bytes
+(epstopdf)             Command: <epstopdf --outfile=img/phiK15_X2_acceleration-
+eps-converted-to.pdf img/phiK15_X2_acceleration.eps>
+(epstopdf)             \includegraphics on input line 497.
+Package epstopdf Info: Output file is already uptodate.
+
+<img/phiK15_X2_acceleration-eps-converted-to.pdf, id=578, 372.39125pt x 307.147
+5pt>
+File: img/phiK15_X2_acceleration-eps-converted-to.pdf Graphic file (type pdf)
+ <use img/phiK15_X2_acceleration-eps-converted-to.pdf>
+Package pdftex.def Info: img/phiK15_X2_acceleration-eps-converted-to.pdf used o
+n input line 497.
+(pdftex.def)             Requested size: 220.50887pt x 181.88095pt.
+
+Overfull \hbox (2.11998pt too wide) in paragraph at lines 496--498
+[][] [] 
+ []
+
+Package epstopdf Info: Source file: <img/phiK15_Y1_acceleration.eps>
+(epstopdf)                    date: 2016-06-01 17:06:42
+(epstopdf)                    size: 666798 bytes
+(epstopdf)             Output file: <img/phiK15_Y1_acceleration-eps-converted-t
+o.pdf>
+(epstopdf)                    date: 2016-06-01 17:11:50
+(epstopdf)                    size: 49080 bytes
+(epstopdf)             Command: <epstopdf --outfile=img/phiK15_Y1_acceleration-
+eps-converted-to.pdf img/phiK15_Y1_acceleration.eps>
+(epstopdf)             \includegraphics on input line 500.
+Package epstopdf Info: Output file is already uptodate.
+
+<img/phiK15_Y1_acceleration-eps-converted-to.pdf, id=579, 375.4025pt x 307.1475
+pt>
+File: img/phiK15_Y1_acceleration-eps-converted-to.pdf Graphic file (type pdf)
+ <use img/phiK15_Y1_acceleration-eps-converted-to.pdf>
+Package pdftex.def Info: img/phiK15_Y1_acceleration-eps-converted-to.pdf used o
+n input line 500.
+(pdftex.def)             Requested size: 220.50887pt x 180.41872pt.
+Package epstopdf Info: Source file: <img/phiK15_Y2_acceleration.eps>
+(epstopdf)                    date: 2016-06-01 17:06:43
+(epstopdf)                    size: 666265 bytes
+(epstopdf)             Output file: <img/phiK15_Y2_acceleration-eps-converted-t
+o.pdf>
+(epstopdf)                    date: 2016-06-01 17:11:51
+(epstopdf)                    size: 44935 bytes
+(epstopdf)             Command: <epstopdf --outfile=img/phiK15_Y2_acceleration-
+eps-converted-to.pdf img/phiK15_Y2_acceleration.eps>
+(epstopdf)             \includegraphics on input line 501.
+Package epstopdf Info: Output file is already uptodate.
+
+<img/phiK15_Y2_acceleration-eps-converted-to.pdf, id=580, 375.4025pt x 307.1475
+pt>
+File: img/phiK15_Y2_acceleration-eps-converted-to.pdf Graphic file (type pdf)
+ <use img/phiK15_Y2_acceleration-eps-converted-to.pdf>
+Package pdftex.def Info: img/phiK15_Y2_acceleration-eps-converted-to.pdf used o
+n input line 501.
+(pdftex.def)             Requested size: 220.50887pt x 180.41872pt.
+
+Overfull \hbox (2.11998pt too wide) in paragraph at lines 500--502
+[][] [] 
+ []
+
+[19 <./img/phiK15_X1_acceleration-eps-converted-to.pdf> <./img/phiK15_X2_accele
+ration-eps-converted-to.pdf> <./img/phiK15_Y1_acceleration-eps-converted-to.pdf
+> <./img/phiK15_Y2_acceleration-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <img/phiK0_X1_acceleration.eps>
+(epstopdf)                    date: 2016-06-01 17:06:44
+(epstopdf)                    size: 625887 bytes
+(epstopdf)             Output file: <img/phiK0_X1_acceleration-eps-converted-to
+.pdf>
+(epstopdf)                    date: 2016-06-01 17:11:52
+(epstopdf)                    size: 50679 bytes
+(epstopdf)             Command: <epstopdf --outfile=img/phiK0_X1_acceleration-e
+ps-converted-to.pdf img/phiK0_X1_acceleration.eps>
+(epstopdf)             \includegraphics on input line 514.
+Package epstopdf Info: Output file is already uptodate.
+
+<img/phiK0_X1_acceleration-eps-converted-to.pdf, id=617, 370.38374pt x 307.1475
+pt>
+File: img/phiK0_X1_acceleration-eps-converted-to.pdf Graphic file (type pdf)
+ <use img/phiK0_X1_acceleration-eps-converted-to.pdf>
+Package pdftex.def Info: img/phiK0_X1_acceleration-eps-converted-to.pdf used on
+ input line 514.
+(pdftex.def)             Requested size: 220.50887pt x 182.86047pt.
+Package epstopdf Info: Source file: <img/phiK0_X2_acceleration.eps>
+(epstopdf)                    date: 2016-06-01 17:06:45
+(epstopdf)                    size: 625795 bytes
+(epstopdf)             Output file: <img/phiK0_X2_acceleration-eps-converted-to
+.pdf>
+(epstopdf)                    date: 2016-06-01 17:11:54
+(epstopdf)                    size: 45457 bytes
+(epstopdf)             Command: <epstopdf --outfile=img/phiK0_X2_acceleration-e
+ps-converted-to.pdf img/phiK0_X2_acceleration.eps>
+(epstopdf)             \includegraphics on input line 515.
+Package epstopdf Info: Output file is already uptodate.
+
+<img/phiK0_X2_acceleration-eps-converted-to.pdf, id=618, 372.39125pt x 307.1475
+pt>
+File: img/phiK0_X2_acceleration-eps-converted-to.pdf Graphic file (type pdf)
+ <use img/phiK0_X2_acceleration-eps-converted-to.pdf>
+Package pdftex.def Info: img/phiK0_X2_acceleration-eps-converted-to.pdf used on
+ input line 515.
+(pdftex.def)             Requested size: 220.50887pt x 181.88095pt.
+
+Overfull \hbox (2.11998pt too wide) in paragraph at lines 514--516
+[][] [] 
+ []
+
+Package epstopdf Info: Source file: <img/phiK0_Y1_acceleration.eps>
+(epstopdf)                    date: 2016-06-01 17:06:45
+(epstopdf)                    size: 656448 bytes
+(epstopdf)             Output file: <img/phiK0_Y1_acceleration-eps-converted-to
+.pdf>
+(epstopdf)                    date: 2016-06-01 17:11:55
+(epstopdf)                    size: 48587 bytes
+(epstopdf)             Command: <epstopdf --outfile=img/phiK0_Y1_acceleration-e
+ps-converted-to.pdf img/phiK0_Y1_acceleration.eps>
+(epstopdf)             \includegraphics on input line 518.
+Package epstopdf Info: Output file is already uptodate.
+
+<img/phiK0_Y1_acceleration-eps-converted-to.pdf, id=619, 375.4025pt x 307.1475p
+t>
+File: img/phiK0_Y1_acceleration-eps-converted-to.pdf Graphic file (type pdf)
+ <use img/phiK0_Y1_acceleration-eps-converted-to.pdf>
+Package pdftex.def Info: img/phiK0_Y1_acceleration-eps-converted-to.pdf used on
+ input line 518.
+(pdftex.def)             Requested size: 220.50887pt x 180.41872pt.
+Package epstopdf Info: Source file: <img/phiK0_Y2_acceleration.eps>
+(epstopdf)                    date: 2016-06-01 17:06:46
+(epstopdf)                    size: 665464 bytes
+(epstopdf)             Output file: <img/phiK0_Y2_acceleration-eps-converted-to
+.pdf>
+(epstopdf)                    date: 2016-06-01 17:11:56
+(epstopdf)                    size: 44578 bytes
+(epstopdf)             Command: <epstopdf --outfile=img/phiK0_Y2_acceleration-e
+ps-converted-to.pdf img/phiK0_Y2_acceleration.eps>
+(epstopdf)             \includegraphics on input line 519.
+Package epstopdf Info: Output file is already uptodate.
+
+<img/phiK0_Y2_acceleration-eps-converted-to.pdf, id=620, 375.4025pt x 307.1475p
+t>
+File: img/phiK0_Y2_acceleration-eps-converted-to.pdf Graphic file (type pdf)
+ <use img/phiK0_Y2_acceleration-eps-converted-to.pdf>
+Package pdftex.def Info: img/phiK0_Y2_acceleration-eps-converted-to.pdf used on
+ input line 519.
+(pdftex.def)             Requested size: 220.50887pt x 180.41872pt.
+
+Overfull \hbox (2.11998pt too wide) in paragraph at lines 518--520
+[][] [] 
+ []
+
+[20 <./img/phiK0_X1_acceleration-eps-converted-to.pdf> <./img/phiK0_X2_accelera
+tion-eps-converted-to.pdf> <./img/phiK0_Y1_acceleration-eps-converted-to.pdf> <
+./img/phiK0_Y2_acceleration-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <img/phiKm15_X1_acceleration.eps>
+(epstopdf)                    date: 2016-06-01 17:06:47
+(epstopdf)                    size: 664976 bytes
+(epstopdf)             Output file: <img/phiKm15_X1_acceleration-eps-converted-
+to.pdf>
+(epstopdf)                    date: 2016-06-01 17:11:58
+(epstopdf)                    size: 51593 bytes
+(epstopdf)             Command: <epstopdf --outfile=img/phiKm15_X1_acceleration
+-eps-converted-to.pdf img/phiKm15_X1_acceleration.eps>
+(epstopdf)             \includegraphics on input line 532.
+Package epstopdf Info: Output file is already uptodate.
+
+<img/phiKm15_X1_acceleration-eps-converted-to.pdf, id=656, 370.38374pt x 307.14
+75pt>
+File: img/phiKm15_X1_acceleration-eps-converted-to.pdf Graphic file (type pdf)
+ <use img/phiKm15_X1_acceleration-eps-converted-to.pdf>
+Package pdftex.def Info: img/phiKm15_X1_acceleration-eps-converted-to.pdf used 
+on input line 532.
+(pdftex.def)             Requested size: 220.50887pt x 182.86047pt.
+Package epstopdf Info: Source file: <img/phiKm15_X2_acceleration.eps>
+(epstopdf)                    date: 2016-06-01 17:06:47
+(epstopdf)                    size: 655626 bytes
+(epstopdf)             Output file: <img/phiKm15_X2_acceleration-eps-converted-
+to.pdf>
+(epstopdf)                    date: 2016-06-01 17:11:59
+(epstopdf)                    size: 46381 bytes
+(epstopdf)             Command: <epstopdf --outfile=img/phiKm15_X2_acceleration
+-eps-converted-to.pdf img/phiKm15_X2_acceleration.eps>
+(epstopdf)             \includegraphics on input line 533.
+Package epstopdf Info: Output file is already uptodate.
+
+<img/phiKm15_X2_acceleration-eps-converted-to.pdf, id=657, 370.38374pt x 307.14
+75pt>
+File: img/phiKm15_X2_acceleration-eps-converted-to.pdf Graphic file (type pdf)
+ <use img/phiKm15_X2_acceleration-eps-converted-to.pdf>
+Package pdftex.def Info: img/phiKm15_X2_acceleration-eps-converted-to.pdf used 
+on input line 533.
+(pdftex.def)             Requested size: 220.50887pt x 182.86047pt.
+
+Overfull \hbox (2.11998pt too wide) in paragraph at lines 532--534
+[][] [] 
+ []
+
+Package epstopdf Info: Source file: <img/phiKm15_Y1_acceleration.eps>
+(epstopdf)                    date: 2016-06-01 17:06:48
+(epstopdf)                    size: 665972 bytes
+(epstopdf)             Output file: <img/phiKm15_Y1_acceleration-eps-converted-
+to.pdf>
+(epstopdf)                    date: 2016-06-01 17:12:01
+(epstopdf)                    size: 49903 bytes
+(epstopdf)             Command: <epstopdf --outfile=img/phiKm15_Y1_acceleration
+-eps-converted-to.pdf img/phiKm15_Y1_acceleration.eps>
+(epstopdf)             \includegraphics on input line 536.
+Package epstopdf Info: Output file is already uptodate.
+
+<img/phiKm15_Y1_acceleration-eps-converted-to.pdf, id=658, 370.38374pt x 307.14
+75pt>
+File: img/phiKm15_Y1_acceleration-eps-converted-to.pdf Graphic file (type pdf)
+ <use img/phiKm15_Y1_acceleration-eps-converted-to.pdf>
+Package pdftex.def Info: img/phiKm15_Y1_acceleration-eps-converted-to.pdf used 
+on input line 536.
+(pdftex.def)             Requested size: 220.50887pt x 182.86047pt.
+Package epstopdf Info: Source file: <img/phiKm15_Y2_acceleration.eps>
+(epstopdf)                    date: 2016-06-01 17:06:49
+(epstopdf)                    size: 665788 bytes
+(epstopdf)             Output file: <img/phiKm15_Y2_acceleration-eps-converted-
+to.pdf>
+(epstopdf)                    date: 2016-06-01 17:12:02
+(epstopdf)                    size: 45613 bytes
+(epstopdf)             Command: <epstopdf --outfile=img/phiKm15_Y2_acceleration
+-eps-converted-to.pdf img/phiKm15_Y2_acceleration.eps>
+(epstopdf)             \includegraphics on input line 537.
+Package epstopdf Info: Output file is already uptodate.
+
+<img/phiKm15_Y2_acceleration-eps-converted-to.pdf, id=659, 370.38374pt x 307.14
+75pt>
+File: img/phiKm15_Y2_acceleration-eps-converted-to.pdf Graphic file (type pdf)
+ <use img/phiKm15_Y2_acceleration-eps-converted-to.pdf>
+Package pdftex.def Info: img/phiKm15_Y2_acceleration-eps-converted-to.pdf used 
+on input line 537.
+(pdftex.def)             Requested size: 220.50887pt x 182.86047pt.
+
+Overfull \hbox (2.11998pt too wide) in paragraph at lines 536--538
+[][] [] 
+ []
+
+[21 <./img/phiKm15_X1_acceleration-eps-converted-to.pdf> <./img/phiKm15_X2_acce
+leration-eps-converted-to.pdf> <./img/phiKm15_Y1_acceleration-eps-converted-to.
+pdf> <./img/phiKm15_Y2_acceleration-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <img/phiKm30_X1_acceleration.eps>
+(epstopdf)                    date: 2016-06-01 17:06:50
+(epstopdf)                    size: 655982 bytes
+(epstopdf)             Output file: <img/phiKm30_X1_acceleration-eps-converted-
+to.pdf>
+(epstopdf)                    date: 2016-06-01 17:12:03
+(epstopdf)                    size: 50234 bytes
+(epstopdf)             Command: <epstopdf --outfile=img/phiKm30_X1_acceleration
+-eps-converted-to.pdf img/phiKm30_X1_acceleration.eps>
+(epstopdf)             \includegraphics on input line 550.
+Package epstopdf Info: Output file is already uptodate.
+
+<img/phiKm30_X1_acceleration-eps-converted-to.pdf, id=695, 370.38374pt x 307.14
+75pt>
+File: img/phiKm30_X1_acceleration-eps-converted-to.pdf Graphic file (type pdf)
+ <use img/phiKm30_X1_acceleration-eps-converted-to.pdf>
+Package pdftex.def Info: img/phiKm30_X1_acceleration-eps-converted-to.pdf used 
+on input line 550.
+(pdftex.def)             Requested size: 220.50887pt x 182.86047pt.
+Package epstopdf Info: Source file: <img/phiKm30_X2_acceleration.eps>
+(epstopdf)                    date: 2016-06-01 17:06:50
+(epstopdf)                    size: 666155 bytes
+(epstopdf)             Output file: <img/phiKm30_X2_acceleration-eps-converted-
+to.pdf>
+(epstopdf)                    date: 2016-06-01 17:12:05
+(epstopdf)                    size: 46165 bytes
+(epstopdf)             Command: <epstopdf --outfile=img/phiKm30_X2_acceleration
+-eps-converted-to.pdf img/phiKm30_X2_acceleration.eps>
+(epstopdf)             \includegraphics on input line 551.
+Package epstopdf Info: Output file is already uptodate.
+
+<img/phiKm30_X2_acceleration-eps-converted-to.pdf, id=696, 375.4025pt x 307.147
+5pt>
+File: img/phiKm30_X2_acceleration-eps-converted-to.pdf Graphic file (type pdf)
+ <use img/phiKm30_X2_acceleration-eps-converted-to.pdf>
+Package pdftex.def Info: img/phiKm30_X2_acceleration-eps-converted-to.pdf used 
+on input line 551.
+(pdftex.def)             Requested size: 220.50887pt x 180.41872pt.
+
+Overfull \hbox (2.11998pt too wide) in paragraph at lines 550--552
+[][] [] 
+ []
+
+Package epstopdf Info: Source file: <img/phiKm30_Y1_acceleration.eps>
+(epstopdf)                    date: 2016-06-01 17:06:51
+(epstopdf)                    size: 666000 bytes
+(epstopdf)             Output file: <img/phiKm30_Y1_acceleration-eps-converted-
+to.pdf>
+(epstopdf)                    date: 2016-06-01 17:12:06
+(epstopdf)                    size: 48068 bytes
+(epstopdf)             Command: <epstopdf --outfile=img/phiKm30_Y1_acceleration
+-eps-converted-to.pdf img/phiKm30_Y1_acceleration.eps>
+(epstopdf)             \includegraphics on input line 554.
+Package epstopdf Info: Output file is already uptodate.
+
+<img/phiKm30_Y1_acceleration-eps-converted-to.pdf, id=697, 375.4025pt x 307.147
+5pt>
+File: img/phiKm30_Y1_acceleration-eps-converted-to.pdf Graphic file (type pdf)
+ <use img/phiKm30_Y1_acceleration-eps-converted-to.pdf>
+Package pdftex.def Info: img/phiKm30_Y1_acceleration-eps-converted-to.pdf used 
+on input line 554.
+(pdftex.def)             Requested size: 220.50887pt x 180.41872pt.
+Package epstopdf Info: Source file: <img/phiKm30_Y2_acceleration.eps>
+(epstopdf)                    date: 2016-06-01 17:06:52
+(epstopdf)                    size: 667584 bytes
+(epstopdf)             Output file: <img/phiKm30_Y2_acceleration-eps-converted-
+to.pdf>
+(epstopdf)                    date: 2016-06-01 17:12:07
+(epstopdf)                    size: 44622 bytes
+(epstopdf)             Command: <epstopdf --outfile=img/phiKm30_Y2_acceleration
+-eps-converted-to.pdf img/phiKm30_Y2_acceleration.eps>
+(epstopdf)             \includegraphics on input line 555.
+Package epstopdf Info: Output file is already uptodate.
+
+<img/phiKm30_Y2_acceleration-eps-converted-to.pdf, id=698, 375.4025pt x 307.147
+5pt>
+File: img/phiKm30_Y2_acceleration-eps-converted-to.pdf Graphic file (type pdf)
+ <use img/phiKm30_Y2_acceleration-eps-converted-to.pdf>
+Package pdftex.def Info: img/phiKm30_Y2_acceleration-eps-converted-to.pdf used 
+on input line 555.
+(pdftex.def)             Requested size: 220.50887pt x 180.41872pt.
+
+Overfull \hbox (2.11998pt too wide) in paragraph at lines 554--556
+[][] [] 
+ []
+
+[22 <./img/phiKm30_X1_acceleration-eps-converted-to.pdf> <./img/phiKm30_X2_acce
+leration-eps-converted-to.pdf> <./img/phiKm30_Y1_acceleration-eps-converted-to.
+pdf> <./img/phiKm30_Y2_acceleration-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <img/phiKm45_X1_acceleration.eps>
+(epstopdf)                    date: 2016-06-01 17:06:52
+(epstopdf)                    size: 666461 bytes
+(epstopdf)             Output file: <img/phiKm45_X1_acceleration-eps-converted-
+to.pdf>
+(epstopdf)                    date: 2016-06-01 17:12:09
+(epstopdf)                    size: 50646 bytes
+(epstopdf)             Command: <epstopdf --outfile=img/phiKm45_X1_acceleration
+-eps-converted-to.pdf img/phiKm45_X1_acceleration.eps>
+(epstopdf)             \includegraphics on input line 568.
+Package epstopdf Info: Output file is already uptodate.
+
+<img/phiKm45_X1_acceleration-eps-converted-to.pdf, id=734, 370.38374pt x 307.14
+75pt>
+File: img/phiKm45_X1_acceleration-eps-converted-to.pdf Graphic file (type pdf)
+ <use img/phiKm45_X1_acceleration-eps-converted-to.pdf>
+Package pdftex.def Info: img/phiKm45_X1_acceleration-eps-converted-to.pdf used 
+on input line 568.
+(pdftex.def)             Requested size: 220.50887pt x 182.86047pt.
+Package epstopdf Info: Source file: <img/phiKm45_X2_acceleration.eps>
+(epstopdf)                    date: 2016-06-01 17:06:53
+(epstopdf)                    size: 668149 bytes
+(epstopdf)             Output file: <img/phiKm45_X2_acceleration-eps-converted-
+to.pdf>
+(epstopdf)                    date: 2016-06-01 17:12:10
+(epstopdf)                    size: 45288 bytes
+(epstopdf)             Command: <epstopdf --outfile=img/phiKm45_X2_acceleration
+-eps-converted-to.pdf img/phiKm45_X2_acceleration.eps>
+(epstopdf)             \includegraphics on input line 569.
+Package epstopdf Info: Output file is already uptodate.
+
+<img/phiKm45_X2_acceleration-eps-converted-to.pdf, id=735, 375.4025pt x 307.147
+5pt>
+File: img/phiKm45_X2_acceleration-eps-converted-to.pdf Graphic file (type pdf)
+ <use img/phiKm45_X2_acceleration-eps-converted-to.pdf>
+Package pdftex.def Info: img/phiKm45_X2_acceleration-eps-converted-to.pdf used 
+on input line 569.
+(pdftex.def)             Requested size: 220.50887pt x 180.41872pt.
+
+Overfull \hbox (2.11998pt too wide) in paragraph at lines 568--570
+[][] [] 
+ []
+
+Package epstopdf Info: Source file: <img/phiKm45_Y1_acceleration.eps>
+(epstopdf)                    date: 2016-06-01 17:06:54
+(epstopdf)                    size: 666915 bytes
+(epstopdf)             Output file: <img/phiKm45_Y1_acceleration-eps-converted-
+to.pdf>
+(epstopdf)                    date: 2016-06-01 17:12:11
+(epstopdf)                    size: 48685 bytes
+(epstopdf)             Command: <epstopdf --outfile=img/phiKm45_Y1_acceleration
+-eps-converted-to.pdf img/phiKm45_Y1_acceleration.eps>
+(epstopdf)             \includegraphics on input line 572.
+Package epstopdf Info: Output file is already uptodate.
+
+<img/phiKm45_Y1_acceleration-eps-converted-to.pdf, id=736, 375.4025pt x 307.147
+5pt>
+File: img/phiKm45_Y1_acceleration-eps-converted-to.pdf Graphic file (type pdf)
+ <use img/phiKm45_Y1_acceleration-eps-converted-to.pdf>
+Package pdftex.def Info: img/phiKm45_Y1_acceleration-eps-converted-to.pdf used 
+on input line 572.
+(pdftex.def)             Requested size: 220.50887pt x 180.41872pt.
+Package epstopdf Info: Source file: <img/phiKm45_Y2_acceleration.eps>
+(epstopdf)                    date: 2016-06-01 17:06:55
+(epstopdf)                    size: 665858 bytes
+(epstopdf)             Output file: <img/phiKm45_Y2_acceleration-eps-converted-
+to.pdf>
+(epstopdf)                    date: 2016-06-01 17:12:13
+(epstopdf)                    size: 45294 bytes
+(epstopdf)             Command: <epstopdf --outfile=img/phiKm45_Y2_acceleration
+-eps-converted-to.pdf img/phiKm45_Y2_acceleration.eps>
+(epstopdf)             \includegraphics on input line 573.
+Package epstopdf Info: Output file is already uptodate.
+
+<img/phiKm45_Y2_acceleration-eps-converted-to.pdf, id=737, 375.4025pt x 307.147
+5pt>
+File: img/phiKm45_Y2_acceleration-eps-converted-to.pdf Graphic file (type pdf)
+ <use img/phiKm45_Y2_acceleration-eps-converted-to.pdf>
+Package pdftex.def Info: img/phiKm45_Y2_acceleration-eps-converted-to.pdf used 
+on input line 573.
+(pdftex.def)             Requested size: 220.50887pt x 180.41872pt.
+
+Overfull \hbox (2.11998pt too wide) in paragraph at lines 572--574
+[][] [] 
+ []
+
+[23 <./img/phiKm45_X1_acceleration-eps-converted-to.pdf> <./img/phiKm45_X2_acce
+leration-eps-converted-to.pdf> <./img/phiKm45_Y1_acceleration-eps-converted-to.
+pdf> <./img/phiKm45_Y2_acceleration-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <img/phiKm45_degree.eps>
+(epstopdf)                    date: 2016-06-01 21:24:31
+(epstopdf)                    size: 644855 bytes
+(epstopdf)             Output file: <img/phiKm45_degree-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-06-01 21:26:59
+(epstopdf)                    size: 62275 bytes
+(epstopdf)             Command: <epstopdf --outfile=img/phiKm45_degree-eps-conv
+erted-to.pdf img/phiKm45_degree.eps>
+(epstopdf)             \includegraphics on input line 589.
+Package epstopdf Info: Output file is already uptodate.
+
+<img/phiKm45_degree-eps-converted-to.pdf, id=773, 377.41pt x 303.1325pt>
+File: img/phiKm45_degree-eps-converted-to.pdf Graphic file (type pdf)
+
+<use img/phiKm45_degree-eps-converted-to.pdf>
+Package pdftex.def Info: img/phiKm45_degree-eps-converted-to.pdf used on input 
+line 589.
+(pdftex.def)             Requested size: 220.50887pt x 177.11209pt.
+Package epstopdf Info: Source file: <img/phiKm30_degree.eps>
+(epstopdf)                    date: 2016-06-01 21:24:30
+(epstopdf)                    size: 665176 bytes
+(epstopdf)             Output file: <img/phiKm30_degree-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-06-01 21:27:00
+(epstopdf)                    size: 61681 bytes
+(epstopdf)             Command: <epstopdf --outfile=img/phiKm30_degree-eps-conv
+erted-to.pdf img/phiKm30_degree.eps>
+(epstopdf)             \includegraphics on input line 590.
+Package epstopdf Info: Output file is already uptodate.
+
+<img/phiKm30_degree-eps-converted-to.pdf, id=774, 377.41pt x 303.1325pt>
+File: img/phiKm30_degree-eps-converted-to.pdf Graphic file (type pdf)
+
+<use img/phiKm30_degree-eps-converted-to.pdf>
+Package pdftex.def Info: img/phiKm30_degree-eps-converted-to.pdf used on input 
+line 590.
+(pdftex.def)             Requested size: 220.50887pt x 177.11209pt.
+
+Overfull \hbox (2.11998pt too wide) in paragraph at lines 589--591
+[][] [] 
+ []
+
+Package epstopdf Info: Source file: <img/phiKm15_degree.eps>
+(epstopdf)                    date: 2016-06-01 21:24:30
+(epstopdf)                    size: 625686 bytes
+(epstopdf)             Output file: <img/phiKm15_degree-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-06-01 21:27:02
+(epstopdf)                    size: 60745 bytes
+(epstopdf)             Command: <epstopdf --outfile=img/phiKm15_degree-eps-conv
+erted-to.pdf img/phiKm15_degree.eps>
+(epstopdf)             \includegraphics on input line 593.
+Package epstopdf Info: Output file is already uptodate.
+<img/phiKm15_degree-eps-converted-to.pdf, id=775, 368.37625pt x 303.1325pt>
+File: img/phiKm15_degree-eps-converted-to.pdf Graphic file (type pdf)
+
+<use img/phiKm15_degree-eps-converted-to.pdf>
+Package pdftex.def Info: img/phiKm15_degree-eps-converted-to.pdf used on input 
+line 593.
+(pdftex.def)             Requested size: 220.50887pt x 181.45073pt.
+Package epstopdf Info: Source file: <img/phiK0_degree.eps>
+(epstopdf)                    date: 2016-06-01 21:24:29
+(epstopdf)                    size: 625543 bytes
+(epstopdf)             Output file: <img/phiK0_degree-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-06-01 21:27:03
+(epstopdf)                    size: 63686 bytes
+(epstopdf)             Command: <epstopdf --outfile=img/phiK0_degree-eps-conver
+ted-to.pdf img/phiK0_degree.eps>
+(epstopdf)             \includegraphics on input line 594.
+Package epstopdf Info: Output file is already uptodate.
+
+<img/phiK0_degree-eps-converted-to.pdf, id=776, 371.3875pt x 303.1325pt>
+File: img/phiK0_degree-eps-converted-to.pdf Graphic file (type pdf)
+
+<use img/phiK0_degree-eps-converted-to.pdf>
+Package pdftex.def Info: img/phiK0_degree-eps-converted-to.pdf used on input li
+ne 594.
+(pdftex.def)             Requested size: 220.50887pt x 179.98448pt.
+
+Overfull \hbox (2.11998pt too wide) in paragraph at lines 593--595
+[][] [] 
+ []
+
+[24 <./img/phiKm45_degree-eps-converted-to.pdf> <./img/phiKm30_degree-eps-conve
+rted-to.pdf> <./img/phiKm15_degree-eps-converted-to.pdf> <./img/phiK0_degree-ep
+s-converted-to.pdf>]
+Package epstopdf Info: Source file: <img/phiK15_degree.eps>
+(epstopdf)                    date: 2016-06-01 21:24:28
+(epstopdf)                    size: 625540 bytes
+(epstopdf)             Output file: <img/phiK15_degree-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-06-01 21:27:04
+(epstopdf)                    size: 63768 bytes
+(epstopdf)             Command: <epstopdf --outfile=img/phiK15_degree-eps-conve
+rted-to.pdf img/phiK15_degree.eps>
+(epstopdf)             \includegraphics on input line 599.
+Package epstopdf Info: Output file is already uptodate.
+
+<img/phiK15_degree-eps-converted-to.pdf, id=816, 374.39874pt x 303.1325pt>
+File: img/phiK15_degree-eps-converted-to.pdf Graphic file (type pdf)
+
+<use img/phiK15_degree-eps-converted-to.pdf>
+Package pdftex.def Info: img/phiK15_degree-eps-converted-to.pdf used on input l
+ine 599.
+(pdftex.def)             Requested size: 220.50887pt x 178.53671pt.
+Package epstopdf Info: Source file: <img/phiK30_degree.eps>
+(epstopdf)                    date: 2016-06-01 21:24:28
+(epstopdf)                    size: 634910 bytes
+(epstopdf)             Output file: <img/phiK30_degree-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-06-01 21:27:05
+(epstopdf)                    size: 61958 bytes
+(epstopdf)             Command: <epstopdf --outfile=img/phiK30_degree-eps-conve
+rted-to.pdf img/phiK30_degree.eps>
+(epstopdf)             \includegraphics on input line 600.
+Package epstopdf Info: Output file is already uptodate.
+
+<img/phiK30_degree-eps-converted-to.pdf, id=817, 374.39874pt x 303.1325pt>
+File: img/phiK30_degree-eps-converted-to.pdf Graphic file (type pdf)
+
+<use img/phiK30_degree-eps-converted-to.pdf>
+Package pdftex.def Info: img/phiK30_degree-eps-converted-to.pdf used on input l
+ine 600.
+(pdftex.def)             Requested size: 220.50887pt x 178.53671pt.
+
+Overfull \hbox (2.11998pt too wide) in paragraph at lines 599--601
+[][] [] 
+ []
+
+Package epstopdf Info: Source file: <img/phiK45_degree.eps>
+(epstopdf)                    date: 2016-06-01 21:24:27
+(epstopdf)                    size: 646992 bytes
+(epstopdf)             Output file: <img/phiK45_degree-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-06-01 21:27:07
+(epstopdf)                    size: 62052 bytes
+(epstopdf)             Command: <epstopdf --outfile=img/phiK45_degree-eps-conve
+rted-to.pdf img/phiK45_degree.eps>
+(epstopdf)             \includegraphics on input line 603.
+Package epstopdf Info: Output file is already uptodate.
+<img/phiK45_degree-eps-converted-to.pdf, id=818, 374.39874pt x 303.1325pt>
+File: img/phiK45_degree-eps-converted-to.pdf Graphic file (type pdf)
+
+<use img/phiK45_degree-eps-converted-to.pdf>
+Package pdftex.def Info: img/phiK45_degree-eps-converted-to.pdf used on input l
+ine 603.
+(pdftex.def)             Requested size: 220.50887pt x 178.53671pt.
+ [25 <./img/phiK15_degree-eps-converted-to.pdf> <./img/phiK30_degree-eps-conver
+ted-to.pdf> <./img/phiK45_degree-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <img/phiKm45_floatingMean_degree.eps>
+(epstopdf)                    date: 2016-06-01 21:19:31
+(epstopdf)                    size: 475593 bytes
+(epstopdf)             Output file: <img/phiKm45_floatingMean_degree-eps-conver
+ted-to.pdf>
+(epstopdf)             Command: <epstopdf --outfile=img/phiKm45_floatingMean_de
+gree-eps-converted-to.pdf img/phiKm45_floatingMean_degree.eps>
+(epstopdf)             \includegraphics on input line 613.
+runsystem(epstopdf --outfile=img/phiKm45_floatingMean_degree-eps-converted-to.p
+df img/phiKm45_floatingMean_degree.eps)...executed (allowed).
+
+Package epstopdf Info: Result file: <img/phiKm45_floatingMean_degree-eps-conver
+ted-to.pdf>
+(epstopdf)                    date: 2016-06-01 21:43:51
+(epstopdf)                    size: 122475 bytes.
+
+<img/phiKm45_floatingMean_degree-eps-converted-to.pdf, id=850, 377.41pt x 307.1
+475pt>
+File: img/phiKm45_floatingMean_degree-eps-converted-to.pdf Graphic file (type p
+df)
+ <use img/phiKm45_floatingMean_degree-eps-converted-to.pdf>
+Package pdftex.def Info: img/phiKm45_floatingMean_degree-eps-converted-to.pdf u
+sed on input line 613.
+(pdftex.def)             Requested size: 220.50887pt x 179.45793pt.
+Package epstopdf Info: Source file: <img/phiKm30_floatingMean_degree.eps>
+(epstopdf)                    date: 2016-06-01 21:19:30
+(epstopdf)                    size: 475860 bytes
+(epstopdf)             Output file: <img/phiKm30_floatingMean_degree-eps-conver
+ted-to.pdf>
+(epstopdf)             Command: <epstopdf --outfile=img/phiKm30_floatingMean_de
+gree-eps-converted-to.pdf img/phiKm30_floatingMean_degree.eps>
+(epstopdf)             \includegraphics on input line 614.
+runsystem(epstopdf --outfile=img/phiKm30_floatingMean_degree-eps-converted-to.p
+df img/phiKm30_floatingMean_degree.eps)...executed (allowed).
+
+Package epstopdf Info: Result file: <img/phiKm30_floatingMean_degree-eps-conver
+ted-to.pdf>
+(epstopdf)                    date: 2016-06-01 21:43:53
+(epstopdf)                    size: 121135 bytes.
+
+<img/phiKm30_floatingMean_degree-eps-converted-to.pdf, id=851, 377.41pt x 307.1
+475pt>
+File: img/phiKm30_floatingMean_degree-eps-converted-to.pdf Graphic file (type p
+df)
+ <use img/phiKm30_floatingMean_degree-eps-converted-to.pdf>
+Package pdftex.def Info: img/phiKm30_floatingMean_degree-eps-converted-to.pdf u
+sed on input line 614.
+(pdftex.def)             Requested size: 220.50887pt x 179.45793pt.
+
+Overfull \hbox (2.11998pt too wide) in paragraph at lines 613--615
+[][] [] 
+ []
+
+Package epstopdf Info: Source file: <img/phiKm15_floatingMean_degree.eps>
+(epstopdf)                    date: 2016-06-01 21:19:30
+(epstopdf)                    size: 476358 bytes
+(epstopdf)             Output file: <img/phiKm15_floatingMean_degree-eps-conver
+ted-to.pdf>
+(epstopdf)             Command: <epstopdf --outfile=img/phiKm15_floatingMean_de
+gree-eps-converted-to.pdf img/phiKm15_floatingMean_degree.eps>
+(epstopdf)             \includegraphics on input line 617.
+runsystem(epstopdf --outfile=img/phiKm15_floatingMean_degree-eps-converted-to.p
+df img/phiKm15_floatingMean_degree.eps)...executed (allowed).
+
+Package epstopdf Info: Result file: <img/phiKm15_floatingMean_degree-eps-conver
+ted-to.pdf>
+(epstopdf)                    date: 2016-06-01 21:43:54
+(epstopdf)                    size: 118812 bytes.
+
+<img/phiKm15_floatingMean_degree-eps-converted-to.pdf, id=852, 368.37625pt x 30
+7.1475pt>
+File: img/phiKm15_floatingMean_degree-eps-converted-to.pdf Graphic file (type p
+df)
+ <use img/phiKm15_floatingMean_degree-eps-converted-to.pdf>
+Package pdftex.def Info: img/phiKm15_floatingMean_degree-eps-converted-to.pdf u
+sed on input line 617.
+(pdftex.def)             Requested size: 220.50887pt x 183.85405pt.
+Package epstopdf Info: Source file: <img/phiK0_floatingMean_degree.eps>
+(epstopdf)                    date: 2016-06-01 21:19:29
+(epstopdf)                    size: 476280 bytes
+(epstopdf)             Output file: <img/phiK0_floatingMean_degree-eps-converte
+d-to.pdf>
+(epstopdf)             Command: <epstopdf --outfile=img/phiK0_floatingMean_degr
+ee-eps-converted-to.pdf img/phiK0_floatingMean_degree.eps>
+(epstopdf)             \includegraphics on input line 618.
+runsystem(epstopdf --outfile=img/phiK0_floatingMean_degree-eps-converted-to.pdf
+ img/phiK0_floatingMean_degree.eps)...executed (allowed).
+
+Package epstopdf Info: Result file: <img/phiK0_floatingMean_degree-eps-converte
+d-to.pdf>
+(epstopdf)                    date: 2016-06-01 21:43:55
+(epstopdf)                    size: 125549 bytes.
+
+<img/phiK0_floatingMean_degree-eps-converted-to.pdf, id=853, 371.3875pt x 307.1
+475pt>
+File: img/phiK0_floatingMean_degree-eps-converted-to.pdf Graphic file (type pdf
+)
+ <use img/phiK0_floatingMean_degree-eps-converted-to.pdf>
+Package pdftex.def Info: img/phiK0_floatingMean_degree-eps-converted-to.pdf use
+d on input line 618.
+(pdftex.def)             Requested size: 220.50887pt x 182.36838pt.
+
+Overfull \hbox (2.11998pt too wide) in paragraph at lines 617--619
+[][] [] 
+ []
+
+[26 <./img/phiKm45_floatingMean_degree-eps-converted-to.pdf> <./img/phiKm30_flo
+atingMean_degree-eps-converted-to.pdf> <./img/phiKm15_floatingMean_degree-eps-c
+onverted-to.pdf> <./img/phiK0_floatingMean_degree-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <img/phiK15_floatingMean_degree.eps>
+(epstopdf)                    date: 2016-06-01 21:19:29
+(epstopdf)                    size: 476270 bytes
+(epstopdf)             Output file: <img/phiK15_floatingMean_degree-eps-convert
+ed-to.pdf>
+(epstopdf)             Command: <epstopdf --outfile=img/phiK15_floatingMean_deg
+ree-eps-converted-to.pdf img/phiK15_floatingMean_degree.eps>
+(epstopdf)             \includegraphics on input line 623.
+runsystem(epstopdf --outfile=img/phiK15_floatingMean_degree-eps-converted-to.pd
+f img/phiK15_floatingMean_degree.eps)...executed (allowed).
+
+Package epstopdf Info: Result file: <img/phiK15_floatingMean_degree-eps-convert
+ed-to.pdf>
+(epstopdf)                    date: 2016-06-01 21:43:56
+(epstopdf)                    size: 125617 bytes.
+
+<img/phiK15_floatingMean_degree-eps-converted-to.pdf, id=889, 374.39874pt x 307
+.1475pt>
+File: img/phiK15_floatingMean_degree-eps-converted-to.pdf Graphic file (type pd
+f)
+ <use img/phiK15_floatingMean_degree-eps-converted-to.pdf>
+Package pdftex.def Info: img/phiK15_floatingMean_degree-eps-converted-to.pdf us
+ed on input line 623.
+(pdftex.def)             Requested size: 220.50887pt x 180.90144pt.
+Package epstopdf Info: Source file: <img/phiK30_floatingMean_degree.eps>
+(epstopdf)                    date: 2016-06-01 21:19:28
+(epstopdf)                    size: 475633 bytes
+(epstopdf)             Output file: <img/phiK30_floatingMean_degree-eps-convert
+ed-to.pdf>
+(epstopdf)             Command: <epstopdf --outfile=img/phiK30_floatingMean_deg
+ree-eps-converted-to.pdf img/phiK30_floatingMean_degree.eps>
+(epstopdf)             \includegraphics on input line 624.
+runsystem(epstopdf --outfile=img/phiK30_floatingMean_degree-eps-converted-to.pd
+f img/phiK30_floatingMean_degree.eps)...executed (allowed).
+
+Package epstopdf Info: Result file: <img/phiK30_floatingMean_degree-eps-convert
+ed-to.pdf>
+(epstopdf)                    date: 2016-06-01 21:43:58
+(epstopdf)                    size: 121632 bytes.
+
+<img/phiK30_floatingMean_degree-eps-converted-to.pdf, id=890, 374.39874pt x 307
+.1475pt>
+File: img/phiK30_floatingMean_degree-eps-converted-to.pdf Graphic file (type pd
+f)
+ <use img/phiK30_floatingMean_degree-eps-converted-to.pdf>
+Package pdftex.def Info: img/phiK30_floatingMean_degree-eps-converted-to.pdf us
+ed on input line 624.
+(pdftex.def)             Requested size: 220.50887pt x 180.90144pt.
+
+Overfull \hbox (2.11998pt too wide) in paragraph at lines 623--625
+[][] [] 
+ []
+
+Package epstopdf Info: Source file: <img/phiK45_floatingMean_degree.eps>
+(epstopdf)                    date: 2016-06-01 21:19:27
+(epstopdf)                    size: 477675 bytes
+(epstopdf)             Output file: <img/phiK45_floatingMean_degree-eps-convert
+ed-to.pdf>
+(epstopdf)             Command: <epstopdf --outfile=img/phiK45_floatingMean_deg
+ree-eps-converted-to.pdf img/phiK45_floatingMean_degree.eps>
+(epstopdf)             \includegraphics on input line 627.
+runsystem(epstopdf --outfile=img/phiK45_floatingMean_degree-eps-converted-to.pd
+f img/phiK45_floatingMean_degree.eps)...executed (allowed).
+
+Package epstopdf Info: Result file: <img/phiK45_floatingMean_degree-eps-convert
+ed-to.pdf>
+(epstopdf)                    date: 2016-06-01 21:43:59
+(epstopdf)                    size: 121927 bytes.
+
+<img/phiK45_floatingMean_degree-eps-converted-to.pdf, id=891, 374.39874pt x 307
+.1475pt>
+File: img/phiK45_floatingMean_degree-eps-converted-to.pdf Graphic file (type pd
+f)
+ <use img/phiK45_floatingMean_degree-eps-converted-to.pdf>
+Package pdftex.def Info: img/phiK45_floatingMean_degree-eps-converted-to.pdf us
+ed on input line 627.
+(pdftex.def)             Requested size: 220.50887pt x 180.90144pt.
+Package epstopdf Info: Source file: <img/degree_floatingMean_sd.eps>
+(epstopdf)                    date: 2016-06-01 21:19:32
+(epstopdf)                    size: 108099 bytes
+(epstopdf)             Output file: <img/degree_floatingMean_sd-eps-converted-t
+o.pdf>
+(epstopdf)             Command: <epstopdf --outfile=img/degree_floatingMean_sd-
+eps-converted-to.pdf img/degree_floatingMean_sd.eps>
+(epstopdf)             \includegraphics on input line 628.
+runsystem(epstopdf --outfile=img/degree_floatingMean_sd-eps-converted-to.pdf im
+g/degree_floatingMean_sd.eps)...executed (allowed).
+
+Package epstopdf Info: Result file: <img/degree_floatingMean_sd-eps-converted-t
+o.pdf>
+(epstopdf)                    date: 2016-06-01 21:44:00
+(epstopdf)                    size: 5339 bytes.
+
+<img/degree_floatingMean_sd-eps-converted-to.pdf, id=892, 372.39125pt x 305.14p
+t>
+File: img/degree_floatingMean_sd-eps-converted-to.pdf Graphic file (type pdf)
+ <use img/degree_floatingMean_sd-eps-converted-to.pdf>
+Package pdftex.def Info: img/degree_floatingMean_sd-eps-converted-to.pdf used o
+n input line 628.
+(pdftex.def)             Requested size: 220.50887pt x 180.69218pt.
+
+Overfull \hbox (2.11998pt too wide) in paragraph at lines 627--629
+[][] [] 
+ []
+
+[27 <./img/phiK15_floatingMean_degree-eps-converted-to.pdf> <./img/phiK30_float
+ingMean_degree-eps-converted-to.pdf> <./img/phiK45_floatingMean_degree-eps-conv
+erted-to.pdf> <./img/degree_floatingMean_sd-eps-converted-to.pdf>]
 (SensorInbetriebnahme.aux) ) 
 Here is how much of TeX's memory you used:
- 5040 strings out of 493634
- 71766 string characters out of 3141320
- 156731 words of memory out of 3000000
- 8343 multiletter control sequences out of 15000+200000
+ 5805 strings out of 493634
+ 95205 string characters out of 3141320
+ 165932 words of memory out of 3000000
+ 8996 multiletter control sequences out of 15000+200000
  15721 words of font info for 39 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 68i,13n,98p,764b,342s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 68i,13n,98p,938b,342s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/
 fontname/8r.enc}<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/
 cm/cmex10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
@@ -611,9 +2403,9 @@ x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files (x86
 )/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files (x86)/
 MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Program Files (x86)/MiKTeX 2
 .9/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on SensorInbetriebnahme.pdf (7 pages, 294508 bytes).
+Output written on SensorInbetriebnahme.pdf (27 pages, 4184332 bytes).
 PDF statistics:
- 114 PDF objects out of 1000 (max. 8388607)
+ 980 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 401 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -100,7 +100,7 @@ end
 function okButton_Callback(hObject, eventdata, handles)
     import CCuBaControl
     comPort = handles.COMInput.String;
-    serialInterface = serial(comPort, 'Terminator', '');
+    serialInterface = serial(comPort, 'Terminator', '', 'BaudRate', 230400);
     CuBa = CCuBaControl(serialInterface);
     CuBa_Configuration(CuBa);
     close(handles.figure1);

@@ -64,6 +64,14 @@ plot(handles.phiKDPlot, handles.CuBa.mPhiKDTime, handles.CuBa.mPhiKDValues);
 grid(handles.phiKDPlot, 'on');
 xlabel(handles.phiKDPlot, 'Zeit in Sekunden');
 ylabel(handles.phiKDPlot, '\phi_D_K in Grad/Sekunde');
+plot(handles.phiRDPlot, handles.CuBa.mPhiRDTime, handles.CuBa.mPhiRDValues);
+grid(handles.phiRDPlot, 'on');
+xlabel(handles.phiRDPlot, 'Zeit in Sekunden');
+ylabel(handles.phiRDPlot, '\phi_D_R in Grad/Sekunde');
+plot(handles.TMPlot, handles.CuBa.mTMTime, handles.CuBa.mTMValues);
+grid(handles.TMPlot, 'on');
+xlabel(handles.TMPlot, 'Zeit in Sekunden');
+ylabel(handles.TMPlot, 'Motormoment in mNm');
 guidata(hObject, handles);
 handles.timer = timer('ExecutionMode', 'fixedRate',...
                       'Period', 0.01, ...
@@ -81,6 +89,10 @@ function timerCallback(hObject,eventdata,hfigure)
     handles.phiKPlot.Children.YData = radtodeg(handles.CuBa.mPhiKValues);
     handles.phiKDPlot.Children.XData = handles.CuBa.mPhiKDTime;
     handles.phiKDPlot.Children.YData = radtodeg(handles.CuBa.mPhiKDValues);
+    handles.phiRDPlot.Children.XData = handles.CuBa.mPhiRDTime;
+    handles.phiRDPlot.Children.YData = radtodeg(handles.CuBa.mPhiRDValues);
+    handles.TMPlot.Children.XData = handles.CuBa.mTMTime;
+    handles.TMPlot.Children.YData = (handles.CuBa.mTMValues);
 
 % UIWAIT makes CuBa_Running wait for user response (see UIRESUME)
 % uiwait(handles.figure1);

@@ -8,7 +8,10 @@ classdef CCuBaControl < handle
         mPhiKTime
         mPhiKDValues
         mPhiKDTime
+        mPhiRDValues
+        mPhiRDTime
         mTMValues
+        mTMTime
         mState
         mSubstate
     end
@@ -21,7 +24,10 @@ classdef CCuBaControl < handle
             ctor.mPhiKTime    = 0;
             ctor.mPhiKDValues = 0;
             ctor.mPhiKDTime   = 0;
-            ctor.mTMValues    = [];
+            ctor.mPhiRDValues = 0;
+            ctor.mPhiRDTime   = 0;
+            ctor.mTMValues    = 0;
+            ctor.mTMTime      = 0;
             ctor.mState       = EState.STATE_CONFIGURATION;
             ctor.mSubstate    = [];
             
@@ -47,8 +53,11 @@ classdef CCuBaControl < handle
                                 bitshift(uint32(data(6)), 24);
                        torque = double(typecast(torque, 'single'));
                        this.mTMValues = [this.mTMValues, torque];
+                       this.mTMTime = [this.mTMTime,...
+                           this.mTMTime(size(this.mTMTime,2)) + 0.02];
                    case ECommEvent.EV_TRANSMIT_FSM_STATE_ENTRY
                        state = data(3);
+                       char(EState(state))
                        if(state == EState.STATE_IDLE || ...
                           state == EState.STATE_BALANCE)
                             this.mState = state;
@@ -66,12 +75,8 @@ classdef CCuBaControl < handle
                                 bitshift(uint32(data(6)), 24);
                        phiK = double(typecast(phiK, 'single'));
                        this.mPhiKValues = [this.mPhiKValues, phiK];
-                       if(size(this.mPhiKTime,1) == 0)
-                           this.mPhiKTime = 0;
-                       else
-                           this.mPhiKTime = [this.mPhiKTime,...
-                               this.mPhiKTime(size(this.mPhiKTime,2)) + 0.05];
-                       end
+                       this.mPhiKTime = [this.mPhiKTime,...
+                               this.mPhiKTime(size(this.mPhiKTime,2)) + 0.02];
                    case ECommEvent.EV_TRANSMIT_PHI_K_D
                        phiKD = uint32(data(3)) + ...
                                bitshift(uint32(data(4)), 8) + ...
@@ -80,7 +85,16 @@ classdef CCuBaControl < handle
                        phiKD = double(typecast(phiKD, 'single'));
                        this.mPhiKDValues = [this.mPhiKDValues, phiKD];
                        this.mPhiKDTime = [this.mPhiKDTime,...
-                           this.mPhiKDTime(size(this.mPhiKDTime,2)) + 0.05];
+                           this.mPhiKDTime(size(this.mPhiKDTime,2)) + 0.02];
+                   case ECommEvent.EV_TRANSMIT_PHI_R_D
+                       phiRD = uint32(data(3)) + ...
+                               bitshift(uint32(data(4)), 8) + ...
+                               bitshift(uint32(data(5)), 16) + ...
+                               bitshift(uint32(data(6)), 24);
+                       phiRD = double(typecast(phiRD, 'single'));
+                       this.mPhiRDValues = [this.mPhiRDValues, phiRD];
+                       this.mPhiRDTime = [this.mPhiRDTime,...
+                           this.mPhiRDTime(size(this.mPhiRDTime,2)) + 0.02];
                end
                        
            end

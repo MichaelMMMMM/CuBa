@@ -13,6 +13,13 @@
 %x2SignedOffset = -1794
 %y2SignedOffset = 781
 %z2SignedOffset = 807
+%29.05 Messung1, phiK = 45, x_soll = g*sin(45), y_soll = -g*sin(45)
+%x1SignedOffset = -2546;
+%y1SignedOffset = 258;
+%z1SignedOffset = -87;
+%x2SignedOffset = -1772;
+%y2SignedOffset = 538;
+%z2SignedOffset = -46;
 
 m = 10000;
 x1RawValues      = zeros(1,m);

@@ -1,0 +1,16 @@
+\documentclass{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx} 
+\usepackage{svg}
+\graphicspath{{Bilder/}}
+\usepackage{geometry}
+
+\begin{document}
+
+\section{Sensorkalibrierung Adafruit 2020}
+\subsection{Inbetriebnahme Beschleunigungssensor}
+Der Sensor verfügt über drei Achsen, die separat kalibriert werden. Zur Kalibrierung wird der Sensor in eine Position gebracht, wo lediglich in einer Achse die Erdbeschleunigung wirkt. Somit soll der Wert dieser Achse $1g$ entsprechen. Aus der Abweichung zwischen Soll und Ist-Wert kann der Offset des Sensors berechnet werden.
+Um den Offset zu ermitteln werden 1000 Werte in der jeweiligen Ruhelage gemessen. Der resultierende Mittelwert wird in $g$ umgerechnet und daraufhin die Abweichung bestimmt. Daraufhin wird der Integer-Offset berechnet, welcher auf die Rohwerte addiert werden muss.
+
+\end{document}

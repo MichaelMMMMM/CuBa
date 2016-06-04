@@ -41,9 +41,9 @@ classdef CPopulation < handle
         function evaluateFitness(this)
             for index = 1:this.mPopulationSize
                currentChromosom = this.mPopulation{index};
-               set_param('CubaModelPID/PID/K_D', 'Gain', num2str(currentChromosom.mKD));
-               set_param('CubaModelPID/PID/K_I', 'Gain', num2str(currentChromosom.mKI));
-               set_param('CubaModelPID/PID/K_P', 'Gain', num2str(currentChromosom.mKP));
+               set_param('CubaModelPID/PID/K_D', 'Value', num2str(currentChromosom.mKD));
+               set_param('CubaModelPID/PID/K_I', 'Value', num2str(currentChromosom.mKI));
+               set_param('CubaModelPID/PID/K_P', 'Value', num2str(currentChromosom.mKP));
                
                sim('CubaModelPID');
                currentChromosom.setFitness(1/fitness);

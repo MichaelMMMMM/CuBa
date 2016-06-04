@@ -13,32 +13,32 @@ T_M_m = 12.4e-3;
 %Elektrische Zeitkonstante Motor
 T_M_e = 5.5e-4;
 %Abstand von A zu B
-l = 0.08455;
+l_SA = 0.0751442;
 %Abstand Schwerpunkt des Körper zu (A)
-l_b = 0.0751442;
+l_AB = 0.08455;
 %Anfangswinkel des Körpers
-phi_b0 = degtorad(1);
+phi_K0 = degtorad(1);
 %Anfangsgeschwindigkeit des Körpers
-phi_b__d0 = degtorad(0);
+phi_K__d0 = degtorad(0);
 %Anfagsnwinkel des Schwungrades
-phi_w0 = degtorad(0);
+phi_R0 = degtorad(0);
 %Anfangsgeschwindigkeit des Schwungrades
-phi_w__d0 = degtorad(0);
+phi_R__d0 = degtorad(0);
 %Masse des Körpers
-m_b = 0.294;
+m_K = 0.294;
 %Masse des Schwungrades
-m_w = 0.1298;
+m_R = 0.1298;
 %Massentraegheitsmoment des Körpers um (A)
-O_b_A = 3.3e-3;
+O_K_A = 3.3e-3;
 %Massentraegheitsmoment des Schwungrades um (B)
-O_w_B = 0.088e-3;
+O_R_B = 0.088e-3;
 %Dynamischer Reibkoeffizient des Körpers
-C_b = 2.1e-3;
+C_K = 2.1e-3;
 %Dynamischer Reibkoeffizient des Schwungrades
-C_w = 2.1268e-5;
+C_R = 2.1268e-5;
 %Massentraegheitsmoment des Gesamtsystem um (A)
-O_G_A = O_b_A + m_w * l^2;
+O_G_A = O_K_A + m_R * l_AB^2;
 
-population = CPopulation(20, 0.5, 50, 0.5, -0.5, 10, 0);
+population = CPopulation(20, 0.5, 50, 0.02, -0.02, 2, 0);
 population.run(10);
 fittest = population.getFittestChromosom();

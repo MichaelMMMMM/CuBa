@@ -45,7 +45,7 @@ A = [0 1 0;
     alpha4 alpha5 alpha6];
 B = [0;beta1;beta2];
 
-R = 5;
+R = 5e+6;
 Q = [1 0 0; 0 1 0; 0 0 1];
 
 [K,S,e] = lqr(A,B,Q,R);
